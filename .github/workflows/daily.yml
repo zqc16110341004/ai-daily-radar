@@ -1,0 +1,82 @@
+name: AI 日报每日自动更新
+
+on:
+  schedule:
+    # 每天 08:00（中国标准时间）= 00:00 UTC
+    - cron: "0 0 * * *"
+  workflow_dispatch: {}        # 允许在 Actions 页面手动触发
+
+permissions:
+  contents: write             # 提交稿件与页面
+  pages: write                # 部署到 GitHub Pages
+  id-token: write
+
+concurrency:
+  group: ai-daily-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 配置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: 配置 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: 采集素材
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/ai_daily/collect.py --days 3
+
+      - name: 大模型撰稿
+        env:
+          LLM_API_KEY: ${{ secrets.LLM_API_KEY }}
+          LLM_BASE_URL: ${{ secrets.LLM_BASE_URL }}   # 可选；默认 https://api.deepseek.com/v1
+          LLM_MODEL: ${{ secrets.LLM_MODEL }}         # 可选；默认 deepseek-chat
+        run: python scripts/ai_daily/generate.py
+
+      - name: 渲染页面
+        run: python scripts/ai_daily/render.py --latest
+
+      - name: 校验页面
+        run: node --test tests/rendered-html.test.mjs
+
+      - name: 提交稿件与页面
+        run: |
+          git config user.name "ai-daily-bot"
+          git config user.email "ai-daily-bot@users.noreply.github.com"
+          git add data/ public/ai-daily.html
+          git commit -m "daily: $(date +%F) 自动更新" || echo "no changes"
+          git push
+
+      - name: 准备 Pages 产物
+        run: |
+          mkdir -p _site
+          cp public/ai-daily.html _site/index.html
+
+      - name: 上传 Pages 产物
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 部署到 GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -1,0 +1,145 @@
+{
+  "rag": {
+    "display": "Retrieval-Augmented Generation",
+    "title": "检索增强生成",
+    "kind": "wiki",
+    "path": "wiki/concepts/rag.md",
+    "definition": "让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。",
+    "plain": "",
+    "analogy": "",
+    "why": "",
+    "alias": "检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"
+  },
+  "model-selection": {
+    "display": "model-selection",
+    "title": "模型选型",
+    "kind": "wiki",
+    "path": "wiki/concepts/model-selection.md",
+    "definition": "模型选型是把\"用哪个模型\"当成产品策略而非技术选择来做：明确目标 → 用真实 query 构建测试集 → GSB 盲评 → 成本/耗时量化 → 综合决策，并建立持续评测机制（不是非此即彼的一次性选择）。与 model-strategy（更偏宏观的模型战略/开源闭源/国内外）相对，本概念聚焦\"具体两个候选模型怎么选\"的方法。",
+    "plain": "",
+    "analogy": "",
+    "why": "",
+    "alias": "模型选型、Model Selection、选模型、模型选择"
+  },
+  "codex": {
+    "display": "OpenAI Codex",
+    "title": "Codex",
+    "kind": "wiki",
+    "path": "wiki/entities/codex.md",
+    "definition": "OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。",
+    "plain": "",
+    "analogy": "",
+    "why": "",
+    "alias": "Codex、OpenAI Codex"
+  },
+  "gemma": {
+    "display": "Google Gemma",
+    "title": "Gemma",
+    "kind": "wiki",
+    "path": "wiki/entities/gemma.md",
+    "definition": "Google 推出的开源大语言模型，因可本地部署、Token 限制低，适合特定垂直场景。Day1 中作为\"模型选择 = 产品策略\"的典型例证。",
+    "plain": "",
+    "analogy": "",
+    "why": "",
+    "alias": "Gemma、Google Gemma"
+  },
+  "claude-code": {
+    "display": "claude code",
+    "title": "Claude Code",
+    "kind": "wiki",
+    "path": "wiki/entities/claude-code.md",
+    "definition": "Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。",
+    "plain": "",
+    "analogy": "",
+    "why": "",
+    "alias": "Claude Code"
+  },
+  "deepseek": {
+    "display": "DeepSeek V4",
+    "title": "DeepSeek",
+    "kind": "wiki",
+    "path": "wiki/entities/deepseek.md",
+    "definition": "国内独角兽 AI 公司，自研基底模型。开源代表，全系 100 万上下文。",
+    "plain": "",
+    "analogy": "",
+    "why": "",
+    "alias": "DeepSeek、DeepSeek V4"
+  },
+  "kimi": {
+    "display": "Moonshot AI",
+    "title": "Kimi",
+    "kind": "wiki",
+    "path": "wiki/entities/kimi.md",
+    "definition": "月之暗面（Moonshot AI）旗下大模型产品。Kimi 2.6 主打 300+ Agents 连排调用，底层 Long CoT 长思考技术，曾以 256K 超长上下文出圈。课程关键点：Kimi 跳过 SFT 直接用强化学习训练；通过\"砍价活动\"收集用户行为轨迹数据，反向训练底层模型——是 data-flywheel 的典型案例。",
+    "plain": "",
+    "analogy": "",
+    "why": "",
+    "alias": "Kimi、月之暗面、Moonshot AI"
+  },
+  "claude": {
+    "display": "Claude AI",
+    "title": "Claude",
+    "kind": "wiki",
+    "path": "wiki/entities/claude.md",
+    "definition": "由 Anthropic 公司开发的大语言模型系列。课程中作为 AI 辅助用户研究的首选工具之一，与飞书（feishu）配合使用。",
+    "plain": "",
+    "analogy": "",
+    "why": "",
+    "alias": "Claude、Claude AI"
+  },
+  "agent": {
+    "display": "AI Agent",
+    "title": "智能体",
+    "kind": "wiki",
+    "path": "wiki/concepts/agent.md",
+    "definition": "",
+    "plain": "",
+    "analogy": "",
+    "why": "",
+    "alias": "Agent、智能体、AI Agent"
+  },
+  "hbm": {
+    "display": "HBM",
+    "title": "高带宽内存",
+    "kind": "wiki",
+    "path": "wiki/concepts/hbm.md",
+    "definition": "High Bandwidth Memory，堆叠在 AI 芯片旁的高速内存，用来存放模型权重，运行时再搬进计算单元。",
+    "plain": "AI 加速器上的高速内存，模型权重临时存放在这里，算的时候再搬进计算单元。它既是推理性能的瓶颈，也是成本大头。",
+    "analogy": "",
+    "why": "Taalas 这类「模型专用芯片」的思路正是绕开它——把权重固化进硅片，就不必反复搬运。看懂 HBM 的瓶颈，才能看懂 inference 专用化这一波硬件动向。",
+    "alias": "High Bandwidth Memory、高带宽显存"
+  },
+  "mcp": {
+    "display": "MCP",
+    "title": "Model Context Protocol",
+    "kind": "wiki",
+    "path": "wiki/concepts/mcp.md",
+    "definition": "一套让大模型调用外部工具和数据源的开放协议：服务端声明有哪些工具可用，模型按需调用。",
+    "plain": "开放协议，让大模型能调外部工具和数据源。服务端先声明有哪些工具可用，模型需要时再调用。它解决的是「模型能调什么」。",
+    "analogy": "",
+    "why": "但它不记录「模型看过什么」。Cloudflare 指出的正是这个缺口——缺了观察记录，共享工作空间时就难判断是否越权。评估 Agent 权限时，MCP 只是第一层，还要补上资源可见性追踪。",
+    "alias": "模型上下文协议"
+  },
+  "open-weights": {
+    "display": "开放权重",
+    "title": "开放权重模型",
+    "kind": "wiki",
+    "path": "wiki/concepts/open-weights.md",
+    "definition": "模型参数可公开下载、能在自己机器上运行的模型。注意它不等于开源——训练数据和训练代码通常并未一并公开。",
+    "plain": "模型参数公开可下载、能在自己机器上跑的模型。但它不等于「开源」：训练数据和训练代码通常没一起公开。",
+    "analogy": "",
+    "why": "它决定你能否把数据留在自己的边界内处理，以及是否会被单一供应商的定价和可用性绑死。自建审核、私有部署都建立在开放权重之上。",
+    "alias": "开源权重、open weights"
+  },
+  "human-in-the-loop": {
+    "display": "人在回路",
+    "title": "人在回路",
+    "kind": "wiki",
+    "path": "wiki/concepts/human-in-the-loop.md",
+    "definition": "在自动化流程的关键节点插入人工确认，由人决定是否放行，常见于 Agent 执行危险命令前的审批弹窗。",
+    "plain": "在自动化流程的关键节点插入人工确认，由人决定放不放行。Agent 要执行危险命令前弹个审批窗，就是典型的人在回路。",
+    "analogy": "",
+    "why": "它被广泛当作 Agent 的安全底线，但高噪声下人的判断会迅速退化（Scale X 的 4 万次模拟显示平均漏掉三分之一威胁）。应把它当兜底而非唯一防线，主防线放在沙箱与上下文隔离。",
+    "alias": "HITL、人工审批、human in the loop"
+  }
+}

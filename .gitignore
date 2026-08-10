@@ -40,3 +40,10 @@ next-env.d.ts
 /.wrangler/
 /outputs/
 /work/
+
+# AI 日报管线（自动生成，无需入库）
+/deploy
+/_site
+/data/raw
+/data/state
+

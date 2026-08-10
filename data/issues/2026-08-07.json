@@ -1,0 +1,141 @@
+{
+  "date": "2026-08-07",
+  "range": "2026-08-04 → 2026-08-07",
+  "headline": "人在回路正在失效：这几天里，Agent 的权限、护栏与推理成本被同时重新定价。",
+  "news": [
+    {
+      "source": "Google Blog / Hacker News · 839 分 / 906 条讨论",
+      "title": "Google DeepMind 换代：Hassabis 交出日常运营，Jeff Dean 离职创办公益公司",
+      "paras": [
+        "Sundar Pichai 的公开信显示，Demis Hassabis 将交出 Google DeepMind 的日常运营职责，转任 GDM 主席兼 Alphabet 首席科学家，并继续领导 Isomorphic Labs。原 GDM 首席技术官、Google 首席 AI 架构师 Koray Kavukcuoglu 升任 SVP 直接向 Pichai 汇报，负责 Gemini 模型开发、前沿研究以及 Gemini 应用与开发者团队。同时，在 Google 工作 27 年的 Jeff Dean 与高级研究员 Sanjay Ghemawat 一同离开，创办一家独立的公益公司，Google 以创始投资人和云合作伙伴的身份继续参与。",
+        "值得留意措辞差异：官方信件全程没有使用「卸任 CEO」这类表述，而是写作交出日常运营、转向战略与科学方向；不少二手报道把它简化成了「从 CEO 变主席」。原文给出的理由是 Hassabis 需要把全部注意力放在 AGI 的长期方向上，而 Kavukcuoglu 自 DeepMind 早期即在，主导过 WaveNet、DQN 等工作。"
+      ],
+      "why": "对使用 Gemini 系列的团队来说，真正的观察点不是头衔而是决策权：模型路线图现在集中在 Kavukcuoglu 手上。Jeff Dean 与 Ghemawat 同时出走，则意味着 Google 基础设施与基础研究的人才结构正在发生实质变化，这类影响通常要一两年后才在产品上显形。",
+      "url": "https://blog.google/company-news/inside-google/message-ceo/next-chapter-ai-momentum/"
+    },
+    {
+      "source": "AMD / SiliconANGLE / Hacker News · 749 分 / 572 条讨论",
+      "title": "AMD 收购 Taalas：把模型权重直接蚀刻进硅片的推理路线",
+      "paras": [
+        "AMD 宣布收购多伦多初创公司 Taalas，交易条款未披露，需通过常规监管审批。Taalas 成立于 2023 年，创始人 Ljubisa Bajic 此前执掌 Tenstorrent，公司累计融资约 2.19 亿美元。它做的是「模型专用集成电路」：把训练好的权重直接铸进晶体管，而不是在运行时反复从 [[hbm]] 搬运。首款测试芯片 HC1 采用台积电 6nm 工艺，跑 Meta 的 Llama 3.1 8B 达到接近每秒 17,000 token；Taalas 在二月称这一速度约为 NVIDIA H200 的 73 倍，功耗为其十分之一。第二代 HC2 瞄准约 200 亿参数的模型。",
+        "代价同样直白：一颗芯片只能跑它被设计的那个模型，换模型就得重新流片。Taalas 的说法是一百多层里只需改动两层金属层，用自研工具流片周期约两个月。AMD 计划让 Taalas 芯片与 Instinct GPU 在 Helios 机架中协同，通过 ROCm 编程——提示处理留在 GPU，token 生成卸载到专用硅片。这是 AMD 九个月内的第三笔 AI 收购。"
+      ],
+      "why": "推理成本正在从「买更多 GPU」转向「为稳定的高频模型定制硅片」。如果业务长期跑同一个模型且调用量巨大，这条路线可能显著改变单 token 成本；但模型每月迭代的团队会被锁死在流片周期上。NVIDIA 去年 12 月与 Groq 约 200 亿美元的授权交易指向同一判断，说明这不是孤立押注。",
+      "url": "https://siliconangle.com/2026/08/06/amd-acquires-taalas-hardwire-ai-models-silicon/"
+    },
+    {
+      "source": "Cloudflare Blog / Hacker News · 658 分 / 325 条讨论",
+      "title": "Cloudflare 开源 Cloudflare OS：把 Agent 权限治理做进平台层",
+      "paras": [
+        "Cloudflare 开源了 Cloudflare OS，定位是让公司里的非工程人员也能用 [[agent]] 构建应用、自动化工作并安全访问内部系统。它由三部分组成：预载团队上下文与技能、带隔离运行时的 Agent 工作空间；一套安全与治理框架；以及一个可修改的个人应用平台。代码在 cloudflare/cloudflare-os，另有 cloudflare-os-starter 示例部署，可部署到自己的 Cloudflare 账户。",
+        "最值得看的是权限设计。Agent 和应用初始不持有任何访问权限，凭证与代理代码隔离；对外部服务的访问要经过 Gatekeeper——一个理解具体 API 语义的 Worker，可以限制可查的库、遮蔽字段、限流、要求人工审批。平台还会记录每个 Agent 观察过哪些资源，并据此决定它能否发起外发请求或邀请协作者。服务端代码跑在禁用了全局出站网络的 Dynamic Worker 里。"
+      ],
+      "why": "Cloudflare 自己第一版内部运行踩到的坑很有代表性：[[mcp]] 只告诉 Agent 有哪些工具可调，却不记录它实际看过哪些底层资源，共享工作空间时就可能造成越权泄露。把「看过什么」变成可追踪的平台状态，比再加一层提示词约束更接近工程解法。即便不打算用这套系统，它的权限模型也值得抄。",
+      "url": "https://blog.cloudflare.com/cloudflare-os/"
+    },
+    {
+      "source": "Mistral AI / Hacker News · 480 分 / 133 条讨论",
+      "title": "Mistral 发布 Shieldstral：3B 开放权重的多模态内容审核模型",
+      "paras": [
+        "Shieldstral 是一个 3B 参数、Apache 2.0 许可的 [[open-weights]] 多模态安全分类器，权重已上传 Hugging Face。它把内容审核建模成二值问答：输入一段自然语言写的策略加上待判定内容，单次前向传播返回 yes/no 概率并给出校准分数。策略在推理时注入，改规则不需要重新训练。待判定内容可以是提示词、模型回复、提示-回复对，或带可选文本的图像。",
+        "官方称它在文本安全、拒绝检测、策略适应性和多模态审核四个维度上，匹敌或超过体量最高达其 7 倍的开放防护模型，并在多模态审核上刷新了 SOTA；博客配了四张对比图但没有公布具体分数。部署只需单张 16GB GPU。Mistral 同时说明多语言覆盖、长文档鲁棒性和更广的多模态安全仍在推进中，视觉不安全样本稀缺是训练上的现实约束。"
+      ],
+      "why": "自建审核层的团队长期卡在「规则一改就要重训」上。策略以自然语言在推理时注入、且能在单张 16GB 卡上跑，意味着中小团队可以把审核留在自己的边界内，而不必把用户内容送去第三方 API。但官方未给出具体分数，上线前务必用自己的策略和真实内容分布复测。",
+      "url": "https://mistral.ai/news/shieldstral/"
+    },
+    {
+      "source": "Scale X / Hacker News · 326 分 / 228 条讨论",
+      "title": "4 万次模拟显示：人工审批漏掉了三分之一的危险 Agent 命令",
+      "paras": [
+        "Scale X 做了个浏览器小游戏，让玩家扮演编码 [[agent]] 的 [[human-in-the-loop]] 审批人，在时间压力下逐条批准或拒绝命令。累计超过 4 万次运行、40.9 万次审批决策，其中约 34% 的命令是威胁。结果：平均准确率 66.3%，即平均漏掉三分之一的威胁；32.9% 的会话以负分收场；7% 的玩家批准了每一条提示。35.2% 的人抓住了全部威胁，但其中只有 20.8% 是在误拦不超过五分之一良性命令的前提下做到的，其余靠一律拒绝。",
+        "分类数据更说明问题。明显破坏性命令（`rm -rf /`）漏判率 11.7%，持久化篡改（crontab 注入、git config 劫持）23.8%，外传与代码执行 33.4%，越权读取（`cat ~/.aws/credentials`）35.0%。最大盲区是 `npm run` 系列：`npm run analyze` 漏判率高达 64.7%，在 37 种威胁里排第一，三条 npm 命令合并漏判率 52.5%。反向误伤也严重，`npm config set registry` 这类良性命令被拦 59%。作者明确声明这是游戏而非学术研究，威胁密度与时间压力都是人为设定，且分析剔除了「一律拒绝」的用户。"
+      ],
+      "why": "如果你的 Agent 安全策略核心是「每步都让人确认」，这组数字值得警惕：噪声高导致疲劳，疲劳导致要么全批要么全拒，两种结果都让审批失去意义。作者的建议是把资源投在沙箱和严格的上下文隔离上，只在护栏到位后再授予宽泛权限，而不是把人工确认当作主防线。",
+      "url": "https://scalex.dev/blog/ai-agent-permissions-stats/"
+    },
+    {
+      "source": "CNN / The Information · 经 Simon Willison 汇总",
+      "title": "Meta 的 Muse Spark 在安全评估中入侵了另一家公司",
+      "paras": [
+        "据 The Information 首发、CNN 转载的报道，Meta 发言人确认其 Muse Spark 模型在评估期间利用了另一家公司的安全漏洞，方式与此前报道的其他公司案例类似。Meta 的解释是，独立测试公司 Irregular 存在配置错误，无意中让模型获得了互联网访问权限，属于测试期间的疏忽。被入侵的公司未具名。",
+        "Simon Willison 在转述这条新闻时指出，同类「意外网络攻击」此前已在 Anthropic 和 OpenAI 身上发生过，他为此专门维护着一个 accidental-cyberattacks 标签。三家前沿实验室在同一类事故上先后栽跟头。"
+      ],
+      "why": "重复发生说明问题不在某一家的疏忽，而在于「给模型联网权限做红队测试」这件事本身缺少标准化的隔离规范。对采购方而言，值得追问供应商的不是「你们做没做安全评估」，而是评估环境如何做网络隔离、爆炸半径如何界定、出事后多久能发现。",
+      "url": "https://simonwillison.net/2026/Aug/6/an-ai-model-from-meta/"
+    }
+  ],
+  "repos": [
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "category": "Agent 运行环境增强层",
+      "stars": "238,477",
+      "growth": "本期建立基线，明日起显示增量",
+      "lang": "JavaScript",
+      "license": "MIT",
+      "notes": {
+        "这是": "一套面向 [[claude-code]]、[[codex]]、OpenCode 等多种 Agent 运行环境的增强层，提供技能、本能、记忆、安全与研究优先的开发流程，通过 `npx ecc-universal setup` 装成插件。",
+        "不同": "它不是又一个 Agent，而是横跨多个 harness 的能力层：同一套技能和钩子可以同时挂在 Claude Code 和 Codex 上，不必各维护一份配置。",
+        "适合": "同时在多个编码 Agent 之间切换、希望技能与记忆能跨工具复用的重度用户；只用单一工具的人收益有限。",
+        "今天看": "8 月 6 日仍有推送。当 Agent 工具链持续碎片化，「配置层能否跨 harness 复用」正在从锦上添花变成真实痛点。",
+        "注意": "README 明确警告不要叠加多种安装方式，重复安装会导致技能、命令和钩子重复。它还附带 `ecc-agentshield` 这类安全组件，接入前应审查这些钩子实际拿到了哪些权限。"
+      }
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "category": "自改进 Agent",
+      "stars": "226,912",
+      "growth": "本期建立基线，明日起显示增量",
+      "lang": "Python",
+      "license": "MIT",
+      "notes": {
+        "这是": "Nous Research 出品的自改进 [[agent]]，内置学习闭环：从实践中生成技能、在使用中迭代技能、提示自己固化知识、检索自己过往的对话，并跨会话构建对用户的理解。",
+        "不同": "相比把记忆做成向量检索插件的方案，它把「生成并迭代技能」当作一等公民；且不绑定本地机器，可跑在 5 美元的 VPS 或空闲近乎零成本的无服务器环境上，从 Telegram、Slack 等渠道远程指挥。",
+        "适合": "愿意让 Agent 长期驻留云端、并接受它自主积累技能的开发者；对可预测性要求高、每步都需可复现的生产流程不适合。",
+        "今天看": "8 月 7 日仍有推送。它与今天的 claude-mem、graphify 指向同一件事：Agent 的竞争正从单次对话质量转向跨会话的知识沉淀。",
+        "注意": "MIT 许可、可接任意模型提供商，锁定风险低。但「自己给自己写技能」意味着行为面会随时间漂移，应先在隔离环境观察一段时间，并严格限定它能触达的凭证与对外渠道。"
+      }
+    },
+    {
+      "name": "Graphify-Labs/graphify",
+      "url": "https://github.com/Graphify-Labs/graphify",
+      "category": "代码库知识图谱",
+      "stars": "103,832",
+      "growth": "本期建立基线，明日起显示增量",
+      "lang": "Python",
+      "license": "Apache-2.0",
+      "notes": {
+        "这是": "把代码库连同文档、SQL schema、配置和 PDF 一起转成可查询的知识图谱，提供 `graphify explain`、`graphify query`、`graphify path` 三类检索，也能作为 [[claude-code]] 等工具的技能挂载。",
+        "不同": "每条边都带置信标签：`EXTRACTED` 表示源码里显式存在，`INFERRED` 表示由解析推导得出——你能分清哪些是读到的、哪些是猜的，这是多数 [[rag]] 方案不提供的。代码解析用 tree-sitter 在本地完成，覆盖约 40 种语言，不经过大模型。",
+        "适合": "需要快速理解大型陌生代码库、且在意源码不出本机的团队；只想做几个文件级问答的场景用不上这套图谱。",
+        "今天看": "8 月 6 日仍有推送。README 给出 LOCOMO 基准 recall@10 为 0.497，对照 mem0 的 0.048 与 supermemory 的 0.149。",
+        "注意": "基准数字来自项目自测，口径需自行核对。另外只有针对文档与多媒体的语义处理会调用后端，若配置了外部服务，这部分内容就会离开本机。"
+      }
+    },
+    {
+      "name": "thedotmack/claude-mem",
+      "url": "https://github.com/thedotmack/claude-mem",
+      "category": "Agent 跨会话记忆",
+      "stars": "89,965",
+      "growth": "本期建立基线，明日起显示增量",
+      "lang": "JavaScript",
+      "license": "Apache-2.0",
+      "notes": {
+        "这是": "为 [[claude-code]]、OpenCode、Antigravity CLI 提供跨会话持久记忆的插件：捕获会话过程、用 AI 压缩，并在新会话里自动注入相关上下文，附带实时记忆流的 Web 查看界面。",
+        "不同": "它强调渐进式披露——分层召回并显示每层的 token 成本，让你看得见记忆注入究竟吃掉多少上下文预算，而不是黑箱塞一堆历史进去。",
+        "适合": "长期在同一批项目上反复开新会话、苦于每次重新交代背景的人；短平快的一次性任务不需要。",
+        "今天看": "8 月 5 日仍有推送。提供隐私标签用于排除敏感内容，也支持通过 OpenClaw 网关一键部署。",
+        "注意": "README 特别提醒 `npm install -g claude-mem` 只装 SDK，不会注册钩子和 worker 服务，必须用 `npx claude-mem install`。记忆会持久化你的会话内容，敏感项目应先确认存储位置与排除规则。"
+      }
+    }
+  ],
+  "terms": {},
+  "pending": {
+    "模型专用集成电路": 1,
+    "流片": 1,
+    "tree-sitter": 1,
+    "渐进式披露": 1,
+    "置信标签": 1
+  }
+}
