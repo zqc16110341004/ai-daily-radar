@@ -1,0 +1,136 @@
+{
+  "headline": "AI 日报 · 今日速览（自动聚合，未做人工解读）",
+  "news": [
+    {
+      "source": "Hacker News · 763分 / 491评",
+      "title": "How I use LLMs to learn complex topics",
+      "url": "https://laurentiugabriel.github.io/blog/articles/how-i-use-llms-to-learn/",
+      "paras": [
+        "How I use LLMs to learn complex topics。"
+      ],
+      "why": "（自动聚合，未做人工解读，请补充。）"
+    },
+    {
+      "source": "Hacker News · 619分 / 331评",
+      "title": "Meta Muse Glimmer – open weights 30B local coding model",
+      "url": "https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model",
+      "paras": [
+        "Meta Muse Glimmer – open weights 30B local coding model。"
+      ],
+      "why": "（自动聚合，未做人工解读，请补充。）"
+    },
+    {
+      "source": "Hacker News · 535分 / 380评",
+      "title": "Oracle bans AI-generated code from OpenJDK",
+      "url": "https://app.dealroom.co/news/feed/oracle-bans-ai-generated-code-from-openjdk-despite-ellison-s-claim-oracle-isn-t-writing-its-own-code",
+      "paras": [
+        "Oracle bans AI-generated code from OpenJDK。"
+      ],
+      "why": "（自动聚合，未做人工解读，请补充。）"
+    },
+    {
+      "source": "Hacker News · 445分 / 279评",
+      "title": "Docker Sandboxes – Disposable, isolated sandboxes for AI agents",
+      "url": "https://www.docker.com/products/docker-sandboxes/",
+      "paras": [
+        "Docker Sandboxes – Disposable, isolated sandboxes for AI agents。"
+      ],
+      "why": "（自动聚合，未做人工解读，请补充。）"
+    },
+    {
+      "source": "Hacker News · 443分 / 130评",
+      "title": "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones",
+      "url": "https://deepmind.google/blog/weathernext-ai-model-achieves-breakthrough-in-forecasting-cyclones/",
+      "paras": [
+        "DeepMind's WeatherNext model achieves breakthrough forecasting cyclones。"
+      ],
+      "why": "（自动聚合，未做人工解读，请补充。）"
+    },
+    {
+      "source": "Hacker News · 429分 / 112评",
+      "title": "Assembly Hall of Shame",
+      "url": "https://github.com/xoreaxeaxeax/asm-hall-of-shame",
+      "paras": [
+        "Assembly Hall of Shame。"
+      ],
+      "why": "（自动聚合，未做人工解读，请补充。）"
+    },
+    {
+      "source": "Hacker News · 427分 / 412评",
+      "title": "Timeline of the OpenAI accidental attack against Hugging Face",
+      "url": "https://simonwillison.net/2026/Aug/7/openai-timeline/",
+      "paras": [
+        "Timeline of the OpenAI accidental attack against Hugging Face。"
+      ],
+      "why": "（自动聚合，未做人工解读，请补充。）"
+    },
+    {
+      "source": "Hacker News · 398分 / 338评",
+      "title": "Everything you do is being recorded",
+      "url": "https://www.theatlantic.com/technology/2026/05/ai-wearable-surveillance-countermeasures/687203/",
+      "paras": [
+        "Everything you do is being recorded。"
+      ],
+      "why": "（自动聚合，未做人工解读，请补充。）"
+    }
+  ],
+  "repos": [
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "category": "GitHub 热门",
+      "stars": "239171",
+      "growth": "—",
+      "lang": "JavaScript",
+      "license": "MIT",
+      "notes": {
+        "这是": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "今天看": "本期自动聚合入选。"
+      }
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "category": "GitHub 热门",
+      "stars": "228312",
+      "growth": "—",
+      "lang": "Python",
+      "license": "MIT",
+      "notes": {
+        "这是": "The agent that grows with you",
+        "今天看": "本期自动聚合入选。"
+      }
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "category": "GitHub 热门",
+      "stars": "196949",
+      "growth": "—",
+      "lang": "C++",
+      "license": "Apache-2.0",
+      "notes": {
+        "这是": "An Open Source Machine Learning Framework for Everyone",
+        "今天看": "本期自动聚合入选。"
+      }
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "category": "GitHub 热门",
+      "stars": "186493",
+      "growth": "—",
+      "lang": "Python",
+      "license": "NOASSERTION",
+      "notes": {
+        "这是": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "今天看": "本期自动聚合入选。"
+      }
+    }
+  ],
+  "terms": {},
+  "pending": {},
+  "date": "2026-08-11",
+  "range": "2026-08-08 → 2026-08-11",
+  "updated": "08-11 00:06"
+}
