@@ -315,80 +315,90 @@ footer h3{
 <body>
 <div class="wrap">
 <header class="masthead">
-<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-08-10 → 2026-08-13</span></div>
-<h1 class="serif">本地 Agent 模型与执行安全成本周 AI 产品主线</h1>
-<div class="stats"><span><b>7</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>1</b> 个</span><span>更新于 08-13 08:53</span></div>
+<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-08-11 → 2026-08-14</span></div>
+<h1 class="serif">模型扎堆发布，推理安全与 Agent 工具链成焦点</h1>
+<div class="stats"><span><b>8</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>6</b> 个</span><span>更新于 08-14 08:52</span></div>
 </header>
 <div class="news-grid">
 <article id="item-1">
-<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Meta 官方博客 / Hacker News · 1198 分 / 637 评</span></div>
-<h2>Meta 开源 Muse Glimmer：专为常驻本地 Agent 打造的 30B 模型</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hacker News 热帖（源自《世界报》）· 1054 分 / 508 评</span></div>
+<h2>法国 8 月 11 日起禁止未经同意的电话营销</h2>
 <div class="body">
-<p>Meta 研究院发布 Muse Glimmer，一个 30B 参数的开放权重 Agent 模型，定位是面向“始终在线”的本地 Agent 工作流。与按请求调用云端模型不同，它更强调常驻内存、持续感知环境并低延迟响应，训练与权重细节以官方博客为准。</p>
-<p>如果你正在规划桌面助手、智能家居中枢或隐私敏感场景的智能体，Muse Glimmer 是一个值得放进评测矩阵的本地选项。30B 参数仍需要一定内存与算力，产品团队应把它和云端 API 模型做对照测试，重点看延迟、功耗、工具调用成功率，再决定是纯本地还是混合调度。</p>
-<p class="why"><strong>为什么值得关心</strong>：本地 Agent 模型的选择权出现了新的开放权重候选，直接影响依赖云端 API 的 Agent 产品架构：隐私、离线与成本成为可谈判变量。产品经理需要把它纳入模型选型与路线图讨论，而不是默认闭源大模型是唯一方案。</p>
+<p>法国宣布自 8 月 11 日起禁止未经用户事先同意的主动营销电话，违反者将面临处罚。这项政策把电话营销的授权逻辑从「默许」翻转为「主动选择加入」，直接改变所有外呼型产品的合规前提。</p>
+<p>对做 AI 语音客服、外呼机器人的团队，这不是换个话术就能解决的事：号码来源、呼叫记录、同意凭证都需要可审计。面向欧洲市场的获客产品，应尽快把这一条加入合规清单，并重新评估第三方号码供应商的合规状态。</p>
+<p class="why"><strong>为什么值得关心</strong>：AI 语音外呼是本次政策最直接的受影响品类：基于大模型生成话术的营销机器人将更难合法触达用户。反过来，做企业合规工具的团队可以把「外呼合规审计」当成新需求来验证。</p>
 </div>
-<p class="readmore"><a href="https://research.meta.ai/blog/introducing-muse-glimmer-open-agentic-model" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://www.lemonde.fr/en/france/article/2026/08/06/france-to-ban-unsolicited-telemarketing-calls-from-august-11_6756208_7.html" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-2">
-<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">Show HN 热帖 · 525 分 / 178 评</span></div>
-<h2>Needle2：14MB 的端侧 Agent 模型，瞄准手机、穿戴设备与机器人</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">Hacker News 热帖（源自 OpenRouter）· 1017 分 / 440 评</span></div>
+<h2>DeepSeek V4 Pro 0813 上线 OpenRouter，开源权重再掀热潮</h2>
 <div class="body">
-<p>Show HN 上出现了一个叫 Needle2 的项目，自称是 14MB 大小的 Agent 化大模型，目标设备覆盖手机、穿戴设备、智能家居和机器人。14MB 意味着它可以长期驻留在资源极受限的边缘硬件上，而不是每次任务都请求云端。</p>
-<p>对做端侧 AI 产品的团队，这件作品的价值在于展示了能力下限：超小模型可以承担意图识别、触发词唤醒、简单决策等轻任务，复杂的推理仍然留给云端。产品设计上可以把它当作“本地触发器”或低功耗待机层，与更强模型配合，而不是期待它独立完成复杂 Agent 任务。</p>
-<p class="why"><strong>为什么值得关心</strong>：它把“端侧 Agent”从概念变成可实验的项目：14MB 模型意味着几乎所有 IoT 设备和手机都能常驻一个轻量智能层。产品经理可以据此设计分层推理架构，用超小模型过滤简单请求、降低云端成本，但需要先验证其真实能力边界，避免被小模型叙事误导。</p>
-</div>
-<p class="readmore"><a href="https://cactuscompute.com/needle" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-3">
-<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">OpenRouter 模型页 / Simon Willison 博客</span></div>
-<h2>DeepSeek V4 Pro 0813 上线 OpenRouter，开源模型迭代再加速</h2>
-<div class="body">
-<p>DeepSeek V4 Pro 0813 版本出现在 OpenRouter 模型目录中，Simon Willison 也为此发了简短转介。从版本编号判断应是 8 月 13 日左右的快照，延续了 DeepSeek 高频发版的节奏；具体能力变化与跑分以官方评测为准。</p>
-<p>对 AI 产品经理，DeepSeek 的持续迭代意味着开源模型与闭源前沿的差距在继续缩小。如果产品在用 API 构建对话或 Agent 场景，值得把这版加入回归评测集，重点看推理、工具调用与指令遵循；同时把模型调度设计成可插拔，避免被单一供应商锁死。</p>
-<p class="why"><strong>为什么值得关心</strong>：它直接影响模型选型与成本结构：DeepSeek 系以低价著称，新版继续给闭源 API 价格施压。产品团队可以借机重估“默认模型”的性价比，并建立版本升级的自动化评估流程，防止模型更新引入行为回退。</p>
+<p>DeepSeek 的新版本 V4 Pro 0813 通过 OpenRouter 对外开放，作为一款 <button class="term term--wiki" data-slug="open-weights" type="button">开放权重</button> 模型，它在推理能力和性价比上延续了社区对 DeepSeek 的期待。Hacker News 上的讨论热度显示，开发者正在快速把它与闭源旗舰模型做对比。</p>
+<p>对 AI 产品经理而言，这意味着在选择模型时多了一个值得认真评估的高性价比骨干候选。尤其是对 token 成本敏感的规模化场景，可以用 V4 Pro 先跑一遍内部基准，看它能替代多少闭源 API 的流量。</p>
+<p class="why"><strong>为什么值得关心</strong>：开源权重模型迭代加速正在压缩闭源模型的溢价空间。若 V4 Pro 在推理与代码任务上达到可用水平，产品团队应把「切换到 open-weights 模型」纳入成本优化与供应链风险预案。</p>
 </div>
 <p class="readmore"><a href="https://openrouter.ai/deepseek/deepseek-v4-pro-0813" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-4">
-<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Docker 官方产品页 / Hacker News · 690 分 / 393 评</span></div>
-<h2>Docker 推出 Sandboxes：为 AI Agent 提供即用即弃的隔离沙箱</h2>
+<article id="item-3">
+<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Hacker News 热帖 · 962 分 / 888 评</span></div>
+<h2>AI 编程工具正在冲击软件工程「中间层」岗位</h2>
 <div class="body">
-<p>Docker 发布了 Docker Sandboxes，目标是为 AI Agent 提供一次性、可丢弃的隔离运行环境。Agent 可以在里面安全执行代码、操作文件或与外部工具交互，用后即弃，把安全事故的爆炸半径限制在单个沙箱内。</p>
-<p>对 AI 产品经理，沙箱化执行是 Agent 从原型走向生产的关键安全设计。设计工具调用功能时，把“默认在一次性沙箱里执行”作为底线，能显著降低用户对自主 Agent 的信任门槛；同时要评估沙箱启动延迟与费用，它们会直接影响交互体感和毛利。</p>
-<p class="why"><strong>为什么值得关心</strong>：它把 Agent 执行安全从自建方案变成标准化服务，降低了 Agent 产品的落地成本。产品团队可以更放心地开放 Agent 的自主行动权限，但也要配套监控、配额与审计能力，防止沙箱被滥用或成为新的攻击面。</p>
+<p>一篇在 Hacker News 获得近九百条评论的文章提出，AI 辅助编程让少数工程师能够维护更多代码，最受伤的是大量从事常规功能开发与维护的中级工程师；初级和资深两端反而受影响较小。这个「沙漏型」人才结构假设正在成为开发者社区的争论焦点。</p>
+<p>对做编码类 AI 产品的团队，这篇文章提示产品价值主张需要转移：与其让工具继续替人补全代码，不如强化跨模块理解、重构与测试能力，服务一个更精简、更资深的用户群。如果中间层岗位收缩，客户画像会从「帮中级工程师写得更快」变成「帮资深工程师管得更多」。</p>
+<p class="why"><strong>为什么值得关心</strong>：直接影响编码工具的产品定义与市场定位。AI 编程助手不应只对标「替代中级开发者的重复劳动」，还应帮资深开发者处理系统级复杂度，否则会在模型能力趋同后失去差异化。</p>
 </div>
-<p class="readmore"><a href="https://www.docker.com/products/docker-sandboxes/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-5">
-<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">安全研究专题网站 / Hacker News · 682 分 / 300 评</span></div>
-<h2>新研究展示如何从闭源 LLM API 窃取思维链推理轨迹</h2>
+<article id="item-4">
+<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Hacker News 热帖 · 694 分 / 306 评</span></div>
+<h2>研究者展示如何从专有大模型 API 窃取推理轨迹</h2>
 <div class="body">
-<p>一个名为 stolen-thoughts 的安全研究项目展示了从闭源 LLM API 窃取思维链推理轨迹的方法。推理轨迹是模型在给出答案前的内部思考过程，闭源厂商通常只暴露最终答案，研究者却展示了如何从 API 行为中重建这些中间步骤。</p>
-<p>如果你的 Agent 产品依赖闭源模型做复杂决策，这则研究提醒你留意提示词与业务逻辑的泄露风险：推理轨迹一旦可被窃取，相当于把产品策略暴露给攻击者。高敏场景应优先考虑本地模型，或至少在提示词中避免放入机密信息，并对 API 输入做脱敏处理。</p>
-<p class="why"><strong>为什么值得关心</strong>：这是 Agent 产品安全评估中被忽视的一环。推理轨迹包含大量业务上下文，可被窃取会动摇“闭源 API 更安全”的默认假设，影响模型部署决策：产品团队需要重新做风险评估，并为敏感行业客户提供本地化方案选项。</p>
+<p>一项名为 Stolen Thoughts 的研究展示了从专有大模型 API 响应中恢复隐藏推理过程的可能性，也就是模型在给出最终答案前的 <button class="term term--temp" data-slug="reasoning-traces" type="button">推理轨迹</button>。它把「思维链窃取」从理论担忧变成了公开演示的风险。</p>
+<p>对产品经理，这提醒任何把 Agent 中间推理以摘要或逐步说明形式展示给用户的交互设计，都可能成为信息泄漏面；尤其在企业级 RAG 与多工具调用场景里，推理轨迹可能包含业务规则痕迹。建议为「展示思考过程」这个功能增加开关与脱敏选项。</p>
+<p class="why"><strong>为什么值得关心</strong>：推理轨迹的可窃取性，把「是否暴露 Agent 思考过程」从体验问题升级为安全问题。产品应重新评估那些实时展示思考过程的交互设计，并为敏感场景增加脱敏或开关。</p>
 </div>
 <p class="readmore"><a href="https://stolen-thoughts.com/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-6">
-<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">The Walrus 杂志 / Hacker News · 926 分 / 963 评</span></div>
-<h2>当 AI 吃掉网络，互联网的集体记忆正在消失</h2>
+<article id="item-5">
+<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">xAI 官方博客 / Hacker News · 622 分 / 603 评</span></div>
+<h2>xAI 发布 Grok 4.6，配套 Bot 组件加深生态布局</h2>
 <div class="body">
-<p>一篇题为“Google 搜索正在死去”的长文在 Hacker News 引发热议，核心论点是：AI 生成内容正在填充网络，搜索引擎流量结构变化，历史网页、论坛与优质长文越来越难被找到，互联网作为集体记忆的机制正在被侵蚀。</p>
-<p>这对依赖网络数据做 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 的产品经理是重要警示：公共语料的质量与可获取性在下降，搜索 API 的返回质量也可能随之恶化。你需要把数据源多元化，建立第一方数据、企业知识库与内容合作，而不是把答案质量全部押注在“全网搜索”上。</p>
-<p class="why"><strong>为什么值得关心</strong>：它直接影响 Agent 与搜索产品的答案质量：源头数据在腐烂，RAG 系统的准确性和时效性就会滑坡。产品策略上应提早布局自有语料与数据合作，并把多源交叉验证作为质量保障机制，减少对单一搜索入口的依赖。</p>
+<p>xAI 发布 Grok 4.6，官方博客同时介绍了 Grok Bot 等配套产品；在 Artificial Analysis 的智能指数上，Grok 4.6 拿到 61 分，讨论区更关注它在实际对话与编码任务中的可用性。</p>
+<p>对做多模型路由或评测的产品团队，Grok 4.6 应被纳入候选池：它在榜单上能否逼近 Claude、GPT 与 Gemini，决定了 xAI 是不是一个值得接入的备选供应商。由于 xAI 在社交数据上的生态位，它在开放域对话类的产品里可能有独特优势。</p>
+<p class="why"><strong>为什么值得关心</strong>：模型榜单竞争持续白热化。Grok 4.6 的表现会影响「第三方 API 提供商选择」格局；同时 xAI 把模型和 Bot 打包，显示其在 agent 场景的纵向整合意图，值得跟踪。</p>
 </div>
-<p class="readmore"><a href="https://thewalrus.ca/google-search-is-dying/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://x.ai/news/grok-4-6" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-6">
+<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Google 官方博客 / Hacker News · 588 分 / 330 评</span></div>
+<h2>Google 发布 Gemini 3.7 Flash，小模型迭代提速</h2>
+<div class="body">
+<p>Google 宣布推出 Gemini 3.7 Flash。Flash 系列一直主打低延迟与低成本，适合高频调用场景；这次版本号来到 3.7，意味着 Gemini 已经进入快速小版本迭代的节奏。</p>
+<p>对产品经理，小模型的每次换代都值得重新跑一次「成本 / 延迟 / 质量」三角测试。如果 3.7 Flash 在关键任务上接近上一代 Pro，那么现有应用可能只需调整模型参数，就能在不牺牲体验的前提下显著降低成本。</p>
+<p class="why"><strong>为什么值得关心</strong>：这是最直接的降本机会：Flash 与 Pro 的定位差意味着每逢 Flash 更新，都要把生产流量中的一部分重新评估是否可切换，属于投入产出比最高的优化项。</p>
+</div>
+<p class="readmore"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-7">
-<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Florian Herrengt 博客 / Hacker News · 697 分 / 625 评</span></div>
-<h2>AI 正在移除软件工程的中层？一篇引发大讨论的分析</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">DeepSeek 官方 / Hacker News · 544 分 / 239 评</span></div>
+<h2>DeepSeek 发布 Agent Harness 开发者预览版</h2>
 <div class="body">
-<p>开发者 Florian Herrengt 发文提出，AI 正在抹掉软件工程中的“中层”：负责常规编码与集成工作的中间地带被压缩，资深架构师与产品定义者依然关键。文章在 Hacker News 上引发关于职业结构和团队协作的广泛讨论。</p>
-<p>对 AI 产品经理，这意味着你所在研发团队的分工需要重新设计：重复编码交给 Agent，人力向需求定义、架构评审、结果验收集中。建议尽早把“人机协作”写进团队建设规划，并重新定义研发流程中的关键检查点，避免团队规模与技能结构错配。</p>
-<p class="why"><strong>为什么值得关心</strong>：它影响 AI 产品团队的招聘与组织方式。如果你在建设 AI 原生研发团队，需要明确哪些角色被增强、哪些被替代，并据此设计晋升与考核机制；同时要谨慎对外传达“AI 取代工作”的叙事，避免引发用户与公众的信任问题。</p>
+<p>DeepSeek 上线了 Harness 的开发者预览版，为 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 应用的开发与运行提供执行环境。这标志着它从「提供模型 API」走向「提供模型加工具链」的纵向整合。</p>
+<p>对已经在用 DeepSeek 模型搭建 agent 的团队，这个 harness 值得体验：它可能降低从提示词到工具调用的工程成本，但也可能让应用更深地绑定 DeepSeek 生态。产品经理在采用前应评估可迁移性，尤其是后续能否继续自由切换其他模型。</p>
+<p class="why"><strong>为什么值得关心</strong>：模型厂商做 harness 是平台化信号：短期能降低落地门槛，长期则可能提高切换成本。需要同时衡量整合红利与绑定风险。</p>
 </div>
-<p class="readmore"><a href="https://blog.florianherrengt.com/ai-removing-middle-class-software-engineering.html" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://deepseek.com/harness/en/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-8">
+<div class="item-top"><span class="idx" aria-hidden="true">08</span><span class="from">英国《金融时报》/ Hacker News · 520 分 / 483 评</span></div>
+<h2>OpenAI 伦理负责人上任不到一年即离职</h2>
+<div class="body">
+<p>OpenAI 的伦理负责人在加入不到一年后离职。消息来自英国《金融时报》，在 Hacker News 上引发了关于「AI 治理岗位在商业公司中的实际话语权」的讨论。</p>
+<p>对于把 OpenAI 作为主力供应商的企业客户，这类关键岗位流动值得记入风险台账：它不会立刻改变 API 的可用性，但在企业安全审查或采购流程里，治理团队的稳定性常常是评估的一部分。产品团队不必因此切换供应商，但应在内部文档中备注。</p>
+<p class="why"><strong>为什么值得关心</strong>：供应商治理稳定性正成为企业级 AI 采购的隐性指标。模型能力之外，信任与安全团队的持续更替会影响企业对长期依赖的判断。</p>
+</div>
+<p class="readmore"><a href="https://www.ft.com/content/e49dfb75-f841-4466-a577-f7aaff8779a0" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 </div>
 <section class="github-radar" id="github">
@@ -398,83 +408,83 @@ footer h3{
 <div class="repo-grid">
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">ollama/ollama</a></h3>
-<span class="repo-category">本地模型运行时</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>178,371</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>Go</b></span>
-<span>许可 <b>MIT</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个让开发者在本机用一条命令运行大模型的开源运行时，支持 Kimi、GLM、MiniMax、DeepSeek、Qwen、Gemma 等主流模型，并提供兼容 OpenAI 的本地 API。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把模型下载、加载和 API 服务全部封装到本地，是目前本地推理栈中被采用最广的入口之一，也是快速验证开源模型的首选工具。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">做端侧或私有化 AI 产品、需要离线推理或数据不出域的团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">Muse Glimmer、Needle2 等本地模型接连出现，Ollama 这类运行时决定了你能否在半天内把新模型接入产品原型，值得保持跟踪。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">本地推理的硬件门槛与性能仍是瓶颈，只适合延迟敏感、数据敏感或成本可控的场景，不能直接替代云端大规模推理。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a></h3>
 <span class="repo-category">Agent 运行环境增强层</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>239,756</b></span>
+<span>Stars <b>239,976</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>JavaScript</b></span>
 <span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">面向 Claude Code、Codex、OpenCode、Cursor 等 Agent 运行时的增强系统，提供技能、本能、记忆、安全与研究优先的开发流程，用一行命令安装成跨工具插件。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是又一个 Agent，而是横跨多个 harness 的能力层：同一套技能和钩子可以同时挂在不同编码 Agent 上，不必为每个工具各维护一份配置。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">同时在多个编码 Agent 之间切换、希望技能与记忆跨工具复用的重度用户或团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">8 月 6 日仍有推送，星标量非常高。当 Agent 工具链持续碎片化，“配置能否跨 harness 复用”正从锦上添花变成真实痛点。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">这类跨工具插件会注入命令与钩子，接入前应仔细审查每个组件实际申请了哪些权限，并在单一环境验证后再推广。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一套面向 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>、OpenCode、Cursor 等编码 Agent 的增强层，提供技能、本能、记忆、安全与研究优先的开发流程，可通过 <code>npx ecc-universal setup</code> 安装插件。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是又一个 Agent，而是跨多个 harness 复用统一配置与技能层，解决工具碎片化问题。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">同时使用多个编码 Agent 的团队或重度个人开发者。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">它在本期 GitHub 星标榜中位居前列，说明「一套技能到处用」的需求正在被验证。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">README 明确警告不要叠加多种安装方式，否则会导致技能与钩子重复；接入前应审查其安全组件拿到的权限。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
-<span class="repo-category">AI 网页上下文 API</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>166,449</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>TypeScript</b></span>
-<span>许可 <b>AGPL-3.0</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">面向 AI 的上下文 API，提供搜索、抓取和规模化网页交互能力，目标是把整个 Web 变成 AI Agent 可检索、可交互的数据源。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把搜索、抓取和结构化输出封装成一个统一接口，专门为 RAG、Agent 与 AI 搜索产品设计，而不是通用的爬虫工具。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要让 Agent 实时获取网络信息、或快速搭建 AI 搜索与知识库问答的产品团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">在“搜索引擎质量下滑、网络记忆萎缩”的讨论背景下，可靠的网页上下文获取正成为 Agent 应用的基础设施。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">AGPL-3.0 许可对商用有传染性，使用自托管版本或云服务前需要先确认法务边界；同时抓取合规与目标网站的条款也要纳入评估。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">Graphify-Labs/graphify</a></h3>
-<span class="repo-category">代码库知识图谱工具</span></div></div>
+<span class="repo-category">代码知识图谱化工具</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>105,685</b></span>
+<span>Stars <b>106,040</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>Python</b></span>
 <span>许可 <b>Apache-2.0</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">把代码库、文档、SQL schema、配置和 PDF 转换成语义查询知识图谱的工具，并提供面向 Claude Code、Cursor、Codex、Gemini CLI 的 graphify 技能。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它使用本地确定性 AST 解析，不依赖向量库，每条关系边都有来源解释，结果可溯源，避免黑盒嵌入检索。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要让 AI 深入理解复杂或遗留代码库的研发团队，尤其是做自动化重构、代码搜索与文档生成的场景。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">企业级 Agent 应用正从“检索片段”走向“理解关系”，确定性图谱提供了一种可审计的方法，和纯向量 RAG 形成互补。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">AST 解析只覆盖它能识别的语言与文件类型，对非代码资料的支持取决于预设解析器，接入前需要验证覆盖率。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">把代码库、文档、SQL schema 与 PDF 转成可查询知识图谱的工具，提供 <code>/graphify</code> skill 给 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、Cursor、Codex 和 Gemini CLI，无需向量库，基于本地确定性 AST 解析。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">主流代码理解走 embedding 检索，它走确定性 AST 抽取，边与边之间都有解释，可追溯性更强。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要让 agent 快速理解大型遗留代码库、或对检索结果可解释性有要求的团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">在 Agent 工具链里，「知识图谱 vs <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button>」的路线竞争正在展开，它代表确定性一侧的典型方案。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">对依赖反射、动态类型等运行时行为的语言，纯 AST 解析可能覆盖不全。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
+<span class="repo-category">面向 Agent 的网页上下文 API</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>166,980</b></span>
+<span>增长 <b>—</b></span>
+<span>语言 <b>TypeScript</b></span>
+<span>许可 <b>AGPL-3.0</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">以 API 形式提供搜索、抓取与网页交互的服务，能把网页内容转成结构化、低噪音的上下文数据，供 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 使用。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它定位为 Agent 的上下文接口而不是普通爬虫，强调规模化与对现有 Agent 框架的适配。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要让 Agent 实时访问网页信息的应用，比如比价、舆情、尽调与客服自动应答。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">当 Agent 联网成为标配，firecrawl 这类服务正在成为应用层的基础设施。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">AGPL 许可对修改后的闭源商用有约束，团队要评估开源版还是商业版。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">ollama/ollama</a></h3>
+<span class="repo-category">本地模型运行框架</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>178,484</b></span>
+<span>增长 <b>—</b></span>
+<span>语言 <b>Go</b></span>
+<span>许可 <b>MIT</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">一条命令在本地跑起主流 <button class="term term--wiki" data-slug="open-weights" type="button">开放权重</button> 模型的工具，目前支持 Kimi-K2.6、GLM-5.2、MiniMax、DeepSeek、gpt-oss、Qwen、Gemma 等。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它几乎成了本地开源模型的事实标准入口，覆盖模型生态的广度远超一般的模型运行器。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">对数据隐私敏感、希望离线交付或做快速模型验证的团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">伴随 DeepSeek V4 Pro 等新模型上线，本地模型矩阵会持续影响「哪些功能可以不下云」的产品决策。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">本地运行大尺寸模型需要足够的 GPU/显存，实际成本未必低于 API，需要按场景测算。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 </div></section>
 <footer>
@@ -482,15 +492,14 @@ footer h3{
 <div class="legend"><span><i></i>这个词已在知识库中收录 —— 点开查看简明解释</span><span><i class="l-prov"></i>临时解释 —— 本期现写的，还没进知识库</span></div>
 <h3>待摄入队列 · 出现越多越值得正式收进去</h3>
 <div class="pending">
-<span>推理轨迹 <b>×3</b></span>
-<span>沙箱 <b>×3</b></span>
-<span>本地模型 <b>×4</b></span>
+<span>harness <b>×3</b></span>
+<span>reasoning-traces <b>×2</b></span>
 </div>
 <p class="note">日报术语来自维护中的知识库，仅用于解释本期内容。</p>
 </footer>
 </div>
 <div class="scrim" id="scrim"><div class="card" id="card"></div></div>
-<script>window.__TERMS__={"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
+<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"open-weights":{"display":"开放权重","title":"开放权重模型","kind":"wiki","path":"wiki/concepts/open-weights.md","definition":"模型参数可公开下载、能在自己机器上运行的模型。注意它不等于开源——训练数据和训练代码通常并未一并公开。","plain":"模型参数公开可下载、能在自己机器上跑的模型。但它不等于「开源」：训练数据和训练代码通常没一起公开。","analogy":"","why":"它决定你能否把数据留在自己的边界内处理，以及是否会被单一供应商的定价和可用性绑死。自建审核、私有部署都建立在开放权重之上。","alias":"开源权重、open weights"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"},"reasoning-traces":{"display":"推理轨迹","title":"推理轨迹（Reasoning Traces）","kind":"temp","plain":"模型在输出最终答案前生成的内部思考步骤，通常对用户隐藏，但可通过统计手段被部分重建。","why":"它把我们平时关注的「是否展示 Agent 思考过程」从体验问题升级为安全问题。"}};</script>
 <script>
 (function(){
   var DICT = window.__TERMS__ || {};
