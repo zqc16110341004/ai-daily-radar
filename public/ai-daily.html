@@ -315,80 +315,90 @@ footer h3{
 <body>
 <div class="wrap">
 <header class="masthead">
-<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-08-18 → 2026-08-21</span></div>
-<h1 class="serif">Agent 工具链与训练数据合规双重变局</h1>
-<div class="stats"><span><b>7</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>9</b> 个</span><span>更新于 08-21 08:32</span></div>
+<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-08-19 → 2026-08-22</span></div>
+<h1 class="serif">模型网关归入 Stripe，Agent 供应链与体验风险</h1>
+<div class="stats"><span><b>8</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>1</b> 个</span><span>更新于 08-22 08:29</span></div>
 </header>
 <div class="news-grid">
 <article id="item-1">
-<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">OpenRouter 官方博客 / Hacker News · 941 分 / 479 评</span></div>
-<h2>OpenRouter 宣布加入 Stripe，模型路由与支付基础设施加速整合</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hacker News 热帖 · 1030 分 / 574 评</span></div>
+<h2>别把 AI 输出直接贴进产品</h2>
 <div class="body">
-<p><button class="term term--temp" data-slug="openrouter" type="button">OpenRouter</button> 在官方博客宣布加入 Stripe。OpenRouter 是许多 AI 团队在用的模型路由与 API 聚合平台，用一个接口接入多家模型、统一计费；这条消息在 Hacker News 上获得近千分，开发者讨论集中在它对多模型生态意味着什么。</p>
-<p>对 AI 产品经理来说，这件事的指向是：多模型路由正在从「临时拼接的开发者工具」变成被大型支付与金融基础设施收编的标准化通道。团队如果在用 OpenRouter 聚合模型，需要持续关注它的定价、模型清单和服务条款是否随整合调整；如果正在自建路由层，则要意识到结算与合规能力正在成为这类平台的护城河，自建的综合成本会更高。</p>
-<p class="why"><strong>为什么值得关心</strong>：模型 API 的分发与结算通道可能被重写，直接影响多模型接入策略；自建路由的团队需要重新评估支付与合规环节的成本。</p>
+<p>一篇以「不要粘贴 AI」为题的短文在 Hacker News 获得上千分热度。作者呼吁开发者不要直接把 AI 生成的内容整段贴进用户界面、聊天或回复里，理由是这些输出往往冗长、空泛、带着明显的机器腔，把未经编辑的模型文本交给用户，等于让用户承担了本该由产品承担的质量责任。</p>
+<p>对 AI 产品经理来说，这段吐槽的真正指向是：生成不是交付。聊天、写作、客服、邮箱助手这些场景，都应该在模型输出与用户看到的内容之间保留一道改写、压缩或格式收敛的工序，把 AI 输出当草稿而不是终稿来设计产品流程。</p>
+<p class="why"><strong>为什么值得关心</strong>：提醒 AI 产品不要把模型输出当作最终的可用内容，缺少后处理的产品体验会放大 AI 腔和质量落差；建议把输出后处理作为产品模块。</p>
+</div>
+<p class="readmore"><a href="https://dontpastetheai.com/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-2">
+<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">OpenRouter 官方博客 / Hacker News · 953 分 / 495 评</span></div>
+<h2>OpenRouter 宣布并入 Stripe</h2>
+<div class="body">
+<p>OpenRouter 官方发布公告，宣布加入 Stripe。OpenRouter 是目前许多开发者和 AI 产品团队在用的模型网关，把多家大模型 API 聚合在一个接入层里，支持按需切换和路由模型；并入 Stripe 意味着模型分发这件事开始和支付基础设施直接挂钩。</p>
+<p>对做 AI 产品的团队，这个变化的直接含义是：多模型路由层的商业逻辑和定价策略可能随 Stripe 的战略而调整。现在不是下判断的时候，但值得把「不依赖单一网关」作为长期架构原则，同时在 API 价格、账期和可用性上预留替代方案。</p>
+<p class="why"><strong>为什么值得关心</strong>：模型接入层正在从纯技术工具变成金融基础设施的一部分，影响 API 定价、账期和工具选型；AI 产品经理需要重新评估模型网关依赖风险。</p>
 </div>
 <p class="readmore"><a href="https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-2">
-<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">The Register / Hacker News · 614 分 / 419 评</span></div>
-<h2>Google 拍下破产航司 Spirit 的数据用于 AI，训练数据合规再引争议</h2>
-<div class="body">
-<p>The Register 报道，Google 在美国破产航空公司 Spirit 的数据拍卖中购得其数据，用途指向 AI 训练。这条新闻在 Hacker News 上引发大量争议，讨论聚焦在破产程序中的个人数据、用户授权与 AI 训练的边界。</p>
-<p>对 AI 产品经理而言，这是一次关于数据来源合法性的清醒提醒：训练语料和用户数据正在变成可拍卖、可转让的资产，「原罪」会在产品上线后被持续放大。设计数据采集链路时，授权链条的完整性应当从源头开始审核，不能只看当前用途是否合理，还要考虑数据曾经经过哪些主体的手。</p>
-<p class="why"><strong>为什么值得关心</strong>：训练数据的授权链条是否完整会直接成为产品的合规与品牌风险点；涉及第三方数据的团队应重新审视来源协议，并准备对外说明数据治理边界。</p>
-</div>
-<p class="readmore"><a href="https://www.theregister.com/ai-and-ml/2026/08/18/google-buys-crashed-airline-spirits-data-at-auction-because-ai/5288962" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
 <article id="item-3">
-<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Anthropic 帮助中心 / Hacker News · 294 分 / 265 评</span></div>
-<h2>Claude Code 推出 2026 年 5–8 月每周限额促销，开发者成本策略起变化</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Simon Willison 博客</span></div>
+<h2>ChatGPT 搜索开始大规模支持 site: 过滤语法</h2>
 <div class="body">
-<p>Anthropic 的官方支持页面披露了 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button> 在 2026 年 5 月至 8 月期间的每周限额促销安排。这条消息在 Hacker News 上获得两百多条讨论，说明开发者对编码 Agent 的价格与配额变动非常敏感。</p>
-<p>编码 Agent 的计费方式正在从「按量计费」走向「限额 + 促销」的组合，配额预期直接影响团队的预算制定与工具选型。产品经理在规划 AI 开发工具投入时，应该把这类临时促销当成变量去跟踪，而不是默认长期价格不变；它同时也为竞品留下调整定价的空间。</p>
-<p class="why"><strong>为什么值得关心</strong>：编码 Agent 的成本模型正被头部厂商用促销与配额调节，直接影响团队工具链投入和替代方案评估。</p>
-</div>
-<p class="readmore"><a href="https://support.claude.com/en/articles/15910845-claude-code-may-august-2026-weekly-limits-promotion" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-4">
-<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">GitHub Issue（anthropics/claude-code #6235）/ Hacker News · 353 分 / 216 评</span></div>
-<h2>开发者请愿 Claude Code 支持 AGENTS.md，配置标准化呼声渐高</h2>
-<div class="body">
-<p>在 anthropics/claude-code 的仓库里，一条「支持 <button class="term term--temp" data-slug="agentsmd" type="button">AGENTS.md</button>」的功能请求获得了大量关注，并在 Hacker News 上发酵。开发者普遍反映，在多个编码 Agent 之间切换时，每个工具各有一套配置文件，协作成本越来越高。</p>
-<p>对做 AI 产品的人来说，这个信号比某个具体功能更重要：Agent 工具链正在形成用仓库级说明文件来约定协作方式的新惯例。如果你的产品需要接入编码 Agent 或提供 Agent 能力，现在就应该考虑把配置做成可移植、可继承的标准，而不是绑定在单一工具上，否则会在工具迁移时被替换掉。</p>
-<p class="why"><strong>为什么值得关心</strong>：AGENTS.md 若成为事实标准，团队维护一份配置即可跨工具复用；提前兼容可以降低集成摩擦并赢得开发者口碑。</p>
-</div>
-<p class="readmore"><a href="https://github.com/anthropics/claude-code/issues/6235" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-5">
-<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Simon Willison 博客</span></div>
-<h2>ChatGPT 搜索开始大规模使用 site: 操作符，AI 搜索的信息获取逻辑生变</h2>
-<div class="body">
-<p>Simon Willison 观察到，ChatGPT 搜索现在会在查询中大规模使用 <code>site:</code> 操作符，把搜索范围主动收窄到特定站点。这说明模型驱动的搜索不再只是理解自然语言，也开始借用传统搜索引擎的查询语法来提升准确性。</p>
-<p>对依赖搜索流量或内容供给的 AI 产品，这个变化值得直接纳入策略：站点能否被正确收录、索引以及被 <code>site:</code> 命中，会直接影响 AI 产品能否引用到你的内容。产品和内容团队应该把「面向 Agent 的搜索可见性」当成日常职能，而不是只交给 SEO 部门。</p>
-<p class="why"><strong>为什么值得关心</strong>：它会影响内容分发与 AI 搜索生态的流量分配；决定你的站点是否出现在 AI 答案里的，可能不再是关键词排名，而是结构化可索引性。</p>
+<p>Simon Willison 的观察显示，ChatGPT 搜索开始大规模支持 <code>site:</code> 过滤语法，用户可以用 <code>site:域名</code> 的方式把检索范围限制在特定网站内。这看起来只是补齐了传统搜索引擎早就有的能力，却说明 ChatGPT 搜索正在从黑盒式问答转向可定向、可验证的检索产品。</p>
+<p>对 AI 产品经理和内容运营者，这算一个可执行的信号：AI 搜索的流量入口不再只能靠模型随机抽取，你可以在产品里主动引导用户使用 <code>site:</code> 去圈定来源，也可以把自家网站的内容结构做得更适合被 AI 搜索准确命中。</p>
+<p class="why"><strong>为什么值得关心</strong>：<code>site:</code> 语法大规模开放，意味着 AI 搜索有了可运营的 SEO 和内容策略抓手，产品团队应把它纳入流量分发与内容可见性的评估。</p>
 </div>
 <p class="readmore"><a href="https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-6">
-<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Hugging Face 博客（IBM Research）</span></div>
-<h2>Agent 需要多少记忆？IBM Research 提出新的评估视角</h2>
+<article id="item-4">
+<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">GitHub 官方博客 / Hacker News · 627 分 / 731 评</span></div>
+<h2>GitHub 发布 8 月 17 日事故总结与后续改进方向</h2>
 <div class="body">
-<p>Hugging Face 博客发布了 IBM Research 的一篇研究，讨论 Agent 在实际运行中究竟需要多少内存，并给出量化和优化的思路。标题里出现的 HMM（隐马尔可夫模型）暗示这项工作与记忆的建模和压缩有关。</p>
-<p>对 AI 产品经理而言，Agent 的「记忆」正从一个宣传词变成需要量化计算成本的功能模块。这篇研究提示团队在设计对话历史与长期记忆时，先回答「这个场景真正需要记住什么」，而不是把所有历史无脑塞进上下文；记忆大小直接对应推理成本和响应延迟，是需要在产品规格里明确的设计参数。</p>
-<p class="why"><strong>为什么值得关心</strong>：记忆功能的设计不应跟随叙事，而应根据任务类型决定记忆策略与存储方案，否则成本会随上下文线性膨胀。</p>
+<p>GitHub 官方博客发布了《The August 17 outage》一文，回顾 8 月 17 日发生的大规模服务中断，并介绍后续的改进方向。Hacker News 上有七百多条讨论在关注故障原因、影响范围和 GitHub 未来如何避免重蹈覆辙。</p>
+<p>对大量使用编码 Agent 和自动化流水线的 AI 团队，GitHub 已经不只是一个代码托管库，而是构建、发布和 Agent 执行链路的公共底座。这类平台故障会直接中断自动化和发布流程，产品经理在做风险预案时，需要为主干流程准备缓存、镜像和备用通道。</p>
+<p class="why"><strong>为什么值得关心</strong>：AI 编码工具链对 GitHub 生态的依赖越来越深，平台故障的影响会传导到 Agent 自动化执行；提醒产品团队别把第三方基础设施当成永续资源。</p>
 </div>
-<p class="readmore"><a href="https://huggingface.co/blog/ibm-research/altk-evolve-hmm" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-5">
+<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Anna's Archive 博客 / Hacker News · 515 分 / 833 评</span></div>
+<h2>称 AI 公司正在毁掉实体书，呼吁尽快扫描稀有书籍</h2>
+<div class="body">
+<p>Anna's Archive 发布博客，标题直接说「AI 公司正在毁掉实体书」，并呼吁在稀有书籍彻底消失前尽快完成数字化扫描。帖子在 Hacker News 上获得八百多条评论，把版权、模型训练语料和文化遗产保护三个话题搅在了一起。</p>
+<p>对 AI 产品团队，这条新闻的真正议题是训练数据供应链正在从线上爬虫延伸到线下实体书数字化。无论是参与扫描、购买语料，还是使用第三方数据集，都可能踩进版权和伦理争议；建议在数据合规策略里明确「线下书籍数字化」这条线的边界。</p>
+<p class="why"><strong>为什么值得关心</strong>：模型训练语料的来源与合法性正在成为公共事件，AI 产品团队需要提前判断自己在数据供应链上的立场和风险，否则会被版权争议反噬。</p>
+</div>
+<p class="readmore"><a href="https://annas-archive.gl/blog/physical-destruction.html" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-6">
+<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">SafeDep 安全研究 / Hacker News · 542 分 / 490 评</span></div>
+<h2>恶意 Rust 包 Arrayref 在编译期执行攻击载荷</h2>
+<div class="body">
+<p>安全公司 SafeDep 披露了一个名为 Arrayref 的恶意 Rust crate：它伪装成正常的 <code>proc-macro</code> 库，却在 cargo 构建阶段执行攻击载荷。Hacker News 上有四百多条讨论，话题集中在开源包管理器对「构建时执行」这一环节的信任缺失。</p>
+<p>对 AI 产品团队来说，这条新闻的价值是提醒：依赖安全不只检查运行时依赖，更要关注构建期钩子。AI 工具链依赖多且新，尤其是编码 Agent、模型推理库和 CLI 工具，发布前应把依赖锁定、哈希校验、沙箱构建纳入发布标准。</p>
+<p class="why"><strong>为什么值得关心</strong>：AI 工具链的第三方依赖复杂而脆弱，恶意包可藏在构建阶段，产品经理应在发布流水线里增加供应链安全门槛。</p>
+</div>
+<p class="readmore"><a href="https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-7">
-<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Modular 博客 / Hacker News · 333 分 / 70 评</span></div>
-<h2>Modular 宣布 Mojo 开源，AI 编程语言再添变量</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">arXiv 论文 / Hacker News · 282 分 / 239 评</span></div>
+<h2>别再给中间令牌贴上「思考痕迹」的人格化标签</h2>
 <div class="body">
-<p>Modular 在官方博客宣布 <button class="term term--temp" data-slug="mojo" type="button">Mojo</button> 正式开源。Mojo 是一种语法上接近 Python 的 AI 编程语言，目标是把 Python 的易用性与底层硬件性能结合起来；消息同时在 Hacker News 和 Simon Willison 等开发者社区传播。</p>
-<p>对 AI 产品团队来说，Mojo 开源短期不会改变大多数人的技术栈，但它让「性能敏感型 AI 代码」多了一个选择：如果团队在写推理服务、数据处理管线或需要精细控制硬件利用率的模块，可以花一两周做个压测来判断它是否适合特定场景，尤其是当团队已经熟悉 Python 却不满于运行效率的时候。</p>
-<p class="why"><strong>为什么值得关心</strong>：开源降低了尝试门槛，值得列入技术雷达；不需要全面迁移，但可以在性能敏感模块上做小范围验证。</p>
+<p>一篇 arXiv 论文以「停止把中间令牌人格化为推理/思考痕迹」为题，指出模型输出的中间令牌本质上是下一个 token 的预测，而不是模型心智活动的记录。Hacker News 上有两百多条讨论，很多从业者承认自己也习惯用「模型在思考」来描述这个过程。</p>
+<p>这直接影响 AI 产品的一个具体功能：如何设计「已思考」或推理过程展示。如果产品把中间 token 包装成「思考痕迹」呈现给用户，用户容易把随机过程误当成模型的自我反思。建议产品团队把它定位为一种界面隐喻，而不是对模型真实意图的说明。</p>
+<p class="why"><strong>为什么值得关心</strong>：影响带推理展示的对话产品如何设计信任与预期管理；把中间 token 当思考过程展示，容易放大用户对模型能力的误解。</p>
 </div>
-<p class="readmore"><a href="https://www.modular.com/blog/mojo-open-source" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://arxiv.org/abs/2504.09762" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-8">
+<div class="item-top"><span class="idx" aria-hidden="true">08</span><span class="from">GitHub Issue / Hacker News · 369 分 / 218 评</span></div>
+<h2>Claude Code 的 AGENTS.md 支持请求引发配置标准之争</h2>
+<div class="body">
+<p>有人在 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button> 的 GitHub 仓库提交 Feature Request，要求支持 <code>AGENTS.md</code>——用项目根目录的 Markdown 文件统一向编码 Agent 说明项目约定、架构和命令方式。Hacker News 上两百多条讨论把这个需求抬到了「编码 Agent 配置标准化」的高度。</p>
+<p>对已经在多个 Agent 工具之间切换的团队，<code>AGENTS.md</code> 这类项目级指令文件可以避免同一份规则在 Claude Code、Codex 等工具里各写一遍。现在是观察其能否成为事实标准的窗口期，产品团队可以先把项目级 Agent 配置当成代码资产维护起来。</p>
+<p class="why"><strong>为什么值得关心</strong>：编码 Agent 正在形成新的项目配置规范，AGENTS.md 的支持与否会影响跨工具迁移成本和团队协作效率，值得在工具选型时跟进。</p>
+</div>
+<p class="readmore"><a href="https://github.com/anthropics/claude-code/issues/6235" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 </div>
 <section class="github-radar" id="github">
@@ -398,83 +408,83 @@ footer h3{
 <div class="repo-grid">
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a></h3>
-<span class="repo-category">Agent 运行环境增强层</span></div></div>
+<h3><a href="https://github.com/f/prompts.chat" target="_blank" rel="noopener noreferrer">f/prompts.chat</a></h3>
+<span class="repo-category">提示词分享与自托管社区</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>241,462</b></span>
-<span>增长 <b>本期建立基线，明日起显示增量</b></span>
-<span>语言 <b>JavaScript</b></span>
-<span>许可 <b>MIT</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一套为 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>、OpenCode、Cursor 等编码 Agent 提供技能、本能、记忆与安全增强的运行层，通过 npx 一条命令即可安装成插件。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是一个新 Agent，而是横跨多个 harness 的能力层：同一套技能和钩子可以同时作用于 Claude Code 和 Codex，不必各维护一份配置。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">在多个编码 Agent 之间切换、希望技能与记忆能跨工具复用的团队；只用单一工具的人收益有限。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">配合本期 Claude Code 限额与 <button class="term term--temp" data-slug="agentsmd" type="button">AGENTS.md</button> 的讨论，Agent 工具链正在走向「配置标准化 + 插件化」。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">README 明确警告不要叠加多种安装方式，否则会造成技能、命令和钩子重复；接入前需审查其安全组件的权限边界。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">NousResearch/hermes-agent</a></h3>
-<span class="repo-category">通用 AI Agent 框架</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>233,546</b></span>
+<span>Stars <b>167,713</b></span>
 <span>增长 <b>—</b></span>
-<span>语言 <b>Python</b></span>
-<span>许可 <b>MIT</b></span>
+<span>语言 <b>HTML</b></span>
+<span>许可 <b>NOASSERTION</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">Nous Research 出品的 Agent 框架，定位是「随你一起成长的 Agent」，把长期记忆和能力演进作为产品方向。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">相比任务型 Agent 框架，它更强调 Agent 与用户的长期关系，走的是「可生长」叙事。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">做个性化助手、陪伴式或长期对话型产品团队的前期评估对象。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 框架竞争开始进入「记忆与成长」维度，与本期 IBM 研究的记忆视角互相印证。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">目前素材只有简介，具体能力和生态成熟度需进一步验证，不宜仅凭星标做决策。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个提示词分享与发现社区，前身是著名的 Awesome ChatGPT Prompts，支持自托管部署，让组织在完全私有环境下收集、分享提示词。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">从「Awesome 清单」变成一个可自托管的社区产品，把提示词这种易变资产变成团队内部可积累、可分发的知识库。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">内部有大量 prompt 需要统一管理的团队，尤其是担心把提示词发到公开平台泄密的组织。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">提示词工程本身在贬值，但提示词的「组织资产管理」需求在上升，这个项目代表了一条从清单到产品的路径。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">仓库许可是 NOASSERTION，自托管和二次分发前要自己核对许可证；社区内容质量参差，不能直接当基准库。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">ollama/ollama</a></h3>
-<span class="repo-category">本地模型运行器</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>179,062</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>Go</b></span>
-<span>许可 <b>MIT</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个让开发者用一条命令在本地跑起开源模型的工具，支持 <button class="term term--wiki" data-slug="kimi" type="button">Moonshot AI</button>、GLM、MiniMax、<button class="term term--wiki" data-slug="deepseek" type="button">DeepSeek V4</button>、Qwen、<button class="term term--wiki" data-slug="gemma" type="button">Google Gemma</button> 等。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">把模型下载、运行和 API 兼容做到极简，是目前本地推理最主流的入口之一。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要本地运行模型做原型、私有部署或离线场景的产品团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本地模型生态持续扩展，产品可以用它快速验证多模型方案。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">本地推理仍受硬件限制，与云端 API 混合使用更现实。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/f/prompts.chat" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
-<span class="repo-category">网页抓取与上下文 API</span></div></div>
+<span class="repo-category">AI 网页上下文检索 API</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>170,096</b></span>
+<span>Stars <b>170,570</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>TypeScript</b></span>
 <span>许可 <b>AGPL-3.0</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">把搜索、抓取、网页交互封装成统一 API 的服务，面向 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 和 Agent 场景，输出结构化的网页上下文给模型。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">不只抓静态页面，还能处理需要交互的网页内容，比传统爬虫更贴近 Agent 的使用方式。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">做 RAG、搜索增强或 Agent 需要访问网页的产品团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本期 ChatGPT 搜索全面使用 <code>site:</code> 过滤，说明「让模型正确取用网页」正成为搜索类产品的基本功，抓取层的重要性随之上升。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">AGPL 许可证对商业闭源集成的限制需要法务评估。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">面向 AI Agent 的网页上下文检索 API，提供搜索、抓取、与网页交互的能力，让 Agent 能以结构化方式读取网页内容。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是普通爬虫，而是把网页转成 LLM 可消费的上下文，并支持与网页交互，定位是 Agent 的「上下文入口」。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">正在做 RAG、情报监控或浏览器类 Agent 的产品团队，尤其是需要从大量动态网页抽取信息的场景。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">大量新项目涌入说明「把网页变成模型输入」仍是刚需，也意味着这个环节的合规竞争在加剧。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">AGPL 许可证对闭源商业产品不太友好，如果做集成要谨慎评估是否影响整体开源状态。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/browser-use/browser-use" target="_blank" rel="noopener noreferrer">browser-use/browser-use</a></h3>
+<span class="repo-category">浏览器自动化 Agent 工具</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>110,018</b></span>
+<span>增长 <b>—</b></span>
+<span>语言 <b>Python</b></span>
+<span>许可 <b>MIT</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">一个让 AI Agent 操作浏览器的 Python 库，通过 Playwright 把网页变成智能体能自动化执行任务的环境。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">聚焦在「把现有网站暴露给 Agent」，而不是让网站专门为 AI 改版，降低了 Agent 直接使用 Web 的接入成本。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">想做网页自动化 Agent 的团队，例如表单填写、信息收集、跨站点操作；也适合拿它做原型验证。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">浏览器自动化的热度居高不下，但效果依赖页面 DOM 稳定性，网站改版或反爬会立刻影响成功率，产品设计时要把可维护性算进去。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">自动化行为可能触发目标网站的反爬机制和合规风险，上线前需要确认使用边界和授权。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/browser-use/browser-use" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">langgenius/dify</a></h3>
+<span class="repo-category">Agent 编排与工作流平台</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>153,147</b></span>
+<span>增长 <b>—</b></span>
+<span>语言 <b>TypeScript</b></span>
+<span>许可 <b>NOASSERTION</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">一个提供 Agent 工作流、RAG 管线、模型与工具接入的协作平台，支持云、VPC 或自托管部署，团队不用换技术栈就能从原型到生产。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">把 Agent 工作流、RAG 和模型管理放在同一个工作区，强调团队协作和部署自由度，属于偏重落地的工程化平台。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">希望快速搭建 Agent 应用、又不想被单一云绑定的团队；对已有模型接入和简单编排需求比较合适。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">十五万星级别说明它已成 Agent 应用的默认选项之一，选型时值得拿来和 Langflow、自研框架做对比，关键看团队协作与运维成本。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">许可证同样是 NOASSERTION，商用部署前要核查授权条款；平台抽象越多，越要留意被框架限制的风险。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 </div></section>
 <footer>
@@ -482,13 +492,15 @@ footer h3{
 <div class="legend"><span><i></i>这个词已在知识库中收录 —— 点开查看简明解释</span><span><i class="l-prov"></i>临时解释 —— 本期现写的，还没进知识库</span></div>
 <h3>待摄入队列 · 出现越多越值得正式收进去</h3>
 <div class="pending">
-<span>编码 Agent <b>×4</b></span>
+<span>OpenRouter <b>×2</b></span>
+<span>AGENTS.md <b>×2</b></span>
+<span>供应链 <b>×3</b></span>
 </div>
 <p class="note">日报术语来自维护中的知识库，仅用于解释本期内容。</p>
 </footer>
 </div>
 <div class="scrim" id="scrim"><div class="card" id="card"></div></div>
-<script>window.__TERMS__={"agentsmd":{"display":"AGENTS.md","title":"AGENTS.md（Agent 配置约定）","kind":"temp","plain":"让代码仓库以文档形式约定 AI 编码代理如何协作与读取上下文的配置说明，类似面向 Agent 的 README。","why":"如果成为跨工具的标准，产品只需维护一份配置就能适配多种 Agent，降低集成成本。"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"deepseek":{"display":"DeepSeek V4","title":"DeepSeek","kind":"wiki","path":"wiki/entities/deepseek.md","definition":"国内独角兽 AI 公司，自研基底模型。开源代表，全系 100 万上下文。","plain":"","analogy":"","why":"","alias":"DeepSeek、DeepSeek V4"},"gemma":{"display":"Google Gemma","title":"Gemma","kind":"wiki","path":"wiki/entities/gemma.md","definition":"Google 推出的开源大语言模型，因可本地部署、Token 限制低，适合特定垂直场景。Day1 中作为\"模型选择 = 产品策略\"的典型例证。","plain":"","analogy":"","why":"","alias":"Gemma、Google Gemma"},"kimi":{"display":"Moonshot AI","title":"Kimi","kind":"wiki","path":"wiki/entities/kimi.md","definition":"月之暗面（Moonshot AI）旗下大模型产品。Kimi 2.6 主打 300+ Agents 连排调用，底层 Long CoT 长思考技术，曾以 256K 超长上下文出圈。课程关键点：Kimi 跳过 SFT 直接用强化学习训练；通过\"砍价活动\"收集用户行为轨迹数据，反向训练底层模型——是 data-flywheel 的典型案例。","plain":"","analogy":"","why":"","alias":"Kimi、月之暗面、Moonshot AI"},"mojo":{"display":"Mojo","title":"Mojo（AI 编程语言）","kind":"temp","plain":"Modular 推出的面向 AI 的编程语言，语法接近 Python，可编译到 GPU 等硬件以获得更高性能。","why":"开源后成为 Python 之外另一个性能敏感型 AI 代码的选项，值得做技术预研。"},"openrouter":{"display":"OpenRouter","title":"OpenRouter（模型路由平台）","kind":"temp","plain":"一个聚合多家大模型 API 的统一入口，开发者用一个接口调用多个模型并按量计费。","why":"它加入 Stripe 后，模型分发与结算通道可能被重新定义，影响团队的多模型接入策略。"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
+<script>window.__TERMS__={"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"}};</script>
 <script>
 (function(){
   var DICT = window.__TERMS__ || {};

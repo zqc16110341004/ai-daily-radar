@@ -1,0 +1,182 @@
+{
+  "headline": "模型网关归入 Stripe，Agent 供应链与体验风险",
+  "news": [
+    {
+      "source": "Hacker News 热帖 · 1030 分 / 574 评",
+      "title": "别把 AI 输出直接贴进产品",
+      "url": "https://dontpastetheai.com/",
+      "paras": [
+        "一篇以「不要粘贴 AI」为题的短文在 Hacker News 获得上千分热度。作者呼吁开发者不要直接把 AI 生成的内容整段贴进用户界面、聊天或回复里，理由是这些输出往往冗长、空泛、带着明显的机器腔，把未经编辑的模型文本交给用户，等于让用户承担了本该由产品承担的质量责任。",
+        "对 AI 产品经理来说，这段吐槽的真正指向是：生成不是交付。聊天、写作、客服、邮箱助手这些场景，都应该在模型输出与用户看到的内容之间保留一道改写、压缩或格式收敛的工序，把 AI 输出当草稿而不是终稿来设计产品流程。"
+      ],
+      "why": "提醒 AI 产品不要把模型输出当作最终的可用内容，缺少后处理的产品体验会放大 AI 腔和质量落差；建议把输出后处理作为产品模块。"
+    },
+    {
+      "source": "OpenRouter 官方博客 / Hacker News · 953 分 / 495 评",
+      "title": "OpenRouter 宣布并入 Stripe",
+      "url": "https://openrouter.ai/blog/announcements/openrouter-is-joining-stripe/",
+      "paras": [
+        "OpenRouter 官方发布公告，宣布加入 Stripe。OpenRouter 是目前许多开发者和 AI 产品团队在用的模型网关，把多家大模型 API 聚合在一个接入层里，支持按需切换和路由模型；并入 Stripe 意味着模型分发这件事开始和支付基础设施直接挂钩。",
+        "对做 AI 产品的团队，这个变化的直接含义是：多模型路由层的商业逻辑和定价策略可能随 Stripe 的战略而调整。现在不是下判断的时候，但值得把「不依赖单一网关」作为长期架构原则，同时在 API 价格、账期和可用性上预留替代方案。"
+      ],
+      "why": "模型接入层正在从纯技术工具变成金融基础设施的一部分，影响 API 定价、账期和工具选型；AI 产品经理需要重新评估模型网关依赖风险。"
+    },
+    {
+      "source": "Simon Willison 博客",
+      "title": "ChatGPT 搜索开始大规模支持 site: 过滤语法",
+      "url": "https://simonwillison.net/2026/Aug/20/chatgpt-search-now-uses-the-siteoperator-at-scale/",
+      "paras": [
+        "Simon Willison 的观察显示，ChatGPT 搜索开始大规模支持 `site:` 过滤语法，用户可以用 `site:域名` 的方式把检索范围限制在特定网站内。这看起来只是补齐了传统搜索引擎早就有的能力，却说明 ChatGPT 搜索正在从黑盒式问答转向可定向、可验证的检索产品。",
+        "对 AI 产品经理和内容运营者，这算一个可执行的信号：AI 搜索的流量入口不再只能靠模型随机抽取，你可以在产品里主动引导用户使用 `site:` 去圈定来源，也可以把自家网站的内容结构做得更适合被 AI 搜索准确命中。"
+      ],
+      "why": "`site:` 语法大规模开放，意味着 AI 搜索有了可运营的 SEO 和内容策略抓手，产品团队应把它纳入流量分发与内容可见性的评估。"
+    },
+    {
+      "source": "GitHub 官方博客 / Hacker News · 627 分 / 731 评",
+      "title": "GitHub 发布 8 月 17 日事故总结与后续改进方向",
+      "url": "https://github.blog/news-insights/company-news/the-august-17-outage-and-the-work-ahead/",
+      "paras": [
+        "GitHub 官方博客发布了《The August 17 outage》一文，回顾 8 月 17 日发生的大规模服务中断，并介绍后续的改进方向。Hacker News 上有七百多条讨论在关注故障原因、影响范围和 GitHub 未来如何避免重蹈覆辙。",
+        "对大量使用编码 Agent 和自动化流水线的 AI 团队，GitHub 已经不只是一个代码托管库，而是构建、发布和 Agent 执行链路的公共底座。这类平台故障会直接中断自动化和发布流程，产品经理在做风险预案时，需要为主干流程准备缓存、镜像和备用通道。"
+      ],
+      "why": "AI 编码工具链对 GitHub 生态的依赖越来越深，平台故障的影响会传导到 Agent 自动化执行；提醒产品团队别把第三方基础设施当成永续资源。"
+    },
+    {
+      "source": "Anna's Archive 博客 / Hacker News · 515 分 / 833 评",
+      "title": "称 AI 公司正在毁掉实体书，呼吁尽快扫描稀有书籍",
+      "url": "https://annas-archive.gl/blog/physical-destruction.html",
+      "paras": [
+        "Anna's Archive 发布博客，标题直接说「AI 公司正在毁掉实体书」，并呼吁在稀有书籍彻底消失前尽快完成数字化扫描。帖子在 Hacker News 上获得八百多条评论，把版权、模型训练语料和文化遗产保护三个话题搅在了一起。",
+        "对 AI 产品团队，这条新闻的真正议题是训练数据供应链正在从线上爬虫延伸到线下实体书数字化。无论是参与扫描、购买语料，还是使用第三方数据集，都可能踩进版权和伦理争议；建议在数据合规策略里明确「线下书籍数字化」这条线的边界。"
+      ],
+      "why": "模型训练语料的来源与合法性正在成为公共事件，AI 产品团队需要提前判断自己在数据供应链上的立场和风险，否则会被版权争议反噬。"
+    },
+    {
+      "source": "SafeDep 安全研究 / Hacker News · 542 分 / 490 评",
+      "title": "恶意 Rust 包 Arrayref 在编译期执行攻击载荷",
+      "url": "https://safedep.io/arrayref-proc-macro1-rust-build-time-malware/",
+      "paras": [
+        "安全公司 SafeDep 披露了一个名为 Arrayref 的恶意 Rust crate：它伪装成正常的 `proc-macro` 库，却在 cargo 构建阶段执行攻击载荷。Hacker News 上有四百多条讨论，话题集中在开源包管理器对「构建时执行」这一环节的信任缺失。",
+        "对 AI 产品团队来说，这条新闻的价值是提醒：依赖安全不只检查运行时依赖，更要关注构建期钩子。AI 工具链依赖多且新，尤其是编码 Agent、模型推理库和 CLI 工具，发布前应把依赖锁定、哈希校验、沙箱构建纳入发布标准。"
+      ],
+      "why": "AI 工具链的第三方依赖复杂而脆弱，恶意包可藏在构建阶段，产品经理应在发布流水线里增加供应链安全门槛。"
+    },
+    {
+      "source": "arXiv 论文 / Hacker News · 282 分 / 239 评",
+      "title": "别再给中间令牌贴上「思考痕迹」的人格化标签",
+      "url": "https://arxiv.org/abs/2504.09762",
+      "paras": [
+        "一篇 arXiv 论文以「停止把中间令牌人格化为推理/思考痕迹」为题，指出模型输出的中间令牌本质上是下一个 token 的预测，而不是模型心智活动的记录。Hacker News 上有两百多条讨论，很多从业者承认自己也习惯用「模型在思考」来描述这个过程。",
+        "这直接影响 AI 产品的一个具体功能：如何设计「已思考」或推理过程展示。如果产品把中间 token 包装成「思考痕迹」呈现给用户，用户容易把随机过程误当成模型的自我反思。建议产品团队把它定位为一种界面隐喻，而不是对模型真实意图的说明。"
+      ],
+      "why": "影响带推理展示的对话产品如何设计信任与预期管理；把中间 token 当思考过程展示，容易放大用户对模型能力的误解。"
+    },
+    {
+      "source": "GitHub Issue / Hacker News · 369 分 / 218 评",
+      "title": "Claude Code 的 AGENTS.md 支持请求引发配置标准之争",
+      "url": "https://github.com/anthropics/claude-code/issues/6235",
+      "paras": [
+        "有人在 [[claude-code]] 的 GitHub 仓库提交 Feature Request，要求支持 `AGENTS.md`——用项目根目录的 Markdown 文件统一向编码 Agent 说明项目约定、架构和命令方式。Hacker News 上两百多条讨论把这个需求抬到了「编码 Agent 配置标准化」的高度。",
+        "对已经在多个 Agent 工具之间切换的团队，`AGENTS.md` 这类项目级指令文件可以避免同一份规则在 Claude Code、Codex 等工具里各写一遍。现在是观察其能否成为事实标准的窗口期，产品团队可以先把项目级 Agent 配置当成代码资产维护起来。"
+      ],
+      "why": "编码 Agent 正在形成新的项目配置规范，AGENTS.md 的支持与否会影响跨工具迁移成本和团队协作效率，值得在工具选型时跟进。"
+    }
+  ],
+  "repos": [
+    {
+      "name": "f/prompts.chat",
+      "url": "https://github.com/f/prompts.chat",
+      "category": "提示词分享与自托管社区",
+      "stars": "167,713",
+      "growth": "—",
+      "lang": "HTML",
+      "license": "NOASSERTION",
+      "notes": {
+        "这是": "一个提示词分享与发现社区，前身是著名的 Awesome ChatGPT Prompts，支持自托管部署，让组织在完全私有环境下收集、分享提示词。",
+        "不同": "从「Awesome 清单」变成一个可自托管的社区产品，把提示词这种易变资产变成团队内部可积累、可分发的知识库。",
+        "适合": "内部有大量 prompt 需要统一管理的团队，尤其是担心把提示词发到公开平台泄密的组织。",
+        "今天看": "提示词工程本身在贬值，但提示词的「组织资产管理」需求在上升，这个项目代表了一条从清单到产品的路径。",
+        "注意": "仓库许可是 NOASSERTION，自托管和二次分发前要自己核对许可证；社区内容质量参差，不能直接当基准库。"
+      }
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "category": "AI 网页上下文检索 API",
+      "stars": "170,570",
+      "growth": "—",
+      "lang": "TypeScript",
+      "license": "AGPL-3.0",
+      "notes": {
+        "这是": "面向 AI Agent 的网页上下文检索 API，提供搜索、抓取、与网页交互的能力，让 Agent 能以结构化方式读取网页内容。",
+        "不同": "它不是普通爬虫，而是把网页转成 LLM 可消费的上下文，并支持与网页交互，定位是 Agent 的「上下文入口」。",
+        "适合": "正在做 RAG、情报监控或浏览器类 Agent 的产品团队，尤其是需要从大量动态网页抽取信息的场景。",
+        "今天看": "大量新项目涌入说明「把网页变成模型输入」仍是刚需，也意味着这个环节的合规竞争在加剧。",
+        "注意": "AGPL 许可证对闭源商业产品不太友好，如果做集成要谨慎评估是否影响整体开源状态。"
+      }
+    },
+    {
+      "name": "browser-use/browser-use",
+      "url": "https://github.com/browser-use/browser-use",
+      "category": "浏览器自动化 Agent 工具",
+      "stars": "110,018",
+      "growth": "—",
+      "lang": "Python",
+      "license": "MIT",
+      "notes": {
+        "这是": "一个让 AI Agent 操作浏览器的 Python 库，通过 Playwright 把网页变成智能体能自动化执行任务的环境。",
+        "不同": "聚焦在「把现有网站暴露给 Agent」，而不是让网站专门为 AI 改版，降低了 Agent 直接使用 Web 的接入成本。",
+        "适合": "想做网页自动化 Agent 的团队，例如表单填写、信息收集、跨站点操作；也适合拿它做原型验证。",
+        "今天看": "浏览器自动化的热度居高不下，但效果依赖页面 DOM 稳定性，网站改版或反爬会立刻影响成功率，产品设计时要把可维护性算进去。",
+        "注意": "自动化行为可能触发目标网站的反爬机制和合规风险，上线前需要确认使用边界和授权。"
+      }
+    },
+    {
+      "name": "langgenius/dify",
+      "url": "https://github.com/langgenius/dify",
+      "category": "Agent 编排与工作流平台",
+      "stars": "153,147",
+      "growth": "—",
+      "lang": "TypeScript",
+      "license": "NOASSERTION",
+      "notes": {
+        "这是": "一个提供 Agent 工作流、RAG 管线、模型与工具接入的协作平台，支持云、VPC 或自托管部署，团队不用换技术栈就能从原型到生产。",
+        "不同": "把 Agent 工作流、RAG 和模型管理放在同一个工作区，强调团队协作和部署自由度，属于偏重落地的工程化平台。",
+        "适合": "希望快速搭建 Agent 应用、又不想被单一云绑定的团队；对已有模型接入和简单编排需求比较合适。",
+        "今天看": "十五万星级别说明它已成 Agent 应用的默认选项之一，选型时值得拿来和 Langflow、自研框架做对比，关键看团队协作与运维成本。",
+        "注意": "许可证同样是 NOASSERTION，商用部署前要核查授权条款；平台抽象越多，越要留意被框架限制的风险。"
+      }
+    }
+  ],
+  "terms": {
+    "OpenRouter": {
+      "display": "OpenRouter",
+      "title": "OpenRouter 模型网关",
+      "kind": "temp",
+      "plain": "聚合多家大模型 API 的统一网关，开发者可在一个接口里调用和切换不同模型。",
+      "why": "它并入 Stripe 意味着模型分发与支付基础设施绑定，影响多模型产品选型。"
+    },
+    "AGENTS.md": {
+      "display": "AGENTS.md",
+      "title": "AGENTS.md 项目指令文件",
+      "kind": "temp",
+      "plain": "放在代码仓库根目录的 Markdown 文件，用来向编码 Agent 说明项目约定、架构和命令，让不同 Agent 统一遵循项目规则。",
+      "why": "它可能成为编码 Agent 项目配置的新标准，影响团队在多个 Agent 工具间的迁移成本。"
+    },
+    "proc-macro": {
+      "display": "proc-macro",
+      "title": "过程宏",
+      "kind": "temp",
+      "plain": "Rust 中在编译期运行代码来生成或转换代码的宏机制，正常情况下用于语法扩展，也可能被滥用为构建阶段攻击点。",
+      "why": "恶意 Rust 包利用它把攻击藏在构建期，理解它能帮助 AI 产品团队审查依赖风险。"
+    }
+  },
+  "pending": {
+    "OpenRouter": 2,
+    "AGENTS.md": 2,
+    "供应链": 3
+  },
+  "date": "2026-08-22",
+  "range": "2026-08-19 → 2026-08-22",
+  "updated": "08-22 08:29"
+}
