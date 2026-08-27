@@ -1,0 +1,144 @@
+{
+  "headline": "AI 日报 · 今日速览（自动聚合，未做中文解读）",
+  "news": [
+    {
+      "source": "Hacker News 热帖 · 1291分 / 1256评",
+      "title": "Apple introduces M6 and M5 Ultra",
+      "url": "https://www.apple.com/newsroom/2026/08/apple-introduces-m6-and-m5-ultra-for-a-big-leap-in-performance-and-ai-compute/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Apple introduces M6 and M5 Ultra"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 1156分 / 1105评",
+      "title": "Nitter and XCancel receive cease and desist notices",
+      "url": "https://github.com/zedeus/nitter/issues/1442",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Nitter and XCancel receive cease and desist notices"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 997分 / 733评",
+      "title": "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded",
+      "url": "https://twitter.com/lemire/status/2091894299289874926",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Xiaomi: New CPU matches Apple cores single threaded, much faster multithreaded"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 946分 / 474评",
+      "title": "GLM-5.3-Flash",
+      "url": "https://z.ai/blog/glm-5.3-flash",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "GLM-5.3-Flash"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 654分 / 213评",
+      "title": "Qwen3.8-Flash-Next",
+      "url": "https://qwen.ai/blog?id=qwen3.8-flash-next",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Qwen3.8-Flash-Next"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 577分 / 369评",
+      "title": "OpenAI Jalapeño: Better than Nvidia Blackwell",
+      "url": "https://newsletter.semianalysis.com/p/openai-jalapeno-better-than-nvidia",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "OpenAI Jalapeño: Better than Nvidia Blackwell"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 557分 / 542评",
+      "title": "Coding expertise is going to collapse from AI reliance",
+      "url": "https://larsfaye.com/articles/ai-coding-will-prevent-expertise",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Coding expertise is going to collapse from AI reliance"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 516分 / 95评",
+      "title": "Tailcat – Like netcat, but over Tailscale’s data plane",
+      "url": "https://github.com/tailscale/tailcat",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Tailcat – Like netcat, but over Tailscale’s data plane"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    }
+  ],
+  "repos": [
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "category": "GitHub 热门项目",
+      "stars": "243563",
+      "growth": "—",
+      "lang": "JavaScript",
+      "license": "MIT",
+      "notes": {
+        "这是": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "category": "GitHub 热门项目",
+      "stars": "236985",
+      "growth": "—",
+      "lang": "Python",
+      "license": "MIT",
+      "notes": {
+        "这是": "The agent that grows with you",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "category": "GitHub 热门项目",
+      "stars": "197643",
+      "growth": "—",
+      "lang": "C++",
+      "license": "Apache-2.0",
+      "notes": {
+        "这是": "An Open Source Machine Learning Framework for Everyone",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "category": "GitHub 热门项目",
+      "stars": "186911",
+      "growth": "—",
+      "lang": "Python",
+      "license": "NOASSERTION",
+      "notes": {
+        "这是": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    }
+  ],
+  "terms": {},
+  "pending": {},
+  "date": "2026-08-27",
+  "range": "2026-08-24 → 2026-08-27",
+  "updated": "08-27 13:15"
+}
