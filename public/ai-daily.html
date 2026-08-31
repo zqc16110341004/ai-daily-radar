@@ -315,90 +315,80 @@ footer h3{
 <body>
 <div class="wrap">
 <header class="masthead">
-<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-08-27 → 2026-08-30</span></div>
-<h1 class="serif">开源模型与政策博弈重塑 AI 产品格局</h1>
-<div class="stats"><span><b>8</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>8</b> 个</span><span>更新于 08-30 09:54</span></div>
+<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-08-28 → 2026-08-31</span></div>
+<h1 class="serif">AI 政策密集变天，开源模型与 Agent 生态共振</h1>
+<div class="stats"><span><b>7</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>8</b> 个</span><span>更新于 08-31 09:49</span></div>
 </header>
 <div class="news-grid">
 <article id="item-1">
-<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hacker News 热帖 · 904 分 / 280 评</span></div>
-<h2>Cloudflare 重构 DNS 缓存，省下 100TB 内存</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">OpenAI 官方博客 / Hacker News 热帖 · 834 分 / 525 评</span></div>
+<h2>OpenAI 对 Cursor 被 SpaceX 收购后的处置表态</h2>
 <div class="body">
-<p>Cloudflare 公开了它对 1.1.1.1 公共 DNS 服务的一次大规模内存优化。通过重新设计缓存条目的存储方式、去掉冗余字段，并针对真实流量分布做定制压缩，团队在保持命中率不降的前提下，节省了大约 100TB 的服务器内存。这个数字对一个基础设施服务商来说相当可观，折算成硬件成本是一笔不小的费用。</p>
-<p>对 AI 产品经理来说，这个案例的价值在于「缓存优化」的通用思路：当你的服务规模大到一定程度，任何看似微小的数据布局改动都会被放大成千万级的成本差异。AI 产品中无论是检索缓存、上下文缓存还是向量索引，都存在类似的节省空间。这篇工程博客可以作为团队做容量规划和成本优化的参考，毕竟 100TB 意味着能少采购一批机器。</p>
-<p class="why"><strong>为什么值得关心</strong>：AI 服务的内存和计算成本是产品毛利的关键变量，Cloudflare 的方法展示了在保持服务质量的前提下压缩资源占用的一条可复制路径。</p>
-</div>
-<p class="readmore"><a href="https://blog.cloudflare.com/dns-cache-memory-optimization-1111/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-2">
-<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">OpenAI 官方博客 / Hacker News · 798 分 / 492 评</span></div>
-<h2>OpenAI 就 Cursor 被 SpaceX 收购发布决定</h2>
-<div class="body">
-<p>OpenAI 发布了一份声明，说明在 AI 代码编辑器 Cursor 被 SpaceX 收购之后，它做出了怎样的决定。虽然声明正文没有在这次素材里展开，但一条能登上 Hacker News 首页并获得 798 分、近 500 条评论的官方表态，实际上已经说明这件事对开发者社区的分量——大家都很关心两家公司的关系会因为这次收购发生什么变化。</p>
-<p>从 AI 产品经理的角度，Cursor 是目前许多团队写代码离不开的工具，它的所有权变更意味着产品路线、商业化策略和与底层模型厂商的绑定都可能出现调整。OpenAI 的表态无论内容如何，都在释放信号：模型提供方和工具方的边界正在被并购事件重画。如果你在团队里定了某个编辑器工具链，需要开始留意它背后资本的动向。</p>
-<p class="why"><strong>为什么值得关心</strong>：编程工具层的收购会影响开发者工具的可用性与定价，AI 产品的技术选型要跟着生态关系的变化重新评估。</p>
+<p>OpenAI 官方博客发布文章，说明 AI 编程工具 Cursor 被 SpaceX 收购后，OpenAI 所采取的应对与决策。这一话题在 Hacker News 上热度很高，获得 834 分和 525 条评论，开发者社区对收购动机和后续影响存在较大分歧。</p>
+<p>从标题看，OpenAI 是在收购落定后明确自己的立场。Cursor 作为一线 AI 编程客户端，其归属变化把「上游模型与终端工具的关系」再次推到台前：模型提供方是继续供能、撤出还是深度绑定，将直接影响 AI 编程赛道的竞争规则。</p>
+<p class="why"><strong>为什么值得关心</strong>：这起收购挑战了「模型厂商做生态、工具厂商做入口」的既有假设。如果你的产品依赖某个热门客户端或 Agent 作为渠道，那么渠道被非 AI 巨头收购意味着流量入口随时可能改变规则。建议重新评估对单一渠道的依赖，将模型 API 的可用性纳入战略风险清单。</p>
 </div>
 <p class="readmore"><a href="https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-3">
-<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Hugging Face / Hacker News · 782 分 / 268 评</span></div>
-<h2>智谱 GLM-5.3 开放权重，开源阵营再添主力</h2>
+<article id="item-2">
+<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">Hugging Face / Hacker News 热帖 · 797 分 / 279 评</span></div>
+<h2>GLM-5.3 开放权重：国产大模型再添新选择</h2>
 <div class="body">
-<p>智谱 AI 的最新模型 GLM-5.3 以开放权重（<button class="term term--wiki" data-slug="open-weights" type="button">开放权重</button>）的形式发布在 Hugging Face 上。这延续了 GLM 系列向开源社区开放的一贯策略。虽然素材没有给出具体参数和评测数字，但「开放权重+可自部署」这个事实本身就是信息：国内头部模型厂商仍在持续向这个方向投入。</p>
-<p>对于做 AI 产品的人来说，<button class="term term--wiki" data-slug="open-weights" type="button">开放权重</button> 模型池又大了一圈。产品团队在选型时可以把 GLM-5.3 放进候选名单，和 <button class="term term--wiki" data-slug="kimi" type="button">Moonshot AI</button>、<button class="term term--wiki" data-slug="deepseek" type="button">DeepSeek V4</button> 等国产开源模型并列评估，尤其是当业务有私有化部署、数据不出域或成本控制要求时，多一个有分量的选择总是好事。后续值得关注它的评测表现和社区第三方数据。</p>
-<p class="why"><strong>为什么值得关心</strong>：开源模型竞争加剧，降低了对单一闭源模型的依赖，AI 产品的模型选择（<button class="term term--wiki" data-slug="model-selection" type="button">model-selection</button>）策略需要动态更新。</p>
+<p>zai-org 在 Hugging Face 上发布了 GLM-5.3 的开放权重版本，模型页已上线，开发者可以直接获取权重并部署。该消息在 Hacker News 上获得 797 分、279 条评论，是当日讨论度最高的开源模型发布之一。</p>
+<p>素材未给出具体的参数规模、基准测试或许可证细节，但 GLM 系列此前在中文任务和工具调用上表现稳定，这次的开放权重延续了社区对国产开源模型的关注，也意味着自托管模型的选项又增加了一个。</p>
+<p class="why"><strong>为什么值得关心</strong>：开放权重模型每更新一代，就应该重新做一次 <button class="term term--wiki" data-slug="model-selection" type="button">model-selection</button> 评估：如果 GLM-5.3 在中文理解、编码或函数调用上追近甚至超越同代闭源模型，那么私有化部署和成本优化的空间就更大了。尤其对数据敏感行业，可自托管的强模型可能改变产品架构选择。</p>
 </div>
 <p class="readmore"><a href="https://huggingface.co/zai-org/GLM-5.3" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-4">
-<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">纽约时报 / 路透社 / Hacker News · 609 分 / 423 评</span></div>
-<h2>美国法官裁定政府把 Anthropic 列入黑名单违法</h2>
+<article id="item-3">
+<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">纽约时报 / Hacker News 热帖 · 629 分 / 432 评</span></div>
+<h2>法官裁定美国五角大楼对 Anthropic 的黑名单违法</h2>
 <div class="body">
-<p>一家美国联邦法院裁定，特朗普政府（具体是五角大楼）把 AI 公司 <button class="term term--temp" data-slug="anthropic" type="button">Anthropic</button> 列入政府黑名单的行为违法。这个判决同时见诸《纽约时报》和《路透社》，在 Hacker News 上引发大量讨论。虽然 <button class="term term--temp" data-slug="anthropic" type="button">Anthropic</button> 是 OpenAI 之后的头部 AI 公司，但它此前似乎成了政府管制的一个标靶，现在法院从程序上否定了这个动作。</p>
-<p>对 AI 产品经理来说，这件事的真正启示在于政策风险会怎样改变供应链。如果你的产品依赖 <button class="term term--temp" data-slug="anthropic" type="button">Anthropic</button> 的模型 API，或者你自己正在评估要不要引入某家 AI 供应商，那么政府实体对特定公司的歧视性动作就会直接变成你的合规风险和业务连续性风险。黑名单无论最终是否被推翻，过程本身的波动就足以让企业客户重新斟酌底座选型。</p>
-<p class="why"><strong>为什么值得关心</strong>：监管不确定性会让企业重新评估 AI 供应商的可靠性，产品规划中应放入合规熔断机制，避免把宝押在单一公司上。</p>
+<p>据《纽约时报》报道，美国联邦法官裁定，特朗普政府（五角大楼）将 Anthropic 列入黑名单的做法违法。Anthropic 是 Claude 模型开发商，此前被政府限制或排除在采购与合作之外，这次判决支持了 Anthropic 的挑战。</p>
+<p>路透社的报道同时指出，法官认为五角大楼的黑名单行为不合法并予以阻止。虽然判决影响范围还需观察，但它向 AI 行业释放了明确信号：政府行政权力在限制 AI 公司时，也需要接受司法审查。</p>
+<p class="why"><strong>为什么值得关心</strong>：对依赖 <button class="term term--wiki" data-slug="claude" type="button">Claude AI</button> API 或与 Anthropic 有合作的产品团队，这是一次典型的供应链风险提示：政策黑名单可以在几天内切断关键模型的可用性。产品负责人应将「模型供应商合规风险」纳入视角，提前规划多模型备份，并持续关注政府与 AI 公司之间的执法动作。</p>
 </div>
 <p class="readmore"><a href="https://www.nytimes.com/2026/08/27/technology/anthropic-government-blacklisting-ruling.html" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-5">
-<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">LWN.net / Hacker News · 470 分 / 438 评</span></div>
-<h2>Debian 社区投票通过决议，允许负责任地使用生成式 AI</h2>
+<article id="item-4">
+<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Tom's Hardware / Hacker News 热帖 · 703 分 / 343 评</span></div>
+<h2>加州一致通过：Linux 等开源软件豁免年龄验证要求</h2>
 <div class="body">
-<p>Debian 这个历史悠久的开源操作系统发行版，刚刚通过内部投票，允许在项目开发中「负责任地使用生成式 AI」。此前这类工具在 Debian 社区里多半是被排斥或模糊对待的。这次决议等于在开源社区内部竖起了一个新的默认姿态——不是拒绝，而是设定边界后的接受。</p>
-<p>对 AI 产品经理而言，开源社区的规则变化会直接影响你产品的开发者生态。如果大量开发者来自 Debian 或类似社区，他们能否合法地在贡献代码时使用生成式 AI 工具，决定了你的 AI 编程助手、代码补全插件能不能在这些社区里被采用。Debian 的表态可能带动其他发行版和基金会跟随，这是一个值得跟踪的风向标。</p>
-<p class="why"><strong>为什么值得关心</strong>：开源社区是 AI 开发工具的重要受众，他们的规范变化直接决定市场空间，产品策略要提前适配这类「社区合规」要求。</p>
+<p>加州立法者以一致投票通过一项法案，将 Linux 及依据 GPL、MIT、BSD、Apache 等开源许可证分发的软件，从州的年龄验证法律中豁免。这意味着使用标准开源许可的开发项目不必承担与内容年龄认证相关的法律义务。</p>
+<p>该法案对开源生态具有直接意义：开发者分发 Linux 系统或各类开源工具时，不会被误归入需要年龄验证的类别。Tom's Hardware 报道了这一消息，并在 Hacker News 上获得 703 分和 343 条评论。</p>
+<p class="why"><strong>为什么值得关心</strong>：如果你的产品以 MIT 或 Apache 等开源许可证发布代码或模型，这类地方性豁免能直接降低合规成本；反之，专有许可证则不在豁免之列。产品经理应当把许可证选择与法务合规关联起来，并在多州扩张时留意各地不同的内容监管规则。</p>
+</div>
+<p class="readmore"><a href="https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-5">
+<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Luanti 官方博客 / Hacker News 热帖 · 521 分 / 151 评</span></div>
+<h2>开源引擎 Luanti 因无依据的 AI 版权通知被 Google Play 下架</h2>
+<div class="body">
+<p>开源游戏引擎与游戏 Luanti 官方博客宣布，其应用被 Google Play 下架，原因是一条「无根据的」AI 版权投诉。Luanti 团队认为，这很可能是由 AI 生成的自动化版权通知，平台没有经过充分人工审核就执行了下架。</p>
+<p>该事件揭示了一个正在蔓延的问题：AI 生成的 DMCA 通知越来越多，误伤开源项目的概率也在增加。Luanti 团队已发起申诉，并呼吁应用商店改进对自动化版权通知的审核机制。</p>
+<p class="why"><strong>为什么值得关心</strong>：这个案例对做 AI 内容产品的团队有直接警示：你的模型可能生成版权投诉，也可能被投诉。产品应在发布流程中留出「应对虚假版权通知」的预案，包括保留训练素材的许可证记录、设置申诉监控，并评估与各分发平台的纠纷处理效率。</p>
+</div>
+<p class="readmore"><a href="https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-6">
+<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">LWN.net / Hacker News 热帖 · 496 分 / 465 评</span></div>
+<h2>Debian 投票通过：允许在社区内负责任地使用生成式 AI</h2>
+<div class="body">
+<p>Debian 项目通过投票，决定允许在其开发和贡献流程中「负责任地使用」生成式 AI。这意味着开发者可以在明确规则下使用 AI 辅助编写代码、文档等内容，而不像一些项目那样完全禁止。投票结果在 LWN.net 上公布，引发 Hacker News 465 条评论。</p>
+<p>Debian 作为最具影响力的 Linux 发行版之一，这一决定可能为其他开源社区提供参考：与其一刀切禁止 AI 贡献，不如用行为准则约束其使用。围绕版权、署名和责任的议题，社区仍在持续讨论。</p>
+<p class="why"><strong>为什么值得关心</strong>：对依赖开源代码库做产品的团队，Debian 的立场具有信号价值：如果主流社区开始接受「负责任 AI 贡献」，你的开源项目或许也该考虑类似政策，否则可能错失 AI 辅助效率，同时又面临贡献合法性的争议。具体规则要结合许可证和社区文化来定。</p>
 </div>
 <p class="readmore"><a href="https://lwn.net/Articles/1091231/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-6">
-<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Google 官方博客 / Hacker News · 360 分 / 127 评</span></div>
-<h2>谷歌发布 Gemini 3.5 Transcribe 语音转写模型</h2>
-<div class="body">
-<p>谷歌发布了 Gemini 3.5 Transcribe，一款专门面向语音转写场景的模型。从名字看，它被独立为一个 Transcribe 型号，和通用的 Gemini 聊天模型区分开，应该是在转写质量、延迟和价格上做了专门优化。官方博客给出了技术介绍，Hacker News 上也有开发者开始讨论它的表现。</p>
-<p>语音转写是很多 AI 产品的基础能力，比如会议纪要、客服质检、字幕生成、语音笔记等。Gemini 3.5 Transcribe 这类专用模型的出现，意味着通用转写任务的成本和质量可能被重新定义。产品经理在做能力选型时，可以把它和现有的语音服务对比，评估是否替换或混用，特别要注意长音频、噪音场景和中文支持等细节。</p>
-<p class="why"><strong>为什么值得关心</strong>：专用模型正在蚕食通用模型的细分场景，语音转写类产品需要及时对比新模型的性价比，避免在延迟和成本上落后。</p>
-</div>
-<p class="readmore"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-5-transcribe/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
 <article id="item-7">
-<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Google 官方博客 / Hacker News · 296 分 / 233 评</span></div>
-<h2>谷歌推出 Gemini Omni 1.1 Flash，面向低延迟实时交互</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Dwarkesh 长文 / Hacker News 热帖 · 220 分 / 129 评</span></div>
+<h2>Agent 文明的兴与衰：理解智能体生态的宏观视角</h2>
 <div class="body">
-<p>谷歌发布了 Gemini Omni 1.1 Flash，这是 Gemini Omni 系列的一个轻量快速版本。Omni 意味着原生多模态，Flash 意味着低延迟和低成本。它主要面向需要实时交互的开发者场景，比如语音对话、视频理解、边聊边看之类的应用。官方博客直接以「Build with」为题，显然是冲着开发者生态去的。</p>
-<p>做实时交互类 AI 产品的团队可以从「Flash 级多模态模型」这个定位里读出信号：低延迟的多模态能力正在逐步成为标准品。过去要自己拼装语音、视觉、对话多个模型，现在一个专门的闪速 Omni 模型可能就能覆盖。产品经理应该实测它在你的场景里的延迟和成本边界，决定是否重构交互链路。</p>
-<p class="why"><strong>为什么值得关心</strong>：多模态实时交互是下一代人机界面的核心，谷歌在降低这个能力的接入门槛，产品团队要评估它能否让你的产品交互体验升级。</p>
+<p>Dwarkesh 发布长文《Agent 文明的兴衰》，以 OpenAI 与 Hugging Face 为观察样本，讨论 AI Agent 生态从兴起到可能出现衰退的结构性因素。文章在 Hacker News 上获得 220 分和 129 条评论，被不少从业者视为理解 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 竞争格局的深度材料。</p>
+<p>素材只提供了标题和讨论热度，具体论点还需阅读原文。从题目看，作者可能将 Agent 生态比作「文明」，分析其扩张、分化和崩溃的周期，这对当前热衷于 All-in Agent 的行业是一个有价值的冷静视角。</p>
+<p class="why"><strong>为什么值得关心</strong>：当产品团队忙着把功能改造成 Agent 时，真正稀缺的是对生态终局的判断：Agent 会集中在少数平台，还是走向碎片化？你的产品应该押注工具层、模型层还是应用层？这类思考能帮助避免把资源投在注定被平台吞并的小能力上。</p>
 </div>
-<p class="readmore"><a href="https://blog.google/innovation-and-ai/technology/developers-tools/build-with-gemini-omni-1-1-flash/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-8">
-<div class="item-top"><span class="idx" aria-hidden="true">08</span><span class="from">Hacker News 热帖 · 676 分 / 320 评</span></div>
-<h2>一个网站拆解 Claude 的「承重墙词汇」</h2>
-<div class="body">
-<p>一位独立开发者做了一个叫「The load-bearing vocabulary of Claude」的网页，尝试找出在 Claude 模型里那些一旦改变、输出就会明显变形的关键词汇。它有点像把提示词的可解释性翻出来看：哪些词承担着模型的「承重墙」，不能轻易动。这个项目作为 Show HN 发布，迅速引发了大量讨论。</p>
-<p>对 AI 产品经理来说，这个工具的价值在于揭示提示词工程的深层规律。如果你团队的产品高度依赖精心设计的提示词，了解哪些词是「承重墙」能帮你更稳定地控制输出，减少因为改一个近义词就导致结果崩掉的尴尬。它也提示我们，闭源模型的内部规律可能通过黑盒探测被接近，这对可解释性和调试能力都有启发。</p>
-<p class="why"><strong>为什么值得关心</strong>：提示词是很多 AI 产品的核心资产，理解模型的词汇敏感性有助于提升 prompt 的鲁棒性，也有助于构建更可控的 Agent 行为。</p>
-</div>
-<p class="readmore"><a href="https://louisabraham.github.io/load-bearing/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://www.dwarkesh.com/p/openai-huggingface" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 </div>
 <section class="github-radar" id="github">
@@ -408,83 +398,83 @@ footer h3{
 <div class="repo-grid">
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/f/prompts.chat" target="_blank" rel="noopener noreferrer">f/prompts.chat</a></h3>
-<span class="repo-category">提示词社区与市场</span></div></div>
+<h3><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a></h3>
+<span class="repo-category">Agent 运行环境增强层</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>168,180</b></span>
+<span>Stars <b>244,733</b></span>
 <span>增长 <b>—</b></span>
-<span>语言 <b>HTML</b></span>
-<span>许可 <b>未声明</b></span>
+<span>语言 <b>JavaScript</b></span>
+<span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">曾经叫 Awesome ChatGPT Prompts，是社区最活跃的提示词分享仓库，如今提供免费开源的提示词浏览与发布站，也支持企业私有化部署。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不只是列表，而是开放平台：任何人都可以分享、发现、收藏提示词，还能自托管，和商业提示词市场形成对照。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要给团队建立内部提示词知识库的产品团队，或者想打造提示词社区的运营方。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">提示词作为资产正被越来越多的产品团队正视，这个老仓库的新形态说明「提示词共享」依然有持续生命力。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">许可证标注为 NOASSERTION，实际使用前需要确认其中内容的授权状态，尤其是收集的提示词可能涉及原作者版权。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个面向多种编码 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 运行环境的增强层，支持给 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>、Cursor、Opencode 等工具挂上技能、本能、记忆与安全钩子，帮助团队更高效地使用 Agent 编程。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是重复造一个 Agent，而是跨 harness 复用同一套能力和配置，比如把「技能」和「记忆」从 Claude Code 带到 Codex，避免每个工具各维护一套。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">正在多个编码 Agent 之间切换的开发者或团队，希望统一安全策略和自定义能力；只用单一工具的用户价值有限。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">star 数达 244k，说明社区对 Agent 配置层的需求正在爆发，是观察 Agent 工具链生态的重要样本。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">配置层意味着钩子能接触到代码执行权限，接入前需审计其安全策略，避免盲目授予高权限。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/f/prompts.chat" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">ollama/ollama</a></h3>
+<span class="repo-category">本地开源模型运行工具</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>179,797</b></span>
+<span>增长 <b>—</b></span>
+<span>语言 <b>Go</b></span>
+<span>许可 <b>MIT</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">本地运行开源大模型的最常用工具之一，一行命令即可拉起 <button class="term term--wiki" data-slug="kimi" type="button">Moonshot AI</button>、GLM、DeepSeek、Qwen、<button class="term term--wiki" data-slug="gemma" type="button">Google Gemma</button> 等模型的推理服务，也是很多产品做私有化部署时的基础组件。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它的价值在「省心」：模型管理、量化、兼容 OpenAI 风格的 API 都封装好了，与 GLM-5.3 这类新权重发布配合，可以快速本地试跑新模型。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要自托管模型做原型验证、私有化交付，或想摆脱 API 费用和限流的团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">本期新增了对 GLM-5.2 等模型的支持说明，紧随开源模型发布节奏，提示「本地推理 + 开源权重」的工程链路越来越顺。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">本地推理对 GPU 和运维能力有要求，面向 C 端大规模应用时成本未必低于闭源 API；它更适合评估和小批量场景。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
+<span class="repo-category">Agent 网页上下文 API</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>174,472</b></span>
+<span>增长 <b>—</b></span>
+<span>语言 <b>TypeScript</b></span>
+<span>许可 <b>AGPL-3.0</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">一个面向 AI Agent 和 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 的网页上下文 API，集搜索、抓取、结构化提取于一体，把网页变成模型可用的上下文。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把「抓取 + 清洗 + 转成 markdown/结构化数据」封装成统一接口，减少自建爬虫和解析流水线的工作量，且支持与常见 RAG 流程衔接。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">做 Agent 搜索、知识库、竞品监控等需要大量网页数据的团队，尤其是想快速验证「网页 → 模型可读上下文」的产品。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">在 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 需要实时联网获取信息的需求快速增长阶段，这类工具正在成为 Agent 应用的基础设施。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">AGPL 许可证要求衍生作品开源，商用前要评估许可证兼容性；大规模抓取还要注意目标网站的服务条款与反爬限制。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">Graphify-Labs/graphify</a></h3>
-<span class="repo-category">代码知识图谱 Agent 技能</span></div></div>
+<span class="repo-category">代码知识图谱工具</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>112,325</b></span>
+<span>Stars <b>112,678</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>Python</b></span>
 <span>许可 <b>Apache-2.0</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个把代码库、文档、SQL Schema、配置文件等自动转换可查询知识图谱的工具，为 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、Cursor、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button> 等编码 Agent 提供 /graphify 技能。它基于本地确定的 AST 解析，而不是向量数据库。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">完全本地确定性解析，每条关系可解释，不需要向量存储，因此结果可审计，这对企业代码环境很友好。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要让 AI 编码助手深度理解大型代码库结构、并且愿意接受本地化处理的研发团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">它瞄准的是 Agent 对代码库的「结构理解」短板——光靠 RAG 检索片段不够，知识图谱是另一个解题方向。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">目前广泛支持主流语言，但边缘语言和极端复杂的构建配置很可能存在解析缺口，需要先小范围验证。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">把代码库、文档、SQL Schema、配置文件甚至 PDF 转成可查询知识图谱的工具，还提供预设技能，可以接入 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、Cursor、Codex、Gemini CLI 等编程 Agent。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">采用本地确定性的 AST 解析，不依赖向量库，因此图谱边关系可解释、可审计，比向量检索更适合理解复杂代码结构。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要让编码 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 理解大型代码库的团队，或有代码审计、文档梳理需求的研发组织。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">当 Agent 编程越来越依赖「读懂整个仓库」，以知识图谱而非向量检索提供上下文，可能成为下一阶段提升推理准确率的方向。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">AST 解析对非标准语法和动态语言可能有局限；引入后应验证它与现有代码搜索和 RAG 管线的重叠与成本。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/browser-use/browser-use" target="_blank" rel="noopener noreferrer">browser-use/browser-use</a></h3>
-<span class="repo-category">浏览器自动化 Agent 库</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>111,672</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>Python</b></span>
-<span>许可 <b>MIT</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">让 AI Agent 像人一样操作浏览器的开源库，封装了 Playwright，可以完成填写表单、点击、提取内容等任务。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把「给 Agent 用的浏览器接口」做成了标准化 Python 库，和 <button class="term term--wiki" data-slug="mcp" type="button">MCP</button> 等协议结合后，Agent 可以轻松获得网页操作能力。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">正在做 RPA 替代产品、自动化测试或信息采集类 AI 产品的团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">浏览器的可访问性一直是 Agent 落地的关键瓶颈，这类库让产品原型验证的周期缩短到几天。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">自动化操作受网站反爬、登录验证和条款限制，需要提前做好合规与封禁风险的应对。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/browser-use/browser-use" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/langflow-ai/langflow" target="_blank" rel="noopener noreferrer">langflow-ai/langflow</a></h3>
-<span class="repo-category">可视化 Agent 工作流平台</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>153,870</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>Python</b></span>
-<span>许可 <b>MIT</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">用于构建和部署 AI Agent 及工作流的低代码平台，提供可视化拖拽界面，支持多 Agent 编排和多种模型接入。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是单纯的 API 封装，而是把复杂的 Agent 流程做成可视化画布，降低非研究员角色的使用门槛。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">希望快速验证 Agent 产品逻辑、或者让产品运营直接搭工作流的团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 应用正在从代码范式走向画布范式，类似 Langflow 的工具说明这个方向已经成熟。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">低代码灵活性和可控性存在上限，超复杂生产级流程可能还是需要代码态，选型时要分清原型和生产的边界。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/langflow-ai/langflow" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 </div></section>
 <footer>
@@ -492,13 +482,13 @@ footer h3{
 <div class="legend"><span><i></i>这个词已在知识库中收录 —— 点开查看简明解释</span><span><i class="l-prov"></i>临时解释 —— 本期现写的，还没进知识库</span></div>
 <h3>待摄入队列 · 出现越多越值得正式收进去</h3>
 <div class="pending">
-<span>GLM <b>×3</b></span>
+
 </div>
 <p class="note">日报术语来自维护中的知识库，仅用于解释本期内容。</p>
 </footer>
 </div>
 <div class="scrim" id="scrim"><div class="card" id="card"></div></div>
-<script>window.__TERMS__={"anthropic":{"display":"Anthropic","title":"Anthropic 公司","kind":"temp","plain":"AI 安全公司，Claude 系列模型的开发商，被美国政府拉黑后经法院判决违法。","why":"政策与合规风险示例，影响企业选择 AI 供应商时评估供应链安全性。"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"deepseek":{"display":"DeepSeek V4","title":"DeepSeek","kind":"wiki","path":"wiki/entities/deepseek.md","definition":"国内独角兽 AI 公司，自研基底模型。开源代表，全系 100 万上下文。","plain":"","analogy":"","why":"","alias":"DeepSeek、DeepSeek V4"},"kimi":{"display":"Moonshot AI","title":"Kimi","kind":"wiki","path":"wiki/entities/kimi.md","definition":"月之暗面（Moonshot AI）旗下大模型产品。Kimi 2.6 主打 300+ Agents 连排调用，底层 Long CoT 长思考技术，曾以 256K 超长上下文出圈。课程关键点：Kimi 跳过 SFT 直接用强化学习训练；通过\"砍价活动\"收集用户行为轨迹数据，反向训练底层模型——是 data-flywheel 的典型案例。","plain":"","analogy":"","why":"","alias":"Kimi、月之暗面、Moonshot AI"},"mcp":{"display":"MCP","title":"Model Context Protocol","kind":"wiki","path":"wiki/concepts/mcp.md","definition":"一套让大模型调用外部工具和数据源的开放协议：服务端声明有哪些工具可用，模型按需调用。","plain":"开放协议，让大模型能调外部工具和数据源。服务端先声明有哪些工具可用，模型需要时再调用。它解决的是「模型能调什么」。","analogy":"","why":"但它不记录「模型看过什么」。Cloudflare 指出的正是这个缺口——缺了观察记录，共享工作空间时就难判断是否越权。评估 Agent 权限时，MCP 只是第一层，还要补上资源可见性追踪。","alias":"模型上下文协议"},"model-selection":{"display":"model-selection","title":"模型选型","kind":"wiki","path":"wiki/concepts/model-selection.md","definition":"模型选型是把\"用哪个模型\"当成产品策略而非技术选择来做：明确目标 → 用真实 query 构建测试集 → GSB 盲评 → 成本/耗时量化 → 综合决策，并建立持续评测机制（不是非此即彼的一次性选择）。与 model-strategy（更偏宏观的模型战略/开源闭源/国内外）相对，本概念聚焦\"具体两个候选模型怎么选\"的方法。","plain":"","analogy":"","why":"","alias":"模型选型、Model Selection、选模型、模型选择"},"open-weights":{"display":"开放权重","title":"开放权重模型","kind":"wiki","path":"wiki/concepts/open-weights.md","definition":"模型参数可公开下载、能在自己机器上运行的模型。注意它不等于开源——训练数据和训练代码通常并未一并公开。","plain":"模型参数公开可下载、能在自己机器上跑的模型。但它不等于「开源」：训练数据和训练代码通常没一起公开。","analogy":"","why":"它决定你能否把数据留在自己的边界内处理，以及是否会被单一供应商的定价和可用性绑死。自建审核、私有部署都建立在开放权重之上。","alias":"开源权重、open weights"}};</script>
+<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"claude":{"display":"Claude AI","title":"Claude","kind":"wiki","path":"wiki/entities/claude.md","definition":"由 Anthropic 公司开发的大语言模型系列。课程中作为 AI 辅助用户研究的首选工具之一，与飞书（feishu）配合使用。","plain":"","analogy":"","why":"","alias":"Claude、Claude AI"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"gemma":{"display":"Google Gemma","title":"Gemma","kind":"wiki","path":"wiki/entities/gemma.md","definition":"Google 推出的开源大语言模型，因可本地部署、Token 限制低，适合特定垂直场景。Day1 中作为\"模型选择 = 产品策略\"的典型例证。","plain":"","analogy":"","why":"","alias":"Gemma、Google Gemma"},"kimi":{"display":"Moonshot AI","title":"Kimi","kind":"wiki","path":"wiki/entities/kimi.md","definition":"月之暗面（Moonshot AI）旗下大模型产品。Kimi 2.6 主打 300+ Agents 连排调用，底层 Long CoT 长思考技术，曾以 256K 超长上下文出圈。课程关键点：Kimi 跳过 SFT 直接用强化学习训练；通过\"砍价活动\"收集用户行为轨迹数据，反向训练底层模型——是 data-flywheel 的典型案例。","plain":"","analogy":"","why":"","alias":"Kimi、月之暗面、Moonshot AI"},"model-selection":{"display":"model-selection","title":"模型选型","kind":"wiki","path":"wiki/concepts/model-selection.md","definition":"模型选型是把\"用哪个模型\"当成产品策略而非技术选择来做：明确目标 → 用真实 query 构建测试集 → GSB 盲评 → 成本/耗时量化 → 综合决策，并建立持续评测机制（不是非此即彼的一次性选择）。与 model-strategy（更偏宏观的模型战略/开源闭源/国内外）相对，本概念聚焦\"具体两个候选模型怎么选\"的方法。","plain":"","analogy":"","why":"","alias":"模型选型、Model Selection、选模型、模型选择"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
 <script>
 (function(){
   var DICT = window.__TERMS__ || {};
