@@ -315,90 +315,90 @@ footer h3{
 <body>
 <div class="wrap">
 <header class="masthead">
-<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-08-30 → 2026-09-02</span></div>
-<h1 class="serif">Claude 双模型与 Agent 工具链加速演进</h1>
-<div class="stats"><span><b>8</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>3</b> 个</span><span>更新于 09-02 09:36</span></div>
+<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-08-31 → 2026-09-03</span></div>
+<h1 class="serif">AI 日报 · 今日速览（自动聚合，未做中文解读）</h1>
+<div class="stats"><span><b>8</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>0</b> 个</span><span>更新于 09-03 09:40</span></div>
 </header>
 <div class="news-grid">
 <article id="item-1">
-<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hacker News 热帖 · 925 分 / 872 评</span></div>
-<h2>Anthropic 发布 Claude Fable 5.1 与 Mythos 5.1，双模型路线引热议</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hacker News 热帖 · 1376分 / 1333评</span></div>
+<h2>Claude Fable 5.1 and Claude Mythos 5.1</h2>
 <div class="body">
-<p>Anthropic 官方页面上出现了 Claude Fable 5.1 和 Claude Mythos 5.1 两个新版本，Fable 与 Mythos 分别意为“寓言”与“神话”，外界猜测它们对应不同的能力侧重。开发者 Simon Willison 体验后称 Fable 5.1 为他生成了一个相当不错的鹈鹕动画，可能暗示该版本在创意与多模态生成上有所加强。Hacker News 上讨论热烈，但官方尚未给出完整的技术说明与价格。</p>
-<p>对于 AI 产品经理，这首先是模型选型的信号：如果你正在基于 Claude 构建应用，需要尽快用内部测试集评估新版本在核心任务上的效果和成本变化；同时双模型的命名也可能意味着 Anthropic 在尝试把通用能力拆分成多个垂直产品，值得关注后续的 API 形态。</p>
-<p class="why"><strong>为什么值得关心</strong>：新版本直接关系现有产品的能力基线，是否迁移、如何评估、成本是否变化，都需要在本周内给出判断。</p>
+<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
+<p>Claude Fable 5.1 and Claude Mythos 5.1</p>
+<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
 </div>
 <p class="readmore"><a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-2">
-<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">GitHub Issue / Hacker News · 209 分 / 234 评</span></div>
-<h2>Claude Code 默认在提交信息附加 Session URL，隐私与工程规范引争议</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">Hacker News 热帖 · 908分 / 274评</span></div>
+<h2>AnkiDroid: Google Play no longer allowing Open Collective donation link</h2>
 <div class="body">
-<p>Claude Code 的一个默认行为被开发者抓了个正着：每次 git commit 和 PR 描述都会自动附带一条指向 Claude 会话的 Session URL（会话链接），目的是让代码变更可追溯。但这意味着所有克隆该仓库的人都能看到内部会话链接，在 GitHub Issue 上引发了大量反对，认为这会泄露工程内部信息并污染提交历史。</p>
-<p>产品经理应该马上检查团队使用的 Coding Agent 配置：这类默认元数据是否值得开，需要结合公司的代码保密要求和协作习惯决定。更重要的是，这个争议提醒我们，Agent 工具的“透明性”功能一旦默认开启，就和隐私、合规产生了直接冲突，产品设计时必须让用户显式选择。</p>
-<p class="why"><strong>为什么值得关心</strong>：直接影响使用 Coding Agent 团队的工程规范与信息安全，也体现了 Agent 工具默认配置的设计陷阱。</p>
-</div>
-<p class="readmore"><a href="https://github.com/anthropics/claude-code/issues/66504" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-3">
-<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Hacker News · 190 分 / 93 评</span></div>
-<h2>把 Agent 记忆做成文件格式：可移植、可版本化的长期记忆</h2>
-<div class="body">
-<p>一篇来自 Cal Paterson 的技术文章提出，Agent 的长期记忆不一定要存在上下文里，而可以设计成一种文件格式，用结构化字段保存重要事实，让记忆可以被读取、修改、合并和版本化。文章以 memoryfields 为例，展示了记忆像代码一样进入版本管理的可能性。</p>
-<p>这对 AI 产品经理是一个值得抄作业的思路：如果用户与 Agent 的个性化记忆能标准化为文件，那么跨设备迁移、厂商锁定解除、用户自己掌控数据都会变得容易。未来 Agent 产品的竞争点可能不只是模型能力，而是记忆的持久化与互操作。</p>
-<p class="why"><strong>为什么值得关心</strong>：记忆文件化是 Agent 产品走向成熟的关键一步，直接关系到个性化体验和数据主权，可以提前设计到产品架构里。</p>
-</div>
-<p class="readmore"><a href="https://calpaterson.com/memoryfields.html" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-4">
-<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Simon Willison 的博客 / Hacker News 热帖</span></div>
-<h2>Codex 捆绑 LibreOffice，Agent 开始直接操作办公文档</h2>
-<div class="body">
-<p>Simon Willison 注意到 OpenAI 的 Codex 在环境中捆绑了开源办公套件 LibreOffice，这意味着 Agent 可以读取、生成和修改文档、表格与演示文稿，而不只是处理文本。配合 Codex 的沙盒能力，用户可以直接让 Agent 完成一套办公流程。</p>
-<p>如果你在做办公场景的 AI 产品，这个信号很直接：模型的工具边界正在扩大，“写文档”和“操作文档”之间的鸿沟在被填平。产品经理需要思考，自己的产品是否应该把文档操作能力内建，而不是依赖外部集成；同时也要留意这类能力对传统办公套件订阅模式的冲击。</p>
-<p class="why"><strong>为什么值得关心</strong>：办公文档是 AI 应用的主流场景之一，Codex 这一步把 Agent 从代码助手扩展为生产力工具，直接影响办公 AI 的竞品格局。</p>
-</div>
-<p class="readmore"><a href="https://simonwillison.net/2026/Sep/1/codex-libreoffice/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-5">
-<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">MacRumors / Hacker News · 491 分 / 585 评</span></div>
-<h2>Apple 低估 AI 需求，Mac Mini 与 Mac Studio 供应告急</h2>
-<div class="body">
-<p>据 MacRumors 报道，苹果对 AI 驱动的 Mac 需求判断失误，Mac Mini 和 Mac Studio 这两款面向开发者和本地推理的机型出现供应紧张。Hacker News 上有大量开发者讨论，认为这与本地大模型部署和 AI 开发环境的流行有关。</p>
-<p>AI 产品经理如果依赖本地推理或为开发者提供工具，需要把硬件供应链的波动纳入规划：短期内可能面临设备交期延长，长期则意味着本地 AI 在开发者群体里的渗透正在加速，端侧推理的产品窗口值得确认。</p>
-<p class="why"><strong>为什么值得关心</strong>：硬件供应影响开发效率与端侧 AI 产品落地节奏，同时反向验证了本地 AI 需求的真实性。</p>
-</div>
-<p class="readmore"><a href="https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-6">
-<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Tom's Hardware / Hacker News · 800 分 / 402 评</span></div>
-<h2>加州豁免开源软件年龄验证：GPL、MIT 等许可证分发不受限</h2>
-<div class="body">
-<p>加州立法者一致通过一项豁免，让基于 GPL、MIT、BSD、Apache 等许可证分发的开源软件无需执行严格的年龄验证要求。这意味着通过开源渠道传播的软件，包括模型权重和工具，在加州的法律风险明显降低。</p>
-<p>对发布开源模型或开源工具的团队，这是一个有利的合规信号：你可以在加州继续宽松地分发，无需为年龄验证增加用户流程。但闭源商业产品不在豁免范围，AI 产品如果走混合开源路线，需要仔细区分哪些部分能享受豁免。</p>
-<p class="why"><strong>为什么值得关心</strong>：开源是 AI 模型分发的重要途径，这一法律变化直接影响合规成本与用户获取流程，是产品法务需要跟进的点。</p>
-</div>
-<p class="readmore"><a href="https://www.tomshardware.com/software/linux/california-lawmakers-unanimously-pass-linux-exemption-from-age-verification-law-software-distributed-under-the-gpl-mit-bsd-and-apache-licenses-are-exempt" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-7">
-<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">GitHub Issue / Hacker News · 830 分 / 246 评</span></div>
-<h2>Google Play 连出重拳：开源应用捐赠链接与第三方商店同遭限制</h2>
-<div class="body">
-<p>AnkiDroid 官方在 GitHub 上称，Google Play 不再允许其应用内展示 Open Collective 的捐赠链接；与此同时 Play Store 又阻止了第三方商店 AuroraStore 上架，影响注重隐私的 GrapheneOS 用户获取应用。两件事叠加，让本就依赖侧载的开源生态更加紧张。</p>
-<p>对 AI 产品经理，尤其是做开源或隐私敏感应用的团队，这是一个预警：分发渠道的规则随时可能改变，把命运绑在单一应用商店上风险很大。尽早规划自有分发渠道和社区捐赠路径，能降低平台政策带来的不确定性。</p>
-<p class="why"><strong>为什么值得关心</strong>：平台治理直接影响 AI 应用的分发、变现和用户触达，开源与闭源策略都应评估渠道风险。</p>
+<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
+<p>AnkiDroid: Google Play no longer allowing Open Collective donation link</p>
+<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
 </div>
 <p class="readmore"><a href="https://github.com/ankidroid/Anki-Android/issues/21656" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-8">
-<div class="item-top"><span class="idx" aria-hidden="true">08</span><span class="from">个人博客 / Hacker News · 576 分 / 149 评</span></div>
-<h2>1.5 小时训练的小 Transformer，在 ARC 上超越许多大模型</h2>
+<article id="item-3">
+<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Hacker News 热帖 · 841分 / 998评</span></div>
+<h2>How accurate have Ed Zitron's AI skeptic predictions been?</h2>
 <div class="body">
-<p>一位开发者在博客中分享，他用 1.5 小时训练了一个小型 Transformer，在 ARC 基准上超过了此前许多大模型的成绩。这个消息在 Hacker News 上引发了对模型规模和训练效率的重新讨论，也让“小模型+专注任务”的路线再次被关注。</p>
-<p>产品经理在做 <button class="term term--wiki" data-slug="model-selection" type="button">model-selection</button> 时，这个小实验是一个提示：不要默认大模型一定更好。在特定领域里，精心设计的小模型可能用极低的推理成本实现接近甚至超过大模型的效果，尤其适合对延迟和成本敏感的功能模块。</p>
-<p class="why"><strong>为什么值得关心</strong>：直接挑战“参数越大越强”的默认假设，为成本敏感的产品提供了一条小而美的技术路线。</p>
+<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
+<p>How accurate have Ed Zitron's AI skeptic predictions been?</p>
+<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+</div>
+<p class="readmore"><a href="https://danluu.com/zitron/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-4">
+<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Hacker News 热帖 · 824分 / 483评</span></div>
+<h2>Gemini 3.8 Flash and 3.8 Flash Cyber</h2>
+<div class="body">
+<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
+<p>Gemini 3.8 Flash and 3.8 Flash Cyber</p>
+<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+</div>
+<p class="readmore"><a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/3-8-flash-and-3-8-flash-cyber/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-5">
+<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Hacker News 热帖 · 651分 / 162评</span></div>
+<h2>I trained a small transformer in 1.5hrs and it beats many LLMs</h2>
+<div class="body">
+<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
+<p>I trained a small transformer in 1.5hrs and it beats many LLMs</p>
+<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
 </div>
 <p class="readmore"><a href="https://mvakde.github.io/blog/44-on-arc-1/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-6">
+<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Hacker News 热帖 · 546分 / 253评</span></div>
+<h2>Play Store blocks AuroraStore, hurting GrapheneOS users</h2>
+<div class="body">
+<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
+<p>Play Store blocks AuroraStore, hurting GrapheneOS users</p>
+<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+</div>
+<p class="readmore"><a href="https://gitlab.com/AuroraOSS/AuroraStore/-/work_items/1566" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-7">
+<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Hacker News 热帖 · 495分 / 590评</span></div>
+<h2>Apple caught off guard by AI demand for Mac Mini and Mac Studio</h2>
+<div class="body">
+<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
+<p>Apple caught off guard by AI demand for Mac Mini and Mac Studio</p>
+<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+</div>
+<p class="readmore"><a href="https://www.macrumors.com/2026/08/30/apple-unexpected-mac-mini-and-studio-demand/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-8">
+<div class="item-top"><span class="idx" aria-hidden="true">08</span><span class="from">Hacker News 热帖 · 401分 / 282评</span></div>
+<h2>GPU World</h2>
+<div class="body">
+<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
+<p>GPU World</p>
+<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+</div>
+<p class="readmore"><a href="https://www.gpuworld.org/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 </div>
 <section class="github-radar" id="github">
@@ -409,82 +409,70 @@ footer h3{
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a></h3>
-<span class="repo-category">Agent 运行环境增强层</span></div></div>
+<span class="repo-category">GitHub 热门项目</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>245,777</b></span>
-<span>增长 <b>本期建立基线，明日起显示增量</b></span>
+<span>Stars <b>246361</b></span>
+<span>增长 <b>—</b></span>
 <span>语言 <b>JavaScript</b></span>
 <span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一套面向 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>、OpenCode、Cursor 等 Agent 运行环境的增强层，提供技能、直觉、记忆、安全与研究优先的开发流程。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不重新发明 Agent，而是以插件形式横跨多个 harness，让同一套技能与钩子在多个编码 Agent 间复用。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">在多个编码 Agent 之间切换、希望记忆和技能一致性的重度开发者；单工具用户收益有限。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">当 Agent 工具链加速碎片化（本期 Claude Code 默认附加 Session URL 引发争议），一个统一配置层可能成为刚需。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">README 警告不要用多种方式重复安装，否则技能和钩子会重复；接入前需审查安全组件权限。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
-<span class="repo-category">面向 Agent 的网络上下文 API</span></div></div>
+<h3><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">NousResearch/hermes-agent</a></h3>
+<span class="repo-category">GitHub 热门项目</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>175,314</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>TypeScript</b></span>
-<span>许可 <b>AGPL-3.0</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个把网页抓取、搜索和交互封装成上下文的 API，专门为 AI Agent 提供干净的网页数据。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">不只是爬虫，而是 Agent 可调用的“上下文接口”，支持抓取后直接转成结构化内容。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要给 Agent 提供实时网页信息的应用，例如搜索增强、比价、监控类产品。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 要真正处理真实世界，高质量的上下文获取是关键供应商，这类基础设施会成为 Agent 应用的质量瓶颈。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">AGPL 许可对商业 SaaS 集成有传染性，如果你做闭源服务，需要评估合规成本。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">ollama/ollama</a></h3>
-<span class="repo-category">本地模型运行工具</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>179,920</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>Go</b></span>
-<span>许可 <b>MIT</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个让开发者在本地一键运行多种开源模型的工具，现在支持 DeepSeek、Gemma、Qwen、GLM 等主流模型。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把模型下载、运行和 API 兼容层做到最简单，是本地 AI 开发的事实标准之一。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">面向隐私敏感用户、离线场景或不想按 token 付费的开发者产品。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本期 Apple 的 Mac 需求证明本地推理正在进入主流，ollama 是承接这波需求的重要基建。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">本地模型的能力上限和算力要求需要提前评估，不是所有场景都适合从云端迁到本地。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/browser-use/browser-use" target="_blank" rel="noopener noreferrer">browser-use/browser-use</a></h3>
-<span class="repo-category">浏览器自动化的 Agent 工具</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>111,979</b></span>
+<span>Stars <b>240145</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>Python</b></span>
 <span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个让 AI Agent 通过浏览器自动化完成线上任务的库，底层基于 Playwright。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">目标是让网站对 Agent 可访问，而不是为爬虫提供 API，强调交互而非抓取。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要 Agent 执行跨站操作的场景，比如自动填写表单、比价下单、信息搜集。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">Codex 捆绑 LibreOffice 说明 Agent 的工具边界在扩大，浏览器自动化则是 Agent 在互联网世界里的“手”。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">自动化操作涉及网站条款和账号风控，产品上线前需要法律合规确认。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">The agent that grows with you</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/browser-use/browser-use" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener noreferrer">tensorflow/tensorflow</a></h3>
+<span class="repo-category">GitHub 热门项目</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>198363</b></span>
+<span>增长 <b>—</b></span>
+<span>语言 <b>C++</b></span>
+<span>许可 <b>Apache-2.0</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">An Open Source Machine Learning Framework for Everyone</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener noreferrer">Significant-Gravitas/AutoGPT</a></h3>
+<span class="repo-category">GitHub 热门项目</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>187087</b></span>
+<span>增长 <b>—</b></span>
+<span>语言 <b>Python</b></span>
+<span>许可 <b>NOASSERTION</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 </div></section>
 <footer>
@@ -492,13 +480,13 @@ footer h3{
 <div class="legend"><span><i></i>这个词已在知识库中收录 —— 点开查看简明解释</span><span><i class="l-prov"></i>临时解释 —— 本期现写的，还没进知识库</span></div>
 <h3>待摄入队列 · 出现越多越值得正式收进去</h3>
 <div class="pending">
-<span>Session URL <b>×2</b></span>
+
 </div>
 <p class="note">日报术语来自维护中的知识库，仅用于解释本期内容。</p>
 </footer>
 </div>
 <div class="scrim" id="scrim"><div class="card" id="card"></div></div>
-<script>window.__TERMS__={"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"model-selection":{"display":"model-selection","title":"模型选型","kind":"wiki","path":"wiki/concepts/model-selection.md","definition":"模型选型是把\"用哪个模型\"当成产品策略而非技术选择来做：明确目标 → 用真实 query 构建测试集 → GSB 盲评 → 成本/耗时量化 → 综合决策，并建立持续评测机制（不是非此即彼的一次性选择）。与 model-strategy（更偏宏观的模型战略/开源闭源/国内外）相对，本概念聚焦\"具体两个候选模型怎么选\"的方法。","plain":"","analogy":"","why":"","alias":"模型选型、Model Selection、选模型、模型选择"}};</script>
+<script>window.__TERMS__={};</script>
 <script>
 (function(){
   var DICT = window.__TERMS__ || {};
