@@ -315,90 +315,70 @@ footer h3{
 <body>
 <div class="wrap">
 <header class="masthead">
-<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-09-03 → 2026-09-06</span></div>
-<h1 class="serif">AI 日报 · 今日速览（自动聚合，未做中文解读）</h1>
-<div class="stats"><span><b>8</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>0</b> 个</span><span>更新于 09-06 09:28</span></div>
+<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-09-05 → 2026-09-08</span></div>
+<h1 class="serif">OpenAI 新品连发，Agent 运维与内容风险成焦点</h1>
+<div class="stats"><span><b>6</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>4</b> 个</span><span>更新于 09-08 09:37</span></div>
 </header>
 <div class="news-grid">
 <article id="item-1">
-<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hacker News 热帖 · 2218分 / 2040评</span></div>
-<h2>GPT-6 Astra</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Simon Willison 博客</span></div>
+<h2>GPT-6 Astra 开发者版亮相</h2>
 <div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>GPT-6 Astra</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+<p>Simon Willison 在博客中转述 OpenAI 推出的 GPT-6 Astra 开发者版，消息本身紧凑，更像是一则面向开发者社区的更新预告。结合 Hacker News 上关于 GPT-6 Astra 在机器人手臂上运行的演示讨论，可以推测这次发布的重心是把新一代模型交到开发者场景里，而非只停留在聊天窗口。</p>
+<p>对国内做 AI 应用的产品经理来说，这条信息真正需要核对的是 API 层的变化：新模型是否延续现有工具调用协议，延迟与成本是否会影响基于 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 的实时方案，以及上下文窗口和旧模型差多少。不要因为名字热就立刻改配置，先用小流量实验验证核心链路的兼容性，再决定是否写进路线图。</p>
+<p class="why"><strong>为什么值得关心</strong>：OpenAI 模型更迭直接牵动下游应用的基础体验。产品负责人需要看懂开发者版与聊天版的差别，避免在模型迁移上被 PR 节奏带偏。</p>
 </div>
-<p class="readmore"><a href="https://openai.com/index/gpt-6-astra/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://simonwillison.net/2026/Sep/5/introducing-gpt-6-astra-for-developers/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-2">
-<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">Hacker News 热帖 · 2107分 / 1515评</span></div>
-<h2>Discovery of a new OpenAI agent message board</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">OpenAI 官方博客 / Hacker News · 209 分 / 178 评</span></div>
+<h2>OpenAI 自述内部研究加速：智能体如何帮助科学家跑得更快</h2>
 <div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>Discovery of a new OpenAI agent message board</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+<p>OpenAI 发布了一篇以「研究加速：OpenAI 内部视角」为题的文章，讲的是研究团队如何借助智能体、自动化工具和模型辅助来压缩从想法到实验的周期。文章在 Hacker News 上获得约 209 分和 178 条评论，讨论焦点更多是这种研发方式能否外推到其他组织。</p>
+<p>值得 AI 产品经理留意的不是 OpenAI 内部用了什么系统，而是它把「AI 加速研发」作为官方叙事公开发布。这等于给所有面向科研、数据科学场景的 AI 产品发了一个强信号：如果头部实验室都把智能体当作实验助手，「AI 研究员」类产品会进入企业服务的真实预算，而不只是演示需求。</p>
+<p class="why"><strong>为什么值得关心</strong>：官方博客往往标记技术战略转向。研究加速被公开讨论，说明 OpenAI 在认真把 agent 应用到最吃模型能力的地方，这会直接抬高整个行业对智能体落地场景的预期。</p>
 </div>
-<p class="readmore"><a href="https://collusion.wiki/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://openai.com/index/research-acceleration-view-inside-openai/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-3">
-<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Hacker News 热帖 · 1149分 / 264评</span></div>
-<h2>Audacity 4.0</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Sylvain Kalache 博客 / Hacker News · 412 分 / 342 评</span></div>
+<h2>AI 处理事故越多，工程师越容易失去对系统的掌控</h2>
 <div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>Audacity 4.0</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+<p>创业者 Sylvain Kalache 撰文指出一个正在发生的副作用：当 AI 开始处理线上事故，工程师会越来越不熟悉自己的系统。AI 接管排障越高效，团队越少有机会在真实故障中积累手感，久而久之，离开 AI 的提示连问题出在哪都说不清。这篇文章在 Hacker News 上获得 412 分和 340 多条讨论。</p>
+<p>对做 SRE、可观测性 AI 产品的团队，这是一个必要的产品伦理提醒。如果产品做成「AI 全自动修复」，客户的工程师会逐渐退化，一旦出现 AI 处理不了的边界事件，整个组织都会失能。更好的做法是把 <button class="term term--wiki" data-slug="human-in-the-loop" type="button">人在回路</button> 做成设计核心：让 AI 给结论前先亮证据，让工程师做最终决策并保留复盘环节，把人留在系统回路里。</p>
+<p class="why"><strong>为什么值得关心</strong>：这决定了 AI 运维产品的长期价值：是帮客户建立能力，还是替客户削弱能力。能解决「学习」问题的产品，切换成本会远高于只解决「自动化」的产品。</p>
 </div>
-<p class="readmore"><a href="https://github.com/audacity/audacity/releases/tag/Audacity-4.0.0" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://www.sylvainkalache.com/blog/ai-handles-incidents-engineers-lose-touch-with-their-systems" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-4">
-<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Hacker News 热帖 · 747分 / 480评</span></div>
-<h2>Formalizing Fermat's Last Theorem</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Bryan Cantrill 博客 / Hacker News · 707 分 / 432 评</span></div>
+<h2>用 LLM 代笔写作，等于把思考拉链敞开给人看</h2>
 <div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>Formalizing Fermat's Last Theorem</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+<p>工程名人 Bryan Cantrill 在一篇短文里将「用 LLM 代写长文」形容为拉链没拉上：语言越流畅，逻辑漏洞越显眼。有经验的读者能一眼看出哪些段落是模型补出来的，因为行文缺少作者真实的思考轨迹。这篇写于 2025 年的文章在 Hacker News 上仍拿到 707 分和 432 条评论，说明争议至今未消。</p>
+<p>写作类 AI 产品经理应该把这个批评当成用户流失风险来研究。如果用户只是把几句话丢给模型扩写，产出的文章确实会暴露论证断层，用户还容易误以为那是自己的水平。产品需要把价值从「帮你写出来」转向「帮你想清楚」：提供反问、挑战和补充前提的功能，让用户最终写出的文字带有他自己的判断和心智指纹。</p>
+<p class="why"><strong>为什么值得关心</strong>：内容生成工具的差异化机会不在输出流畅度，而在提升用户真实思考质量。能避免用户「出丑」的产品，口碑和留存都会更好。</p>
 </div>
-<p class="readmore"><a href="https://www.anthropic.com/research/formalizing-fermats-last-theorem" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://bcantrill.dtrace.org/2025/12/05/your-intellectual-fly-is-open/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-5">
-<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Hacker News 热帖 · 684分 / 225评</span></div>
-<h2>Qwen 3.8 27B available on Cerebras at 1500 tokens/s</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Benedict Evans 博客 / Hacker News · 154 分 / 75 评</span></div>
+<h2>AI 工具的下一步不是更多模型能力，而是重构流程</h2>
 <div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>Qwen 3.8 27B available on Cerebras at 1500 tokens/s</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+<p>知名科技分析师 Benedict Evans 发表长文讨论 AI、工具与转型，延续他多年观察科技如何进入企业的视角。文章核心是把 AI 发展从模型层拉到工具层和组织层：真正能规模化的机会，往往出现在 AI 改变工作流程与决策结构的地方。Hacker News 上的讨论约 154 分，话题很快从模型能力滑向技术采用的组织阻力。</p>
+<p>对产品经理而言，这篇文章的价值在于调整参照系：和竞争对手比拼模型分数是没有终点的消耗战，但流程重构有先发者壁垒。做企业服务时，可以回到客户的一线场景里，找到某个频繁发生的决策节点，用 AI 改它的输入输出，而不是再包装一个「AI 助手」。产品身份应该从工具供应商变成流程改造者。</p>
+<p class="why"><strong>为什么值得关心</strong>：它提醒 AI 产品经理别只盯着模型迭代，而要回到工作流里找价值。这可能是 AI 产品建立差异化壁垒的基础判断。</p>
 </div>
-<p class="readmore"><a href="https://inference-docs.cerebras.ai/models/overview" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://www.ben-evans.com/benedictevans/2026/9/3/ai-tools-and-transformation" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-6">
-<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Hacker News 热帖 · 393分 / 74评</span></div>
-<h2>Google AI Mode shows same products 21.6% more expensive than traditional search</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Simon Willison 博客</span></div>
+<h2>在 macOS 上用编码代理操作 Blender，创意工具的另一种可能</h2>
 <div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>Google AI Mode shows same products 21.6% more expensive than traditional search</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+<p>Simon Willison 在自己的博客记录了一则实践：在 macOS 环境里把编码代理与 Blender 组合使用，让自然语言指令去驱动三维创作软件。这个尝试的看点是 agent 的触角正在从代码仓库伸向图形界面类工具，编码代理不再只处理文本。</p>
+<p>对做设计、动画、3D 相关 AI 产品的团队，这是一个值得跟进的信号：与其等待 Blender 官方出生成式 AI 插件，不如先考虑给 agent 加一个操作层，让它调用真实软件的既有功能。通用 agent 一旦能操作专业工具，很多垂直的「一键生成」产品可能被通用能力降维打击；提前把软件语义化接口做出来，反而能成为新的中间层。</p>
+<p class="why"><strong>为什么值得关心</strong>：通用 agent 逐渐渗透专业创作软件，会改变 AI 创意工具的市场边界。产品策略应从单点生成器转向可被 agent 调用的能力平台。</p>
 </div>
-<p class="readmore"><a href="https://productrise.app/blog/google-ai-mode-prefers-more-expensive-products" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-7">
-<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Hacker News 热帖 · 388分 / 118评</span></div>
-<h2>Show HN: Open-Source eInk Bike Computer</h2>
-<div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>Show HN: Open-Source eInk Bike Computer</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
-</div>
-<p class="readmore"><a href="https://opentrailpaper.com" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-8">
-<div class="item-top"><span class="idx" aria-hidden="true">08</span><span class="from">Hacker News 热帖 · 380分 / 206评</span></div>
-<h2>Can AI design circuit boards yet?</h2>
-<div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>Can AI design circuit boards yet?</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
-</div>
-<p class="readmore"><a href="https://eebench.org/blog/can-ai-design-circuit-boards-yet/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://simonwillison.net/2026/Sep/5/blender-coding-agents-macos/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 </div>
 <section class="github-radar" id="github">
@@ -409,70 +389,82 @@ footer h3{
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a></h3>
-<span class="repo-category">GitHub 热门项目</span></div></div>
+<span class="repo-category">Agent 运行环境增强层</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>249922</b></span>
+<span>Stars <b>252,875</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>JavaScript</b></span>
 <span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一套 agent harness 性能与能力增强系统，为 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>、OpenCode、Cursor 等编码代理补充技能、本能、记忆与安全护栏。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是又一个 agent，而是横跨多个编码代理的「能力层」，同一套技能和配置可以共享给不同 CLI。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">在多个编码代理之间切换的团队或重度个人用户，想用一套机制统一管理工具链、记忆与权限策略。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">编码代理正在从单点工具走向可组合环境，ECC 这类「harness 之上的 harness」会变成新的集成层。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">它需要向 agent 注入钩子和权限，接入前应审查每个钩子实际拿到的能力，避免扩大攻击面。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">NousResearch/hermes-agent</a></h3>
-<span class="repo-category">GitHub 热门项目</span></div></div>
+<h3><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">DietrichGebert/ponytail</a></h3>
+<span class="repo-category">编码代理行为风格插件</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>242022</b></span>
+<span>Stars <b>131,021</b></span>
+<span>增长 <b>—</b></span>
+<span>语言 <b>JavaScript</b></span>
+<span>许可 <b>MIT</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">一个编码代理插件，让 AI agent 模仿「组里最懒的资深工程师」：能不写就不写，能复用就复用，把删除代码视为加分项。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">多数 agent 的激励是完成任务并尽量多写代码，它反过来把「不写代码」当作最高目标。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">想控制代码库膨胀、减少 AI 生成改动量的团队，尤其适合维护复杂旧系统的场景。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">「最好的代码是没写的代码」在 agent 时代变成了工程指标，值得产品团队在设计 AI 编码工具时借鉴。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">过度追求少写代码可能牺牲可读性或引入抽象层，需要人工 review 和测试门禁兜底。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">Graphify-Labs/graphify</a></h3>
+<span class="repo-category">代码库知识图谱生成器</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>115,724</b></span>
+<span>增长 <b>—</b></span>
+<span>语言 <b>Python</b></span>
+<span>许可 <b>Apache-2.0</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">把代码库及其文档、SQL schema、配置和 PDF 解析成本地可查询的知识图谱，并提供一个 /graphify 技能，可接入 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、Cursor、Codex 等编码代理。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">不依赖向量库，而是用本地确定性的 AST 解析，每条图谱关系都有解释，适合需要可追溯上下文的场景。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">想给编码代理更可靠的代码库上下文、又不想引入向量检索复杂度的团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">它代表了给 agent 喂上下文的另一条路线：比起向量相似度，用确定性图谱保证「每条依赖都能解释」。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">它覆盖的是 AST 层面的静态关系，运行时行为、外部服务调用链可能不在图谱范围内。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">NousResearch/hermes-agent</a></h3>
+<span class="repo-category">可成长的开源 Agent 框架</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>243,055</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>Python</b></span>
 <span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">The agent that grows with you</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">NousResearch 发布的 hermes-agent 仓库，核心口号是「随你一起成长的 agent」，定位在通用 AI agent 与自动化工作流。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">由开放权重模型实验室直接维护，路线更贴近最新开源模型的 agent 能力，而不是只做与模型无关的调度层。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">愿意尝试开源 agent、希望跟随上游模型快速迭代的研发团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">开源社区的 agent 框架正从 demo 走向长期可用，这类项目可以作为自建 AI 产品底座或竞品参照。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">官方描述与文档较简，实际使用前需要实测稳定性、工具兼容性和社区维护活跃度。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener noreferrer">tensorflow/tensorflow</a></h3>
-<span class="repo-category">GitHub 热门项目</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>198863</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>C++</b></span>
-<span>许可 <b>Apache-2.0</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">An Open Source Machine Learning Framework for Everyone</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener noreferrer">Significant-Gravitas/AutoGPT</a></h3>
-<span class="repo-category">GitHub 热门项目</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>187162</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>Python</b></span>
-<span>许可 <b>NOASSERTION</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/Significant-Gravitas/AutoGPT" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 </div></section>
 <footer>
@@ -486,7 +478,7 @@ footer h3{
 </footer>
 </div>
 <div class="scrim" id="scrim"><div class="card" id="card"></div></div>
-<script>window.__TERMS__={};</script>
+<script>window.__TERMS__={"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"human-in-the-loop":{"display":"人在回路","title":"人在回路","kind":"wiki","path":"wiki/concepts/human-in-the-loop.md","definition":"在自动化流程的关键节点插入人工确认，由人决定是否放行，常见于 Agent 执行危险命令前的审批弹窗。","plain":"在自动化流程的关键节点插入人工确认，由人决定放不放行。Agent 要执行危险命令前弹个审批窗，就是典型的人在回路。","analogy":"","why":"它被广泛当作 Agent 的安全底线，但高噪声下人的判断会迅速退化（Scale X 的 4 万次模拟显示平均漏掉三分之一威胁）。应把它当兜底而非唯一防线，主防线放在沙箱与上下文隔离。","alias":"HITL、人工审批、human in the loop"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
 <script>
 (function(){
   var DICT = window.__TERMS__ || {};
