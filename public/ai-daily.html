@@ -315,90 +315,90 @@ footer h3{
 <body>
 <div class="wrap">
 <header class="masthead">
-<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-09-20 → 2026-09-23</span></div>
-<h1 class="serif">模型同日换代打价格战，Agent 工具链跟着重估</h1>
-<div class="stats"><span><b>8</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>5</b> 个</span><span>更新于 09-23 09:57</span></div>
+<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-09-21 → 2026-09-24</span></div>
+<h1 class="serif">模型换代撞上决策模型新形态，编码 Agent 的成本与信任成焦点</h1>
+<div class="stats"><span><b>8</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>6</b> 个</span><span>更新于 09-24 09:47</span></div>
 </header>
 <div class="news-grid">
 <article id="item-1">
-<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Anthropic 官方发布页 / Hacker News 热帖 · 1206 分 / 815 评</span></div>
-<h2>Anthropic 发布 Claude Opus 5.5，登上今日热榜第一</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Anthropic 官方公告 / Hacker News 热帖 · 1769 分 / 1083 评</span></div>
+<h2>Anthropic 发布 Claude Opus 5.5，拿下当日讨论榜首</h2>
 <div class="body">
-<p>Anthropic 官方上线了 Claude Opus 5.5，发布页在 Hacker News 上拿到 1206 分、815 条评论，是当天讨论量最高的技术帖，也说明这条消息同时被大量工程团队认真读了一遍。同一链接在榜单上出现了两次，热度集中在发布本身而非某个单点功能。</p>
-<p>对 AI 产品经理来说，主力模型换代不是「要不要跟进」的问题，而是「什么时候重评测」的问题。真正常见的判断失误是只看榜单名次就切换，结果自有场景的表现没变、迁移成本却先付了：提示词、评测集、缓存策略、成本模型都要重跑一遍。815 条评论的讨论密度本身就是信号——迁移是一件事，不是改一行配置。</p>
-<p class="why"><strong>为什么值得关心</strong>：这是所有以 Claude 为底座的产品的重定价与重评测节点。建议动作不是立刻上线，而是把它拉进现有评测集跑一遍自有场景，看差距是否集中在某类以前做不好的任务上；如果是，那就是新功能立项的信号，而不是单纯的模型替换。</p>
+<p>Anthropic 上线了 Claude Opus 5.5，官方产品页直接作为发布入口。这条在 Hacker News 拿到 1769 分、1083 条评论，是当天热度最高的一条，评论规模说明社区正在密集实测而不是围观。</p>
+<p>对做模型选型的团队，关键问题不是它排第几，而是它在你自己的任务上到底比上一代强多少。当天上千条评论里，与自身场景相似的实测值得翻一遍，比榜单更有信息量。另一个现实判断是：Opus 系列通常占据复杂推理和长上下文的选型区间，如果这次换代确有提升，此前因为成本被降级到小模型的任务，可以重新算一次投入产出，看是否调回大模型。</p>
+<p class="why"><strong>为什么值得关心</strong>：这是本周模型供给端变化的起点：同一天内多家主要厂商集体换代，说明竞争压力正从能力转向价格与用量。产品经理应把「评测集先备好、等价格稳定后一次性横向对比」作为默认流程，而不是每出一个型号就重跑一轮内部评测，避免把团队时间消耗在噪音上。</p>
 </div>
 <p class="readmore"><a href="https://www.anthropic.com/claude-opus-5-5" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-2">
-<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">OpenAI 官方发布页 / Hacker News 热帖 · 1184 分 / 607 评</span></div>
-<h2>OpenAI 一次放出两个 GPT-6 型号：Sol 与 Luna</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">OpenAI 官方公告 / Hacker News 热帖 · 1734 分 / 822 评</span></div>
+<h2>OpenAI 一次放出 GPT-6 Sol 与 GPT-6 Luna 两个型号</h2>
 <div class="body">
-<p>OpenAI 发布了 GPT-6 系列，并且一次性给出两个型号命名：Sol 与 Luna。官方发布页在 Hacker News 上获得 1184 分、607 条评论，热度与 Anthropic 的发布几乎持平，两家在同一天完成了旗舰换代。素材中没有给出两个型号之间的能力、价格或适用场景差异，这部分需要回到官方文档确认。</p>
-<p>双型号发布通常意味着按能力或成本分档，产品团队接下来面对的是一个更复杂的选型矩阵，而不是一次简单的版本升级。对做 AI 产品的人来说，最稳妥的做法是把模型名从代码里抽出来，做成可配置的路由开关，按任务类型决定走哪个档位——这样下一次换代时，改的是配置而不是架构。</p>
-<p class="why"><strong>为什么值得关心</strong>：同一天两家头部实验室同时换代，意味着所有以单一模型为底座的产品都要重做一次选型和成本测算。提前设计「按任务路由到不同档位」的能力，比赌某一个型号更划算，也能在价格或能力变动时把迁移成本降到最低。</p>
+<p>OpenAI 在同一次发布中给出 GPT-6 Sol 与 GPT-6 Luna 两个型号，命名上以日月区分。该帖在 Hacker News 拿到 1734 分、822 条评论，热度与 Anthropic 的 Claude Opus 5.5 基本持平。当天热榜上还出现了两条以 GPT-6 Astra 命名的帖子，分别指向破译一个自 2005 年以来未被解开的密码，以及驾驶能力演示。</p>
+<p>一次发布两个型号、后续再出现以 Astra 命名的分支，说明同一代模型正在按能力档位和用途拆分，而不是只给一个「大而全」的旗舰。这对选型表的结构有直接影响：模型路由本身变成产品设计的一部分，哪些环节值得用最强档、哪些用快而便宜的档，需要按任务分层明确写下来。另外，Simon Willison 把这轮发布与 Claude Opus 5.5 放在一起讨论，文章标题里直接出现了「新的价格战」，意味着价格与配额政策的变化可能比能力提升更快地改变单位经济模型，值得盯官方定价页而不是只盯跑分。</p>
+<p class="why"><strong>为什么值得关心</strong>：供应商主动把一代模型拆成多个档位，等于把「用哪个模型」的决策成本转嫁给了产品团队。建议提前定义任务分层规则和降级策略，否则等价格战开打时，你会发现自己既没有评测基线，也没有快速切换的开关。</p>
 </div>
 <p class="readmore"><a href="https://openai.com/index/introducing-gpt-6-sol-and-luna/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-3">
-<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Simon Willison 博客 / Hacker News 讨论</span></div>
-<h2>Simon Willison：这轮发布背后是一场新的价格战</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Simon Willison 博客 / Hacker News 热帖 · 631 分 / 197 评（25 行 Python 复现）</span></div>
+<h2>Jev 提出「决策模型」新形态：把快思考单独做成一层</h2>
 <div class="body">
-<p>Simon Willison 在博客里把当天 Claude Opus 5.5、GPT-6 Sol 与 Luna 的集中发布概括为一场新的价格战。同一天他还在更新自己的命令行工具链，发布了 llm 0.36 与 llm-anthropic 0.29 等版本，这属于他惯常的模型接入维护动作。</p>
-<p>需要注意措辞边界：这篇是评论而不是官方定价公告，具体单价要以各家官方定价页为准，内部测算里不要沿用旧价，也不要直接把评论里的判断当作成本事实。对产品负责人来说，真正要动的不是采购清单，而是定价模型——把模型成本设成可替换变量，同时想清楚当模型降价时，是把利润让给用户、投入更多推理量换质量，还是先吃进毛利。</p>
-<p class="why"><strong>为什么值得关心</strong>：价格战直接改写单位经济模型，同样一次调用的毛利空间会变化。这件事应该触发一次定价与套餐结构的复盘，而不是只当成技术新闻；尤其是按用量计费的产品，模型成本占比一旦下降，套餐设计的自由度会明显变大。</p>
+<p>Simon Willison 介绍了 Jev 引入的一种新形态模型，称为 System One，也就是决策模型。同一话题在热榜上迅速扩散：有人用 25 行 Python 复现了 Jev（631 分），开发者 jaredpalmer 在 Qwen3.5 之上做出同类的决策模型 Kev（459 分），还有一篇分析在问 OpenAI 是否会快速跟进、抢下这块市场（316 分）。</p>
+<p>把「快思考」单独做成一层，产品含义很直接：意图识别、路由、分类、内容审核、表单填写这类高频但低难度的判断，如果可以用小而快的决策模型承担，就没有必要全部推给大模型，调用成本曲线会明显不同。对正在精算单位经济模型的团队，值得把现有调用按「需要深思」和「只需要判断」切一刀，看看有多大比例可以下沉；这个比例往往比预想的高。</p>
+<p class="why"><strong>为什么值得关心</strong>：这是本期最可能改变架构决策的一条：模型选型不再只是「选最强的」，而是「按任务难度分层配置」。如果这条路线成立，竞品的成本结构会先于功能拉开差距，你的定价与毛利假设需要重算。</p>
 </div>
-<p class="readmore"><a href="https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://simonwillison.net/2026/Sep/21/jev/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-4">
-<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Hacker News 热帖（agentexecutor.io）· 657 分 / 297 评</span></div>
-<h2>Google 开源 Agent 编排器 AX 引发讨论</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">个人博客 / Hacker News 热帖 · 451 分 / 257 评（标题标注已修复）</span></div>
+<h2>Claude Code 被发现在开启遥测时才读取 AGENTS.md</h2>
 <div class="body">
-<p>一个被描述为 Google 开放 Agent 编排器的项目 AX 在 Hacker News 上获得 657 分、297 条评论，榜单条目把它直接标为「Google 的开放 Agent 编排器」，链接指向 agentexecutor.io。素材没有提供更多架构或接入方式的细节，判断其实际能力需要看项目本身的文档。</p>
-<p>对产品经理的含义在于编排层的定位正在变化：如果连大厂都把它开源出来，那么自研一套编排框架的护城河就变薄了。正在纠结自建还是接入的团队，可以借这个机会重新算一次账——把差异化押在编排框架本身风险很高，真正的壁垒更可能落在行业数据、评测标准和用户体验上，而不是工作流引擎的调度逻辑。</p>
-<p class="why"><strong>为什么值得关心</strong>：它提示一次技术选型的方向性调整：编排层大概率会像容器和构建工具一样逐步商品化，值得把有限的研发资源从「造轮子」挪到能形成差异的地方，同时保留随时替换编排实现的抽象层。</p>
+<p>一位开发者发文指出，Claude Code 只有在遥测开关打开时才会读取项目根目录的 AGENTS.md，帖子标题已标注该问题被修复。这条在 Hacker News 拿到 451 分、257 条评论，争议点不在功能本身，而在于项目配置的读取为什么会和遥测状态绑在一起。</p>
+<p>对采购方来说，这是典型的信任细节问题：企业常出于合规考虑关闭遥测，如果这一步会让项目配置悄悄失效，排查成本会非常高，因为表现是行为不一致而非明确报错。建议在接入任何编码 Agent 时，专门验证「关闭遥测」与「开启遥测」两种状态下工具行为是否一致，并把这条写进选型验收清单。</p>
+<p class="why"><strong>为什么值得关心</strong>：编码 Agent 正在进入企业环境，而企业最先关闭的恰恰是遥测。这类「隐性行为差异」一旦发生在客户的开发流程里，损失的是信任而非功能，收回成本极高。做 Agent 产品的人应当把「关闭遥测后的功能完整性」当成一条硬性验收标准。</p>
 </div>
-<p class="readmore"><a href="https://agentexecutor.io" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://blog.szypowi.cz/p/claude-code-reads-agents.md-only-when-telemetry-is-on/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-5">
-<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Hacker News 热帖 · 758 分 / 393 评</span></div>
-<h2>报道称 ChatGPT 通过广告数据采集器获知你在其他网站的行为</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Hacker News 讨论 / Simon Willison 博客引用</span></div>
+<h2>「MCP 一直是个坏主意？」：协议层质疑重新浮上水面</h2>
 <div class="body">
-<p>一篇题为「ChatGPT 现在通过广告采集器知道你访问了其他哪些网站」的文章在 Hacker News 上引起 758 分、393 条评论的讨论，焦点是对话式产品和广告追踪数据之间的联系。这是一篇第三方调查性质的报道，不是官方声明，具体机制需要读原文判断。</p>
-<p>这是风险项而不是机会项。当用户开始意识到对话产品的「更懂我」可能部分来自第三方追踪数据，任何个性化功能都会先撞上信任门槛。值得现在做的一件事是检查自己的数据来源说明写清楚了没有——隐私政策里「我们如何收集和使用数据」那一节，往往是在出事之后才被认真读的。</p>
-<p class="why"><strong>为什么值得关心</strong>：个性化能力的上限正在被数据来源的合法性约束。如果产品路线图上有「更懂用户」这类目标，最好在合规和用户告知上提前留出设计空间，否则功能做得越准，用户越会追问数据从哪来。</p>
-</div>
-<p class="readmore"><a href="https://www.buchodi.com/chatgpt-now-knows-what-you-do-on-other-websites-via-ad-collector/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-6">
-<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Simon Willison 博客转引 Hacker News 讨论</span></div>
-<h2>「MCP 从一开始就是个坏主意？」旧争论被重新翻出</h2>
-<div class="body">
-<p>Simon Willison 转引了一条 Hacker News 讨论，标题直接把 <button class="term term--wiki" data-slug="mcp" type="button">MCP</button> 定性为「一直是个坏主意」。他没有展开长篇评论，只是把这条讨论挑了出来，具体批评点需要读原帖才能确认。同期他还在更新自己的 llm 系列工具与相关插件。</p>
-<p>对产品经理的实际意义不在争论本身，而在技术债。如果产品里的工具接入已经全部压在 <button class="term term--wiki" data-slug="mcp" type="button">MCP</button> 上，就需要评估一旦生态分裂或协议演进，迁移成本有多大。更稳的做法是把工具层再抽象一层，让业务代码依赖自己定义的能力接口，而不是直接依赖某一种协议实现——这样协议吵归吵，产品不会被绑住。</p>
-<p class="why"><strong>为什么值得关心</strong>：工具协议之争会直接影响未来两年的维护成本。现在不必下结论站队，但应该确认自己的工具接入是否可替换；如果答案是不可替换，那这件事就该进技术债清单。</p>
+<p>Simon Willison 引用了一条 Hacker News 讨论，标题直接是「MCP 是不是一直是个坏主意」。素材只提供了讨论入口，没有给出具体论据与结论，因此这里只记录一件事：围绕 <button class="term term--wiki" data-slug="mcp" type="button">MCP</button> 的协议层质疑重新升温。</p>
+<p>对已经或准备把 <button class="term term--wiki" data-slug="mcp" type="button">MCP</button> 当作工具接入标准的团队，合理的反应不是立刻改路线，而是重新核算这层抽象的实际代价与收益：多一层协议意味着多一层调试和版本兼容负担，收益则取决于你要接入的工具是否真的足够多样。一个稳妥的做法是把 MCP 当作可替换的适配层来设计，业务逻辑不要直接依赖它的具体形状，这样即使风向变化，迁移代价仍然可控。</p>
+<p class="why"><strong>为什么值得关心</strong>：工具接入方式是 Agent 产品的长期地基，选错了改造代价很大。这条提醒产品经理在做技术选型时保留「可替换性」这一项评估维度：协议层可以跟进，但不要让它长进业务代码里。</p>
 </div>
 <p class="readmore"><a href="https://simonwillison.net/2026/Sep/20/hn-49779718/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-7">
-<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Linear 官方博客 / Hacker News 热帖 · 309 分 / 384 评</span></div>
-<h2>Linear：AI 写码之后，CI 成了新瓶颈</h2>
+<article id="item-6">
+<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Linear 官方博客 / Hacker News 热帖 · 313 分 / 402 评</span></div>
+<h2>AI 编码把 CI 变成瓶颈，Linear 重做了自己的流水线</h2>
 <div class="body">
-<p>Linear 在官方博客里复盘了他们如何重构持续集成流水线：<button class="term term--wiki" data-slug="claude-code" type="button">claude code</button> 一类的编码 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 让提交量和提交频率上升之后，原本够用的 CI 变成了整个交付流程的瓶颈。文章讲的是他们怎么改造这条流水线来跟上节奏，帖子在 Hacker News 上拿到 309 分、384 条评论。</p>
-<p>这是 AI 提效最常被忽略的下游成本：写代码变快了，但验证环节没有同比变快，整体吞吐就不会变。做 AI 编码工具的 ROI 测算时，如果不把 CI 时长、评审人力和测试覆盖率维护的成本算进去，很容易高估净收益。反过来说，这也是一个产品机会——瓶颈从「写」转移到「验」，就说明围绕评审、测试生成和流水线优化的工具有真实需求。</p>
-<p class="why"><strong>为什么值得关心</strong>：它给出了一个可复用的测算框架：AI 提效必须按整条交付链路算，不能只看写码环节。如果团队正在推 AI 编码，建议先量一次 CI 平均等待时间，这通常是最先爆掉的地方。</p>
+<p>Linear 团队发文说，AI 编码让代码提交量上升，持续集成成了瓶颈，于是他们重做了一套流水线来跟上节奏。这条在 Hacker News 拿到 313 分、402 条评论，评论数明显高于分数，说明很多团队遇到了同一个问题。</p>
+<p>这类一手工程记录的价值在于它指出了提效的真实路径：写代码变快之后，瓶颈会沿流水线往下移动到代码评审、CI、测试和发布，只优化「写」这一环很快会撞到天花板。做研发工具或内部提效平台的团队，可以把注意力往这些下游环节挪；同时对客户承诺效率提升时也要留出余量，因为收益往往被下游环节吃掉一部分。</p>
+<p class="why"><strong>为什么值得关心</strong>：如果 AI 编码的真实瓶颈在 CI 和评审，那「编码助手」这个产品品类的天花板就不是模型能力，而是工程流程配套。这对判断竞品格局和自研方向都很关键：下一波价值可能出现在流水线环节，而不是编辑器里。</p>
 </div>
 <p class="readmore"><a href="https://linear.app/now/ci-bottleneck-reworked" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-8">
-<div class="item-top"><span class="idx" aria-hidden="true">08</span><span class="from">GitHub 项目（jaredpalmer/kev）/ Hacker News 热帖 · 453 分 / 199 评 / Simon Willison 博客</span></div>
-<h2>Kev：基于 Qwen3.5 的小型决策模型，被称作新形态</h2>
+<article id="item-7">
+<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Bloomberg 调查报道 / Hacker News 热帖 · 894 分 / 500 评</span></div>
+<h2>五角大楼称对 AI 的过度依赖与伊朗学校遭导弹袭击有关</h2>
 <div class="body">
-<p>GitHub 项目 jaredpalmer/kev 提供了一套基于 Qwen3.5 构建的小型决策模型家族，被描述为 Jev 一类的工作。同一天 Simon Willison 专门撰文称 Jev 引入了 LLM 的一种新形态——System One，也就是决策模型。该项目在 Hacker News 上获得 453 分、199 条评论，Simon 的文章也指向同一件事。</p>
-<p>这背后的产品判断值得记住：先问任务需不需要「生成」，再问需不需要大模型。分类、路由、判断、打分这类任务用通用大模型来做，既慢又贵，而且输出还不稳定；换成小型专用决策模型，延迟和成本都能明显下降。建议现在就把现有功能清单筛一遍，标出哪些调用其实只想要一个判断结果，而不是一段文字。</p>
-<p class="why"><strong>为什么值得关心</strong>：它提示一条反直觉的选型原则：不是所有 AI 功能都该用通用大模型。把「生成」和「判断」拆开做架构，可能是这一轮成本优化里最容易被忽略、也最容易见效的一步。</p>
+<p>彭博的报道标题指向五角大楼的说法：对 AI 的过度依赖是伊朗一所学校遭导弹袭击事件的因素之一。这条在 Hacker News 拿到 894 分、500 条评论，是当天讨论最集中的非模型类话题之一。</p>
+<p>对 AI 产品经理，含义是 <button class="term term--wiki" data-slug="human-in-the-loop" type="button">人在回路</button> 不该被当作合规装饰。凡是把判断权交给模型的产品，都要能清楚回答「最终由谁签字、在什么条件下模型不允许自动执行」。高风险场景尤其如此：上线时应默认保留人工确认环节，并把模型输出的不确定性明确暴露给操作者，而不是用一个置信度分数糊过去。</p>
+<p class="why"><strong>为什么值得关心</strong>：这是本期唯一一条直接涉及人身后果的素材，也是最好用的一条对外沟通素材。它同时提醒两件事：B 端高风险产品必须设计明确的人机责任边界；在市场宣传里不要过度承诺自动化程度，否则一旦出事，产品叙事会反过来成为责任证据。</p>
 </div>
-<p class="readmore"><a href="https://github.com/jaredpalmer/kev/tree/main" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://www.bloomberg.com/graphics/2026-iran-school-attack/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-8">
+<div class="item-top"><span class="idx" aria-hidden="true">08</span><span class="from">Anthropic 官方公告 / Hacker News 热帖 · 495 分 / 530 评</span></div>
+<h2>Claude 发现具有类 CRISPR 重复序列的新酶系统</h2>
+<div class="body">
+<p>Anthropic 宣布 Claude 发现了一个新的酶系统，其重复序列与 CRISPR 类似。这条在 Hacker News 拿到 495 分、530 条评论，讨论数高于分数，说明关注点集中在「这算不算真正的发现」上。</p>
+<p>这类消息的产品含义是模型能力的评估标准正在变化：以前比的是说得像不像，现在开始比结论能不能被实验或外部证据验证。如果你的产品里包含模型给出的研究型结论，「可验证性」会变成差异化点——给出依据、给出来源、给出可复现的推理路径，比给出一个漂亮的答案更重要，也更难被竞品模仿。</p>
+<p class="why"><strong>为什么值得关心</strong>：它把「AI 产出能否被验证」推到台前。做知识类、研究类、分析类产品的团队，应把引用、溯源和可复现当作功能来设计，而不只是让模型答得更流畅；这既是用户信任的来源，也是合规环境下的必要能力。</p>
+</div>
+<p class="readmore"><a href="https://www.anthropic.com/news/claude-discovers-novel-enzyme-system" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 </div>
 <section class="github-radar" id="github">
@@ -408,83 +408,83 @@ footer h3{
 <div class="repo-grid">
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a></h3>
-<span class="repo-category">面向编码 Agent 的增强层</span></div></div>
+<h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">langgenius/dify</a></h3>
+<span class="repo-category">Agent 工作流与 RAG 平台</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>265,479</b></span>
+<span>Stars <b>157,008</b></span>
 <span>增长 <b>—</b></span>
-<span>语言 <b>JavaScript</b></span>
-<span>许可 <b>MIT</b></span>
+<span>语言 <b>TypeScript</b></span>
+<span>许可 <b>NOASSERTION</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一套面向 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>、OpenCode、Cursor 等多种编码 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 的运行环境增强系统，提供技能、本能、记忆、安全以及研究优先的开发流程。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是又一个 Agent，而是横跨多个 harness 的能力层——同一套技能与记忆逻辑可以挂在不同的编码工具上，不必每个工具各维护一份配置。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">同时在多个编码 Agent 之间来回切换、希望技能与记忆能跨工具复用的重度用户；只固定用单一工具的人收益有限。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">在旗舰模型同日换代的背景下，「把技能和记忆与具体模型、具体工具解耦」这件事的价值正在上升，它决定了换模型时你要改多少东西。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">项目描述中包含安全与研究流程相关的组件，接入生产环境前应确认这些组件实际拿到了哪些文件与网络权限；建议先在非关键仓库试用。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个开源协作平台，用来搭建 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 工作流和 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 管线，内置模型与工具接入，可部署在云端、VPC 或自托管环境。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">定位是「从原型到生产不用重建技术栈」：把工作流编排、模型接入、工具调用放进同一个工作台，而不是只做其中一环。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要快速把内部流程做成可用 Agent 应用、又希望自托管以控制数据出域的团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">本期模型换代与价格战的消息密集，模型层更替越快，中间编排层的价值越稳固，值得放进选型清单对比。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">许可证标注为 NOASSERTION，商业使用前需逐条确认条款；自托管还意味着模型成本、运维和权限治理都要自己承担。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
+<span class="repo-category">面向 AI 的网页抓取与检索 API</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>183,888</b></span>
+<span>增长 <b>—</b></span>
+<span>语言 <b>TypeScript</b></span>
+<span>许可 <b>AGPL-3.0</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">把网页搜索、抓取和交互封装成 API，为 Agent 与 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 提供可直接使用的结构化数据。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">面向 AI 场景设计，重点在于抓下来就能喂给模型（清洗与结构化），而不是做通用爬虫框架。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">要做联网检索、知识库持续更新、竞品信息监控的产品团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">当模型能力趋同、价格战开打，差异化越来越多来自「模型之外」的数据管道，这类基础设施的性价比在上升。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">AGPL-3.0 对闭源商业集成存在传染性要求，商用前必须过法务；抓取目标站点的合规与反爬也要自行兜底。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">Graphify-Labs/graphify</a></h3>
-<span class="repo-category">代码库知识图谱 / Agent 检索技能</span></div></div>
+<span class="repo-category">代码库知识图谱与检索技能</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>120,589</b></span>
+<span>Stars <b>120,931</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>Python</b></span>
 <span>许可 <b>Apache-2.0</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个把代码库连同文档、SQL 结构、配置和 PDF 转成可查询知识图谱的工具，以 /graphify 技能的形式接入 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、Cursor、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button> 和 Gemini CLI。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它强调本地确定性 AST 解析、每条边都可解释，并且不用向量存储——这与常见的 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 向量检索路线是两种思路。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">代码库规模大、希望让 Agent 回答「这个改动会影响什么」这类结构化问题的工程团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">当编码 Agent 的实际瓶颈从「写得出」变成「找得准」，代码理解层的工具有机会成为新的基础设施层。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">不用向量库意味着召回依赖结构与规则而非语义相似度，跨语言或高度动态的代码库效果需要先做小范围验证。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">把代码库连同文档、SQL schema、配置文件和 PDF 转成可查询的知识图谱，并以技能形式接入 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、Cursor、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button> 等编码工具。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">采用本地确定性 AST 解析、每条边都有解释、不使用向量库，与主流 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 走的是完全不同的一条路线。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">代码量大、希望编码 Agent 真正理解项目结构而非只做片段补全的团队，尤其适合文档与 SQL 混杂的遗留系统。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">这几天编码 Agent 的瓶颈明显从「能不能写」转到「能不能理解上下文」，确定性图谱是向量检索之外值得实测的一条对照路线。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">只覆盖它能解析的语言与文件类型，图构建本身也有持续维护成本，规模大时需评估更新频率。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/JuliusBrussee/caveman" target="_blank" rel="noopener noreferrer">JuliusBrussee/caveman</a></h3>
-<span class="repo-category">编码 Agent 的 Token 成本压缩技能</span></div></div>
+<span class="repo-category">降低 token 消耗的编码 Agent 技能与代理</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>107,399</b></span>
+<span>Stars <b>107,569</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>Go</b></span>
 <span>许可 <b>NOASSERTION</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个让编码 Agent「像原始人一样说话」的技能加代理，宣称通过改变表达风格削减约 65% 的 token 消耗。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不换模型、不换框架，只改输出风格来控制成本——在价格战之外提供了另一条降本路径。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">调用量大、对成本敏感，且任务本身不需要模型输出漂亮解释的编码场景。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">它与本期的模型价格战构成一组对照：成本优化不只有「等模型降价」和「换更小的模型」两条路，提示词与输出规范同样是杠杆。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">许可证标注为 NOASSERTION，商用前需确认；另外压缩表达必然损失一部分信息，落到自有任务上要先验证质量有没有受影响。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个走红的技能加代理，让编码 Agent 用极简的「原始人式」表达来压缩输出，项目自述可减少约 65% 的 token 消耗。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是换模型，而是在提示与输出层做压缩来省钱，属于成本优化而非能力增强，思路与「决策模型」那条线互补。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">编码 Agent 调用量大、token 账单压力明显，愿意用少量准确率换取成本下降的团队做实验。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">价格战之外，用量侧的省钱手法同样在改变单位经济模型，这类项目的实测数据比模型榜单更贴近财务现实。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">省 token 的代价可能是语义与可读性损失，65% 是项目自述数字，务必在自己任务集上验证准确率是否下降以及下降多少。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/JuliusBrussee/caveman" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">langgenius/dify</a></h3>
-<span class="repo-category">Agent 工作流与 RAG 搭建平台</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>156,892</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>TypeScript</b></span>
-<span>许可 <b>NOASSERTION</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个协作式工作台，用来搭建 Agentic 工作流和 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 管线，支持多种模型与工具接入，可部署在云端、私有网络或自托管环境。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它主打的是「从原型到生产不用重建整套栈」，把模型、工具、编排和发布放在同一个工作台里，而不是分散在若干脚本中。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要在企业内部快速验证并上线 AI 应用、又不想从零搭基础设施的产品与工程团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">在模型价格和能力快速变化的当下，工作流层的价值恰恰在于底座可换——把业务逻辑放在编排层，换模型时改动最小。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">许可证标注为 NOASSERTION，属于带附加条款的开源许可，商用或二次分发前需要确认具体限制。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 </div></section>
 <footer>
@@ -492,15 +492,17 @@ footer h3{
 <div class="legend"><span><i></i>这个词已在知识库中收录 —— 点开查看简明解释</span><span><i class="l-prov"></i>临时解释 —— 本期现写的，还没进知识库</span></div>
 <h3>待摄入队列 · 出现越多越值得正式收进去</h3>
 <div class="pending">
-<span>harness <b>×3</b></span>
-<span>decision-model <b>×3</b></span>
-<span>token <b>×3</b></span>
+<span>决策模型 <b>×4</b></span>
+<span>价格战 <b>×3</b></span>
+<span>遥测开关 <b>×2</b></span>
+<span>CI 瓶颈 <b>×2</b></span>
+<span>可验证性 <b>×2</b></span>
 </div>
 <p class="note">日报术语来自维护中的知识库，仅用于解释本期内容。</p>
 </footer>
 </div>
 <div class="scrim" id="scrim"><div class="card" id="card"></div></div>
-<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"mcp":{"display":"MCP","title":"Model Context Protocol","kind":"wiki","path":"wiki/concepts/mcp.md","definition":"一套让大模型调用外部工具和数据源的开放协议：服务端声明有哪些工具可用，模型按需调用。","plain":"开放协议，让大模型能调外部工具和数据源。服务端先声明有哪些工具可用，模型需要时再调用。它解决的是「模型能调什么」。","analogy":"","why":"但它不记录「模型看过什么」。Cloudflare 指出的正是这个缺口——缺了观察记录，共享工作空间时就难判断是否越权。评估 Agent 权限时，MCP 只是第一层，还要补上资源可见性追踪。","alias":"模型上下文协议"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
+<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"human-in-the-loop":{"display":"人在回路","title":"人在回路","kind":"wiki","path":"wiki/concepts/human-in-the-loop.md","definition":"在自动化流程的关键节点插入人工确认，由人决定是否放行，常见于 Agent 执行危险命令前的审批弹窗。","plain":"在自动化流程的关键节点插入人工确认，由人决定放不放行。Agent 要执行危险命令前弹个审批窗，就是典型的人在回路。","analogy":"","why":"它被广泛当作 Agent 的安全底线，但高噪声下人的判断会迅速退化（Scale X 的 4 万次模拟显示平均漏掉三分之一威胁）。应把它当兜底而非唯一防线，主防线放在沙箱与上下文隔离。","alias":"HITL、人工审批、human in the loop"},"mcp":{"display":"MCP","title":"Model Context Protocol","kind":"wiki","path":"wiki/concepts/mcp.md","definition":"一套让大模型调用外部工具和数据源的开放协议：服务端声明有哪些工具可用，模型按需调用。","plain":"开放协议，让大模型能调外部工具和数据源。服务端先声明有哪些工具可用，模型需要时再调用。它解决的是「模型能调什么」。","analogy":"","why":"但它不记录「模型看过什么」。Cloudflare 指出的正是这个缺口——缺了观察记录，共享工作空间时就难判断是否越权。评估 Agent 权限时，MCP 只是第一层，还要补上资源可见性追踪。","alias":"模型上下文协议"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
 <script>
 (function(){
   var DICT = window.__TERMS__ || {};
