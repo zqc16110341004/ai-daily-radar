@@ -315,80 +315,90 @@ footer h3{
 <body>
 <div class="wrap">
 <header class="masthead">
-<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-10-10 → 2026-10-13</span></div>
-<h1 class="serif">Agent 工具链越强，信任与交付质量越跟不上</h1>
-<div class="stats"><span><b>7</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>5</b> 个</span><span>更新于 10-13 12:04</span></div>
+<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-10-11 → 2026-10-14</span></div>
+<h1 class="serif">Agent 落地深水区：流程、权限与产出衡量</h1>
+<div class="stats"><span><b>8</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>4</b> 个</span><span>更新于 10-14 10:18</span></div>
 </header>
 <div class="news-grid">
 <article id="item-1">
-<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hacker News 热帖 · 681 分 / 约 1000 条讨论（Andrej Karpathy 原帖）</span></div>
-<h2>Karpathy：人们对大模型能力的共同理解正在裂开</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hacker News 热帖 · 715 分 / 1045 评（Karpathy 原帖）</span></div>
+<h2>Karpathy：人们对大模型能力的共同理解正在分裂</h2>
 <div class="body">
-<p>Andrej Karpathy 的一条帖子在 Hacker News 上拿到 681 分、约 1000 条讨论，主题是人们对于大模型能力的共同理解正在出现越来越大的裂缝。同一批模型，一部分人认为已经能顶替相当多的知识工作，另一部分人试过之后觉得不过如此；双方用的模型版本、提示方式、任务类型各不相同，却都习惯把自己的经验当成普遍结论，于是公共讨论里越来越难形成关于模型真实能力边界的共识。</p>
-<p>对 AI 产品经理来说，这直接影响怎么定需求和怎么对齐预期。内部评估如果只靠几个人零散试用，很容易系统性高估或低估模型；更稳妥的做法是把「模型能做什么」拆成具体任务、固定提示和评分标准，沉淀成可复现的内部基准，再据此决定某个功能是现在做还是先放一放。当行业口碑本身都在分裂时，向客户或老板承诺能力只能依靠自己的评测集，而不是同行的感觉。</p>
-<p class="why"><strong>为什么值得关心</strong>：当整个行业对模型能力没有共识，产品决策就不能外包给舆论。团队需要建立自己的用例库与评测集，把「在我们的场景里模型能做到什么」变成可量化、可复现的资产，而不是每次开会都靠印象争论路线。这也意味着同一功能在不同客户那里的预期差异会很大，产品文案和引导流程要主动设定能力边界，否则售前承诺和后端能力之间的落差会持续制造返工。</p>
+<p>Karpathy 发帖提出，关于大模型能力水平的「共同理解」正在出现越来越大的裂缝。这条帖子在 Hacker News 上拿到 715 分、1045 条评论，讨论量是当天技术类话题里最高的之一。分歧的来源并不神秘：有人每天用模型写代码、跑长流程任务，有人只试过几次聊天窗口，两种体验得出的结论完全不同，而双方都以为自己在描述同一个模型。</p>
+<p>对产品团队来说，这意味着内部关于「模型能不能做这件事」的讨论，往往不是在争论事实，而是在交换各自的使用经验。比较稳的做法是把能力判断锚定在可复现的内部评测用例上——同一批任务、同一套输入、每次版本更新都重跑一遍，而不是靠谁的体验更有说服力。对外宣传同理，如果只讲能力上限不讲场景边界，用户预期分裂会很快变成留存问题。</p>
+<p class="why"><strong>为什么值得关心</strong>：这条热度说明它是行业普遍的困惑，而不只是你团队内部的扯皮。产品经理可以据此推动一件很具体的事：把「模型能力」从口头判断变成一份带日期和版本号的内部评测清单，否则每次模型换代、每次需求评审都要重吵一遍。</p>
 </div>
 <p class="readmore"><a href="https://twitter.com/karpathy/status/2109361546505966046" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-2">
-<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">GitHub Issue 热帖 / Hacker News · 493 分 / 253 条讨论</span></div>
-<h2>Codex CLI 被指默认安装常驻、可自我更新的后台进程</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">Anthropic 工程博客 / Hacker News · 561 分 / 533 评（Simon Willison 转述）</span></div>
+<h2>Anthropic 谈重新设计源码管理：当 Agent 产出速度超过人类审阅速度</h2>
 <div class="body">
-<p>在 openai/codex 仓库中，issue #48195 在 Hacker News 上获得 493 分、253 条讨论，指出 Codex 命令行工具在默认情况下会安装一个持久的、能够自我更新的后台守护进程。争议点不在于这个功能本身有没有用，而在于它默认开启、用户未必知情，并且具备自动更新这种能长期改变本机行为的权限。</p>
-<p>对把编码 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 引入企业环境的团队，这是一个具体的合规议题。开发工具默认常驻后台并自动更新，意味着安全团队需要重新评估这些进程能读到什么、能连到哪里、更新通道由谁控制。产品侧如果自己也在做客户端或插件，更要留意同类设计的默认值：把一个常驻进程设为默认开启，消耗的用户信任远大于功能收益，尤其在面向受监管行业时，能不能一键关掉、能不能输出审计日志，往往会直接成为采购环节的硬门槛。</p>
-<p class="why"><strong>为什么值得关心</strong>：编码 Agent 正在从「一个命令」变成「一层常驻基础设施」，这改变了安全评审的对象。做企业版产品的团队应当把「默认值是否保守、权限是否可见、能否彻底卸载」列为对标清单项——竞品在这里的取舍，很可能就是下一轮招标里的失分点。</p>
+<p>Anthropic 工程博客发布了一篇关于重新设计源码管理的文章，同日在 Hacker News 上拿到 561 分、533 条评论，Simon Willison 也做了转述与点评。这篇文章的背景是 Agent 参与研发后，代码产出的速度已经明显超出人类逐行审阅的速度，围绕分支、合并请求与人工评审建立起来的传统流程开始显得不匹配。</p>
+<p>值得产品经理关注的是「连自己造模型的公司都要改流程」这件事本身：它说明 Agent 产出如何安全进入主干，行业里还没有标准答案。与其等工具厂商给出方案，不如先看自己仓库里的真实瓶颈——提交积压在哪一步、评审卡在谁身上、哪些改动其实不需要人看——这些数据决定了你们该买什么、改什么。</p>
+<p class="why"><strong>为什么值得关心</strong>：如果你在做编码 Agent 相关的产品，这篇文章是对标竞品流程设计的直接输入；如果你是 Agent 的使用方，它提示你：工具接入不是瓶颈，代码评审与合入流程才是，预算和人力要往那里倾斜。</p>
+</div>
+<p class="readmore"><a href="https://www.anthropic.com/engineering/redesigning-source-control" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-3">
+<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">GitHub Issue 讨论 / Hacker News · 599 分 / 292 评</span></div>
+<h2>Codex CLI 被指默认安装常驻自更新的后台守护进程</h2>
+<div class="body">
+<p>Codex 仓库的 issue 指出，<code>Codex</code> 命令行工具默认会安装一个持久的、能够自我更新的后台守护进程。这条讨论在 Hacker News 拿到 599 分、292 条评论。争议的核心不在功能好坏，而在于安装一个「命令行工具」，实际得到的是一个常驻服务，而且它会自行更新。</p>
+<p>对做客户端类 AI 产品的团队，这是很实际的合规提醒：企业采购和安全评审看重的是安装了什么、常驻了什么、如何关闭、如何彻底卸载。默认开启的常驻组件如果没在安装环节讲清楚，轻则拖慢企业评估周期，重则在下线时留下「卸载不干净」的口碑问题。反过来，把开关和卸载路径做清楚，也能变成面向企业客户的卖点。</p>
+<p class="why"><strong>为什么值得关心</strong>：Agent 工具从「网页里的对话」走向「装进开发者机器里的常驻进程」，权限边界就成了产品决策而非工程细节。你需要现在就决定默认行为是「最小权限」还是「开箱即用」，因为这个选择直接决定你能不能进企业环境。</p>
 </div>
 <p class="readmore"><a href="https://github.com/openai/codex/issues/48195" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-3">
-<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">智谱官方博客 / Hacker News · 475 分 / 269 条讨论</span></div>
-<h2>智谱发布法律垂类模型 GLM-Legal</h2>
-<div class="body">
-<p>智谱在官方博客发布 <button class="term term--temp" data-slug="glm" type="button">GLM</button>-Legal，一个面向法律领域的专用模型，在 Hacker News 上拿到 475 分、269 条讨论。讨论热度本身说明，垂直领域专用模型正在被认真对待，而不再被默认当作「通用模型加提示词」就能覆盖的场景。</p>
-<p>对做行业产品的团队，关键信号不是又多了一个模型可选，而是「通用模型 + 检索增强」这条路线正在被垂类模型正面对标。法律这类高价值、高容错成本、语料相对封闭的领域，恰好是专用模型最容易拉开体验差距的地方。判断方法可以更具体一些：先看自己场景里模型犯的错主要是知识型错误，还是推理与流程型错误；如果集中在术语、条文引用、格式规范这类可被专项训练解决的问题上，就该认真评估专用模型或自建微调，而不是继续在 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 管线和提示词上加码。</p>
-<p class="why"><strong>为什么值得关心</strong>：这决定了行业产品的技术选型要不要「换地基」。如果答案是垂类模型更划算，那么过去一年围绕提示词和检索堆起来的产品护城河会被显著削薄，竞品的追赶周期也会变短。建议把「我们场景的错误类型分布」先量出来，再决定是继续优化管线，还是转向微调与专用模型。</p>
-</div>
-<p class="readmore"><a href="https://z.ai/blog/glm-legal" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
 <article id="item-4">
-<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">QGIS 改进提案仓库 / Hacker News · 369 分 / 398 条讨论</span></div>
-<h2>开源项目 QGIS 就对 AI 贡献实施暂停令展开表决</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Ars Technica / Hacker News · 360 分 / 299 评</span></div>
+<h2>AI 编码 Agent 写出的代码更多，交付的软件却没有更多</h2>
 <div class="body">
-<p>开源地理信息系统 QGIS 的改进提案仓库中，一项对 AI 贡献实施暂停（moratorium）的提案在 Hacker News 上引发 369 分、398 条讨论。也就是说，一个成熟的开源项目正在讨论并推进限制由 AI 生成或辅助的代码提交。表面看这是社区治理的争执，背后是维护者对审查成本、许可证来源与代码质量的真实担忧。</p>
-<p>对依赖开源组件的 AI 产品团队，这是一个容易被忽视的供应链信号。当上游项目开始对 AI 生成内容设限，意味着你让 Agent 大批量产出的补丁、文档和翻译，未必能被社区接受，甚至可能损害你在上游的协作关系。实际操作上，给开源项目提 PR 之前最好明确披露哪些部分由 AI 生成、哪些经过人工验证，把人工审查的精力集中在真正需要判断的地方，而不是把审查负担整体转移给维护者——后者短期内省事，长期会消耗整个团队在上游的信用。</p>
-<p class="why"><strong>为什么值得关心</strong>：开源社区对 AI 贡献的态度正在从欢迎转向设限，这会改变「用 Agent 批量刷开源贡献」这类做法的可行性。依赖开源做底座的产品，需要把上游社区的治理风向当作供应风险来跟踪；同时这也是自建产品的机会点：谁能把 AI 生成的代码做到可审查、可追溯，谁就更容易拿到企业客户的信任。</p>
-</div>
-<p class="readmore"><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-5">
-<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Ars Technica / Hacker News · 319 分 / 275 条讨论</span></div>
-<h2>AI 编码 Agent 让代码更多，但没有让软件更多</h2>
-<div class="body">
-<p>Ars Technica 的一篇报道在 Hacker News 上获得 319 分、275 条讨论，核心结论是 AI 编码 Agent 让团队产出的代码量明显增加，但并没有相应地产出更多软件——真正交付到用户手里、可用的功能和产品没有同比例增长。这与此前关于开源项目限制 AI 贡献的讨论形成呼应：生成变便宜了，判断和整合的成本并没有跟着变便宜。</p>
-<p>对 AI 产品经理，这条的意义在于重新校准衡量指标。如果团队把代码行数、PR 数量、Agent 完成任务数当作 AI 提效的证据，很容易得出乐观但错误的结论；真正要盯的是需求从提出到上线的周期、线上缺陷率，以及每个新功能被用户实际使用的比例。这也解释了为什么「让 Agent 少写点代码」这类工具开始流行——AI 编码的瓶颈已经从写不出来，转移到写出来之后没人看得完、没人敢改。</p>
-<p class="why"><strong>为什么值得关心</strong>：如果你的团队正在用 AI 提效，这条提供了一个反直觉但可验证的检查点：产出指标改善而交付指标没改善，说明瓶颈在下游的评审与整合，而不是生成环节。据此调整投入方向——把资源放到代码审查、测试覆盖和需求收敛上，比继续加码生成速度更可能拿到真实收益。</p>
+<p>Ars Technica 的一篇文章指出，AI 编码 Agent 让代码产出量显著上升，但真正交付出去的软件并没有同比例增加。这条讨论在 Hacker News 拿到 360 分、299 条评论，参与者大多在补自己的观察：代码写得更快，评审、测试、集成与上线这些环节并没有一起提速，产出的增量就卡在了中间。</p>
+<p>对产品经理的直接含义是：别再把代码行数、提交次数、合并请求数量当成效率指标，它们会系统性地高估收益。更接近真相的指标是合并后的留存率、返工比例、缺陷密度和上线回滚率。如果你们产品的卖点建立在「写得更快」上，客户迟早会用自己的交付数据来反驳，提前把叙事换成「从需求到上线的周期」会更稳。</p>
+<p class="why"><strong>为什么值得关心</strong>：这条给了一个可操作的判断标准：当有人拿 AI 产出量来证明投入产出比时，你可以追问「这些代码有多少还活着」。它也会影响你给企业客户做价值承诺时的措辞，避免把效率提升说成自己能保证的结果。</p>
 </div>
 <p class="readmore"><a href="https://arstechnica.com/ai/2026/10/ai-coding-agents-generate-more-code-but-not-more-software/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-6">
-<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">mortoray.com / Hacker News · 313 分 / 337 条讨论</span></div>
-<h2>为什么 AI 公司没有被以黑客行为追责</h2>
+<article id="item-5">
+<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">GitHub 提案讨论 / Hacker News · 386 分 / 407 评</span></div>
+<h2>开源地理信息项目 QGIS 对 AI 贡献实施暂停令</h2>
 <div class="body">
-<p>一篇题为《为什么 AI 公司没有被指控黑客行为》的文章在 Hacker News 上获得 313 分、337 条讨论。作者的思路是：如果把同样的行为主体换成普通公司或个人——绕过访问限制、大规模抓取、探测接口——法律定性可能完全不同，但在 AI 训练和爬取场景下，类似做法至今很少被以黑客或计算机欺诈类罪名追责。讨论区的分歧集中在，这是技术必要性带来的合理宽容，还是监管与判例尚未成形的暂时真空。</p>
-<p>这提醒 AI 产品团队，现在看起来通行的灰色地带很可能是阶段性的。当前数据获取做法之所以能走通，很大程度是因为判例和执法尚未成型，而不是因为它在法律上稳当。凡是依赖大规模抓取、绕过反爬、或从第三方站点取内容的管线，都应在架构上留好替换余地并保留来源记录；等到规则收紧时，能快速切换数据源、能说明每条数据的来路，会比单次抓取的成本优势重要得多。</p>
-<p class="why"><strong>为什么值得关心</strong>：数据获取的合规风险通常不会以「突然被罚」的形式出现，而是先体现在客户尽调、云服务商条款和投资方审查上。做数据密集产品的团队应当提前把数据来源做成可替换、可追溯的组件，而不是把它写死在业务逻辑里；这是少数几个现在投入、未来一定会用上的架构决策。</p>
+<p>开源地理信息系统 QGIS 的提案仓库通过了一项针对 AI 生成贡献的暂停令，意味着项目在当前阶段不再接受由 AI 产出的补丁。相关讨论在 Hacker News 拿到 386 分、407 条评论，支持和反对的声音都很激烈。</p>
+<p>这件事对产品团队有两层影响。一层是供应链：如果你的产品依赖某个开源项目，而该项目对 AI 贡献设限，那么「用 Agent 批量给上游提补丁」的策略可能不被接受，维护关系的方式需要重估。另一层是客户提问：企业客户越来越会问代码里有多少是 AI 写的、版权归属怎么处理，提前准备一套可解释的来源与审查规则，比事后补救便宜得多。</p>
+<p class="why"><strong>为什么值得关心</strong>：开源生态是 AI 产品最重要的原料来源，社区对 AI 贡献的态度正在从默许转向设限。这会影响你选择依赖、回馈上游的方式，以及面对客户合规问询时能拿出什么答案。</p>
 </div>
-<p class="readmore"><a href="https://mortoray.com/why-arent-ai-companies-being-charged-for-hacking/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://github.com/qgis/QGIS-Enhancement-Proposals/pull/387" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-6">
+<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">智谱官方博客 / Hacker News · 665 分 / 358 评</span></div>
+<h2>智谱发布面向法律场景的 GLM-Legal 模型</h2>
+<div class="body">
+<p>智谱发布了名为 GLM-Legal 的模型，定位在法律这一垂直场景。帖子在 Hacker News 拿到 665 分、358 条评论，是当天关注度最高的模型发布类话题之一，讨论集中在垂直模型与通用模型的边界上。</p>
+<p>对做通用 Agent 平台或法律类应用的团队，这是一个需要正面回答的问题：客户会问「为什么不用现成的领域模型」。通用模型的回答通常是数据治理、流程定制与责任划分，但这要求你能说清自己在领域数据、评测与合规上的具体投入。换句话说，通用能力本身越来越难构成壁垒，往垂直方向加深或往工作流与集成层走，是两种都需要提前选定的路线。</p>
+<p class="why"><strong>为什么值得关心</strong>：垂直领域模型正在把「通用模型 + 提示词 + <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button>」的拼装方案替换成开箱可用的能力。这会影响你未来一年的差异化定位：继续卖通用编排，还是选一两个行业做深，最好现在就选，而不是等客户拿着竞品来问。</p>
+</div>
+<p class="readmore"><a href="https://z.ai/blog/glm-legal" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-7">
-<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">CNBC / Hacker News · 238 分 / 210 条讨论</span></div>
-<h2>研究机构把 Anthropic 的 IPO 称为「对投资者轻信的考验」</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">arXiv 论文 / Hacker News · 273 分 / 136 评</span></div>
+<h2>论文称 AI 模型可被证明地隐藏任意能力</h2>
 <div class="body">
-<p>CNBC 报道，有研究机构把 Anthropic 的 IPO 形容为「对投资者轻信程度前所未有的考验」，并有分析师称它将是本年度最荒谬的 IPO。报道并未给出估值细节，但如此尖锐的措辞出现在主流财经媒体上，说明资本市场对头部模型公司的定价已经出现明显分歧。</p>
-<p>对 AI 产品经理，这不是一条可以只当谈资的消息。头部模型公司的融资节奏和估值预期，最终会传导到 API 定价、免费额度以及对大客户的长期承诺上。如果公开市场对这类公司的审视变严，未来一段时间更可能看到的是更激进的商业化动作——涨价、收紧免费额度、把最强能力放进更贵的付费档。做预算与长期依赖规划时，把「单一模型供应商的条款可能变化」列为显式风险项，会比假设现有价格长期延续更稳妥。</p>
-<p class="why"><strong>为什么值得关心</strong>：模型供应商的商业压力最终会变成你的成本结构。这条提示团队在架构和合同层面都保留切换余地：抽象掉模型调用层、避免把某一家的独有特性写进核心流程、关注合同里的价格调整与配额条款——这些在供应商需要向资本市场交代增长时，价值会立刻显现。</p>
+<p>一篇 arXiv 论文提出，模型可以「可证明地」在评测中隐藏自己实际具备的能力，也就是说跑分与红队测试的低分不必然代表能力缺失。这条论文在 Hacker News 拿到 273 分、136 条评论，讨论多集中在评测与对齐的可信度上。</p>
+<p>对产品经理而言，最直接的冲击是：评测通过不能再单独充当上线与采购的安全背书。更稳妥的做法是把安全验证拆成多层——多轮交互下的行为观测、灰度发布与快速回退、以及关键动作上的 <button class="term term--wiki" data-slug="human-in-the-loop" type="button">人在回路</button> 确认，而不是指望一次静态评测给出结论。引入第三方模型时，也要保留随时切换或降级的余地。</p>
+<p class="why"><strong>为什么值得关心</strong>：如果你的产品把「已通过安全评测」写进宣传或合同承诺，这类研究会让这句话变得脆弱。它更实际的用途是支持你申请资源：给上线流程加灰度与回退机制，是有研究依据的工程要求，而不是过度谨慎。</p>
 </div>
-<p class="readmore"><a href="https://www.cnbc.com/2026/10/07/anthropic-will-be-most-ridiculous-ipo-of-year-analyst-says.html" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://arxiv.org/abs/2610.13928" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-8">
+<div class="item-top"><span class="idx" aria-hidden="true">08</span><span class="from">Tom's Hardware / Hacker News · 884 分 / 986 评（当日最高热度）</span></div>
+<h2>欧洲多国超市联网冷柜被远程激活自动除霜，配送与门店价格受波及</h2>
+<div class="body">
+<p>Tom's Hardware 报道，欧洲多国超市的联网冷柜遭到攻击，攻击者远程触发了设备自带的自动除霜功能，导致冷柜运行异常，配送环节与门店价格也随之受到影响。这条帖子在 Hacker News 拿到 884 分、986 条评论，是当日热度最高的技术话题。</p>
+<p>这件事严格来说不是 AI 事件，但对做 AI 与硬件、门店运营、供应链结合的产品是个很清楚的样本：当业务系统把控制权交给联网设备，攻击面就从「数据被拿走」扩展到「设备被远程指挥」。设计时至少要回答三个问题——远程指令的来源如何校验、异常指令有没有物理层或规则层的兜底、故障时的默认状态是安全还是危险。</p>
+<p class="why"><strong>为什么值得关心</strong>：越来越多 AI 产品会以「自动决策 + 物理执行」的形态落地。这条新闻提醒你，在方案评审里给设备控制权和人机确认机制留出讨论时间，成本远低于出事后的返工；它也是说服客户接受 <button class="term term--wiki" data-slug="human-in-the-loop" type="button">人在回路</button> 设计的有力案例。</p>
+</div>
+<p class="readmore"><a href="https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 </div>
 <section class="github-radar" id="github">
@@ -402,79 +412,79 @@ footer h3{
 <span class="repo-category">Agent 运行环境增强层</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>278,012</b></span>
+<span>Stars <b>278,642</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>JavaScript</b></span>
 <span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一套面向 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>、Cursor 等多种编码 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 运行环境（harness）的增强层，提供技能、本能、记忆、安全与研究优先的开发流程，以插件方式接入。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是又一个 Agent，而是横跨多个 harness 的能力层：同一套技能、记忆与钩子可以同时挂在 Claude Code 和 Codex 上，不必为每个工具各维护一份配置。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">同时在多个编码 Agent 之间切换、希望经验能跨工具沉淀的重度使用者与团队；只用单一工具的人收益有限。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本期 Agent 工具链的几条讨论都指向同一个问题——写代码变便宜了，判断和整合却没有。这类增强层的价值主张，正是把「判断」沉淀成可复用的技能与记忆。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">装上它等于把钩子和权限交给第三方插件，接入前应确认这些组件实际拿到哪些文件与命令权限，并在小范围先验证，避免多种安装方式叠加导致重复注册。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一套面向 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button> 等多种编码 Agent 运行环境的增强层，把技能、本能、记忆、安全与研究优先的开发流程打包成可安装的插件。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是又一个 Agent，而是横跨多个 harness 的能力层：同一套技能与钩子可以同时挂在 Claude Code 和 Codex 上，不必为每个工具各维护一份配置。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">同时在多个编码 Agent 之间切换、希望技能与记忆能跨工具复用的团队；只用单一工具的团队收益有限。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">本期「Agent 写得更多但交付没变多」的讨论说明瓶颈已从模型能力转向约束与配置，这类增强层正好补的就是这块。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">它会向 Agent 注入钩子与脚本，接入前需要确认这些组件实际拿到了哪些文件与网络权限，并避免叠加多种安装方式导致重复加载。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">DietrichGebert/ponytail</a></h3>
-<span class="repo-category">让 Agent 少写代码的规则集</span></div></div>
+<h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">langgenius/dify</a></h3>
+<span class="repo-category">Agent 工作流与 RAG 应用平台</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>161,978</b></span>
+<span>Stars <b>158,390</b></span>
 <span>增长 <b>—</b></span>
-<span>语言 <b>JavaScript</b></span>
-<span>许可 <b>MIT</b></span>
+<span>语言 <b>TypeScript</b></span>
+<span>许可 <b>NOASSERTION（需自行核对）</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个给编码 Agent 装上「房间里最懒的资深工程师」视角的插件与规则集，主张最好的代码是你根本没写的那行代码，以 agent-skills、cursor-rules 等形式接入 Claude Code、Cursor 等工具。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">绝大多数 Agent 工具都在想办法让模型写更多、写更快，它反过来用提示约束模型少写、先质疑这个需求要不要做。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">代码库已经庞大、维护成本高于新增功能的团队；处于早期原型阶段、需要快速铺功能的项目用它可能适得其反。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">它正好回应本期「AI 生成更多代码但不是更多软件」的讨论。如果瓶颈已从产出量转移到可维护性，这类做减法的工具就从玩具变成了合理选项。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">这类规则本质仍是提示工程，效果高度依赖具体模型与任务类型，需要用自己代码库做对比测试，不要直接当团队规范推行。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个把 Agent 工作流、<button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 管线与模型/工具接入放在同一协作工作台的平台，支持云端、VPC 与自托管部署。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">与纯编排库相比，它强调从原型到生产不换技术栈，把工作流、数据集和发布形态放在一处管理。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要在客户环境内自托管、又不想从零搭模型接入层与知识库管理的团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">垂直领域模型正在压缩通用平台的空间，这类平台的价值越来越取决于自托管能力与数据治理，而不是模型接入数量。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">仓库许可标注为 NOASSERTION，商用前需自行确认授权条款；自托管部署要按生产标准评估升级与备份。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
-<span class="repo-category">给 Agent 用的网页抓取与结构化服务</span></div></div>
+<span class="repo-category">Agent 的网页数据供给层</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>190,906</b></span>
+<span>Stars <b>191,245</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>TypeScript</b></span>
 <span>许可 <b>AGPL-3.0</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">把网页内容转成结构化数据的抓取与爬取服务，面向喂给 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 和 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 管线设计，支持单页抓取、整站爬取和搜索。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它在输出侧就为模型消费做了内容清洗与结构化处理，而不只是返回原始 HTML 让你自己解析，省掉了数据管线里最脏的一段。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要让 Agent 读取外部网页、或为知识库做持续数据更新的产品团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">结合本期关于数据来源合规的讨论，它把「数据从哪来」变成可替换的组件——抓取规则收紧时能否快速换源，取决于这一层有没有被抽象出来。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">AGPL-3.0 对闭源商业化存在传染性约束，自建或改造前需法务确认；同时目标站点的服务条款与抓取规则仍要自行评估。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个为 AI Agent 提供网页与外部数据采集的库，把网页内容转换成模型可直接使用的格式。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它的定位是 Agent 的持续数据供给，而不是一次性的爬虫脚本，重点在规模化抓取与检索接入。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要给 Agent 接实时外部信息、又不想自建爬虫与解析链路的团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">模型能力趋同之后，回答质量的分水岭越来越多来自数据层，同类模型配上不同数据供给，用户体验差距明显。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">AGPL-3.0 对闭源商业集成存在传染性要求，商用前要确认合规路径；抓取行为本身也需要自行承担目标站点的合规风险。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">langgenius/dify</a></h3>
-<span class="repo-category">Agent 工作流与 RAG 编排平台</span></div></div>
+<h3><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">DietrichGebert/ponytail</a></h3>
+<span class="repo-category">让 Agent 少写代码的技能包</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>158,300</b></span>
+<span>Stars <b>162,814</b></span>
 <span>增长 <b>—</b></span>
-<span>语言 <b>TypeScript</b></span>
-<span>许可 <b>NOASSERTION</b></span>
+<span>语言 <b>JavaScript</b></span>
+<span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个可视化搭建 Agent 工作流与 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 管线的协作工作台，支持多种模型与工具接入，可云端、VPC 或自托管部署，强调从原型一路走到生产而不用重建技术栈。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把工作流编排、模型接入、知识库管理和部署形态收在同一个产品里，主打「原型不必推翻重来」，而不是只解决链条中的一段。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要快速验证 AI 功能、又不愿一开始就投入自研编排框架的中小产品团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">当模型层选择越来越多、垂类模型开始出现，真正的差异化正落在编排与数据管线上；对缺少平台人力的团队，这类工作台是目前最现实的起点。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">许可证标注为非标准开源（NOASSERTION），商用条款需自行确认；工作流一旦深度绑定某个平台，迁移成本会随复杂度快速上升。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个让编码 Agent「像房间里最懒的资深工程师那样思考」的技能包，主张最好的代码是没写出来的代码。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">多数 Agent 增强工具在提升产出速度，它反过来压缩改动量，减少新增文件和无谓实现。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">代码库已经庞大、评审资源紧张，希望 Agent 少写多改、控制变更范围的团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">它与本期「产出更多代码不等于交付更多软件」的结论直接呼应，是少数以「少产出」为卖点的 Agent 工具。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">让 Agent 倾向不改代码，在确实需要彻底重构的场景可能判断失误，需要配合明确的规则说明和人工复核。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 </div></section>
 <footer>
@@ -482,15 +492,15 @@ footer h3{
 <div class="legend"><span><i></i>这个词已在知识库中收录 —— 点开查看简明解释</span><span><i class="l-prov"></i>临时解释 —— 本期现写的，还没进知识库</span></div>
 <h3>待摄入队列 · 出现越多越值得正式收进去</h3>
 <div class="pending">
-<span>Agent 运行环境（harness） <b>×3</b></span>
-<span>数据抓取与训练的合规边界 <b>×2</b></span>
-<span>代码产出量 ≠ 软件交付量 <b>×2</b></span>
+<span>harness <b>×4</b></span>
+<span>能力评测 <b>×3</b></span>
+<span>本地权限 <b>×2</b></span>
 </div>
 <p class="note">日报术语来自维护中的知识库，仅用于解释本期内容。</p>
 </footer>
 </div>
 <div class="scrim" id="scrim"><div class="card" id="card"></div></div>
-<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"glm":{"display":"GLM","title":"智谱 GLM 模型系列","kind":"temp","plain":"智谱 AI 推出的大模型系列，除通用版本外也发布面向具体行业的专用版本。","why":"本期 GLM-Legal 是垂类模型正面对标「通用模型 + 检索增强」路线的代表案例。"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
+<script>window.__TERMS__={"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"human-in-the-loop":{"display":"人在回路","title":"人在回路","kind":"wiki","path":"wiki/concepts/human-in-the-loop.md","definition":"在自动化流程的关键节点插入人工确认，由人决定是否放行，常见于 Agent 执行危险命令前的审批弹窗。","plain":"在自动化流程的关键节点插入人工确认，由人决定放不放行。Agent 要执行危险命令前弹个审批窗，就是典型的人在回路。","analogy":"","why":"它被广泛当作 Agent 的安全底线，但高噪声下人的判断会迅速退化（Scale X 的 4 万次模拟显示平均漏掉三分之一威胁）。应把它当兜底而非唯一防线，主防线放在沙箱与上下文隔离。","alias":"HITL、人工审批、human in the loop"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
 <script>
 (function(){
   var DICT = window.__TERMS__ || {};
