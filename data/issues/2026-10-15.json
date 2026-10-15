@@ -1,0 +1,144 @@
+{
+  "headline": "AI 日报 · 今日速览（自动聚合，未做中文解读）",
+  "news": [
+    {
+      "source": "Hacker News 热帖 · 902分 / 998评",
+      "title": "Hackers activate automatic defrosting in supermarket fridges across Europe",
+      "url": "https://www.tomshardware.com/tech-industry/cyber-security/unprecedented-cyberattack-cripples-supermarket-fridges-across-europe-as-hackers-activate-automatic-defrosting-delivery-and-store-prices-also-impacted-by-incident",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Hackers activate automatic defrosting in supermarket fridges across Europe"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 866分 / 963评",
+      "title": "Redesigning source control at Anthropic",
+      "url": "https://www.anthropic.com/engineering/redesigning-source-control",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Redesigning source control at Anthropic"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 838分 / 449评",
+      "title": "Containment and monitoring failures are to blame for AI hacking reports: experts",
+      "url": "https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Containment and monitoring failures are to blame for AI hacking reports: experts"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 801分 / 207评",
+      "title": "Things to know when you get cancer – 2026 Edition",
+      "url": "https://jjmaxwell4.com/writing/things-to-know-when-you-get-cancer/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Things to know when you get cancer – 2026 Edition"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 760分 / 588评",
+      "title": "AI is a tool and using it well takes skill",
+      "url": "https://yyhh.org/blog/2026/10/ai-is-a-tool/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "AI is a tool and using it well takes skill"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 741分 / 425评",
+      "title": "11 year old unsoundness bugs found in Rust borrow checker",
+      "url": "https://github.com/rust-lang/rust/issues/164250",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "11 year old unsoundness bugs found in Rust borrow checker"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 670分 / 363评",
+      "title": "GLM-Legal",
+      "url": "https://z.ai/blog/glm-legal",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "GLM-Legal"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 643分 / 528评",
+      "title": "OpenAI engineer arrested in bugging of executive conference room",
+      "url": "https://sfstandard.com/2026/10/13/openai-engineer-arrested-alleged-bugging-executive-conference-room/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "OpenAI engineer arrested in bugging of executive conference room"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    }
+  ],
+  "repos": [
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "category": "GitHub 热门项目",
+      "stars": "253818",
+      "growth": "—",
+      "lang": "Python",
+      "license": "MIT",
+      "notes": {
+        "这是": "The agent that grows with you",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "morluto/rea",
+      "url": "https://github.com/morluto/rea",
+      "category": "GitHub 热门项目",
+      "stars": "243992",
+      "growth": "—",
+      "lang": "TypeScript",
+      "license": "MIT",
+      "notes": {
+        "这是": "Reverse engineer anything with agents, from app behavior down to native binaries.",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "category": "GitHub 热门项目",
+      "stars": "200970",
+      "growth": "—",
+      "lang": "C++",
+      "license": "Apache-2.0",
+      "notes": {
+        "这是": "An Open Source Machine Learning Framework for Everyone",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "category": "GitHub 热门项目",
+      "stars": "191597",
+      "growth": "—",
+      "lang": "TypeScript",
+      "license": "AGPL-3.0",
+      "notes": {
+        "这是": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    }
+  ],
+  "terms": {},
+  "pending": {},
+  "date": "2026-10-15",
+  "range": "2026-10-12 → 2026-10-15",
+  "updated": "10-15 10:13"
+}
