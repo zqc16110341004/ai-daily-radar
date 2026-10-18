@@ -315,80 +315,80 @@ footer h3{
 <body>
 <div class="wrap">
 <header class="masthead">
-<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-10-14 → 2026-10-17</span></div>
-<h1 class="serif">Agent 事故源于安全欠账，评估与算力账本同时收紧</h1>
-<div class="stats"><span><b>7</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>14</b> 个</span><span>更新于 10-17 09:44</span></div>
+<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-10-15 → 2026-10-18</span></div>
+<h1 class="serif">开源权重模型密集上新，Agent 工程化进入流程细节之争</h1>
+<div class="stats"><span><b>7</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>10</b> 个</span><span>更新于 10-18 09:40</span></div>
 </header>
 <div class="news-grid">
 <article id="item-1">
-<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">CSO Online / Hacker News 热帖 · 946 分 / 619 评</span></div>
-<h2>专家称「AI 黑客」报道的真正原因是隔离与监控缺位，而非 Agent 自行失控</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hacker News 热帖 · 914 分 / 475 评；Hugging Face 博客</span></div>
+<h2>Meta 发布 Muse Spark Open：开放权重的前沿多模态混合专家模型</h2>
 <div class="body">
-<p>针对近期多起「AI 自主发动攻击」的报道，多位安全专家在接受 CSO Online 采访时给出不同归因：问题不在模型自行越界，而在部署方跳过了基础的安全实践，也就是没有把 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 关进受限的运行环境（<button class="term term--temp" data-slug="containment" type="button">隔离（Containment）</button>），也没有做足够的运行监控与日志留存。专家认为，把这些事故写成「模型觉醒」会掩盖真正的工程缺陷。</p>
-<p>对 AI 产品经理来说，这里的可操作点是把「权限边界」和「可审计轨迹」当作产品功能来设计，而不是合规部门事后补的材料。哪些动作必须 <button class="term term--wiki" data-slug="human-in-the-loop" type="button">人在回路</button>、哪些工具调用必须留痕可回放、默认权限给到多宽，都是现在就能定下的需求项。对客户解释时，「我们的 Agent 跑在受限环境里、每一步有记录」比「我们的模型不会乱来」更有说服力。</p>
-<p class="why"><strong>为什么值得关心</strong>：它把 Agent 风险的讨论从「模型会不会作恶」拉回到「我们给了它多大权限、有没有监控」。这会直接影响企业客户的采购门槛：接下来安全评审会追问隔离方案与审计日志，建议把它写进下一版需求的必选清单，而不是等出事再补。</p>
+<p>Meta 研究博客放出 <button class="term term--temp" data-slug="muse-spark" type="button">Muse Spark Open</button>，Hugging Face 同步上线模型卡，将其定位为开放权重的前沿多模态模型，采用混合专家（<button class="term term--temp" data-slug="moe" type="button">MoE</button>）结构，可自托管、可定制、可横向扩容。同一天前后，苹果机器学习研究博客发布了在 Mac Studio 上用 <button class="term term--temp" data-slug="mlx" type="button">MLX</button> 做分布式推理的文章，标题直接落在「在 Mac Studio 上运行 Muse Spark Open」，Hacker News 上相关讨论合计接近千分。</p>
+<p>对做产品的团队，这条的关键词是「开放权重」与「多模态」同时成立：过去多模态能力基本只能从闭源 API 买，现在多了一条自托管路径，端侧或私有云部署的成本模型需要重新算一遍。但开放权重不等于可商用，许可证条款、单卡显存需求、以及 MoE 结构带来的推理调度复杂度，都得在实际压测后才能下结论。建议把「模型可替换」当成架构要求写进需求文档，而不是等下一次涨价再临时改。</p>
+<p class="why"><strong>为什么值得关心</strong>：如果你的多模态功能现在完全绑在一家闭源 API 上，Muse Spark Open 这类模型给了你一个议价与降本的备选项；但别只看榜单，先确认许可证是否允许商用、推理成本能否覆盖你的调用量，再决定是否在路线图里开一条自托管分支。</p>
 </div>
-<p class="readmore"><a href="https://www.csoonline.com/article/4234854/ai-agents-arent-going-rogue-frontier-labs-are-skipping-security-basics.html" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://huggingface.co/blog/meta-muse-spark-open" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-2">
-<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">Mercor 研究报告 / Hacker News 热帖 · 399 分 / 337 评</span></div>
-<h2>研究称美国约九成工作时间花在 AI 基准覆盖不足的任务上</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">Hacker News 热帖 · 699 分 / 588 评；OpenRouter · 511 分</span></div>
+<h2>DeepSeek V4.1 Flash 1017 上架：快速档模型同时出现在模型库与聚合 API</h2>
 <div class="body">
-<p>Mercor 的劳动指数研究把公开 AI 基准与真实职业任务做了对照，结论是约 90% 的美国工作时间花在基准覆盖不足的任务上。对应的 <button class="term term--temp" data-slug="benchmark-map" type="button">基准覆盖地图</button> 展示了现有评测集与实际工作分布的错位，讨论区大量反馈集中在「榜单分数高但实际不好用」这一常见体验上。</p>
-<p>这对评测体系的搭建是直接的提醒：如果内部 eval 只覆盖了榜单擅长的那一小块，上线后的落差几乎是必然的。更现实的做法是把评测重心搬到自家业务流程的真实任务分布上，并单独记录「基准覆盖不到」的失败类型，比如跨系统的长流程、含模糊指令的沟通类任务、需要判断取舍的场景。demo 惊艳与留存不佳之间的鸿沟，大多就藏在这部分。</p>
-<p class="why"><strong>为什么值得关心</strong>：它给了「为什么榜单越来越强、用户却还在抱怨」一个可引用的解释。产品团队可以据此调整验收标准：少追通用榜单排名，多建自家任务集的回归测试，否则选型决策会被 benchmark 误导。</p>
+<p>DeepSeek 的新版本 V4.1 Flash 1017 出现在 Hugging Face 模型库，同时在 <button class="term term--temp" data-slug="openrouter" type="button">OpenRouter</button> 上架，Hacker News 上分别形成 699 分 / 588 评与 511 分 / 5 评两个帖子。从命名看这是 Flash 系列，主打速度与成本而不是极限能力，两个入口几乎同步开放，意味着发布即接入聚合渠道已经是常规动作。</p>
+<p>对产品经理的直接影响是模型选型的窗口变短了：你上周刚做完的性价比测算，这周可能就被一个新 Flash 版本推翻。更务实的做法是把模型调用收敛到一个内部网关，用同一套提示词和评测集横向跑分，把「换模型」变成一次配置修改而不是一次重构。同时要留意 Flash 定位意味着它更适合高频、可容错的场景，涉及长链推理或高风险决策时仍应保留强模型的降级路径。</p>
+<p class="why"><strong>为什么值得关心</strong>：聚合平台同步上架说明模型分发已经标准化，竞争对手可以在几小时内把新模型接进产品。你的护城河不可能建立在「用了哪个模型」上，只能建立在数据、工作流和评测体系上；这也是把模型选择（<button class="term term--wiki" data-slug="model-selection" type="button">model-selection</button>）从一次决策变成一个持续机制的理由。</p>
+</div>
+<p class="readmore"><a href="https://huggingface.co/blog/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-3">
+<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Hacker News 热帖 · 598 分 / 540 评；Mercor 劳动指数研究</span></div>
+<h2>研究称美国 90% 的工作时间花在 AI 基准覆盖不佳的任务上</h2>
+<div class="body">
+<p>Mercor 的劳动指数研究把真实工作任务与主流 AI 基准做了对照，结论是美国工作时间里约 90% 花在那些基准覆盖得并不好的任务上，帖子在 Hacker News 上引发 540 条讨论。争论集中在两点：基准考的是不是真实工作，以及如果真实工作结构本身难以被题目化，那么分数还能代表什么。</p>
+<p>这条对做 AI 产品的人几乎是直球：榜单涨分和你的用户满意度之间没有稳定映射。产品侧更该做的是自建一套贴着业务工作流的评测集，用真实任务、真实输入、真实验收标准来打分，而不是引用公开榜单做发布会 PPT。更进一步，如果九成工作时间落在基准之外，那恰恰是差异化机会所在——这些没人愿意做评测的脏活，往往才是客户愿意付钱的地方。</p>
+<p class="why"><strong>为什么值得关心</strong>：它直接质疑了「模型分数提升就能带来产品体验提升」这条默认假设。如果你正在用公开基准给老板汇报能力进展，或者据此决定是否上线某功能，这个结论提示你要换成任务级验收，否则很容易在真实用户面前翻车。</p>
 </div>
 <p class="readmore"><a href="https://www.mercor.com/research/labor-index/benchmark-map/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-3">
-<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Meta 研究博客 / 苹果机器学习研究博客 / Hacker News 热帖 · 901 分、266 分</span></div>
-<h2>Meta 发布 Muse Spark Open，苹果展示用 MLX 在 Mac Studio 上分布式推理</h2>
-<div class="body">
-<p>Meta 研究团队发布了 <button class="term term--wiki" data-slug="open-weights" type="button">开放权重</button> 方向的 <button class="term term--temp" data-slug="muse-spark" type="button">Muse Spark</button> 模型，在 Hacker News 上拿到 901 分、467 条讨论。几乎同时，苹果机器学习研究发布文章，展示用 MLX 框架在 Mac Studio 上做分布式推理来跑这一模型，讨论热度也不低。两条消息放在一起看，指向的是同一件事：开源权重模型加上桌面级硬件的集群推理，正在从实验玩具变成可以认真评估的部署选项。</p>
-<p>对产品团队的意义在于架构选择变多了，但账要重新算。数据敏感或者调用量稳定的场景，本地推理能省下持续的 token 支出并规避数据出域；但 Mac Studio 集群的购置与运维成本、并发吞吐上限、模型更新节奏，都必须和按量付费的云 API 摆在同一张表里比较。不要因为「能在本地跑」就默认「该在本地跑」，先用真实流量压一遍再决定。</p>
-<p class="why"><strong>为什么值得关心</strong>：推理成本与数据合规是 AI 产品最贵的两项约束，这组消息同时松动了它们。建议在下一轮选型时补上「私有硬件部署」这一列选项，尤其是面向金融、医疗、政企的产品线。</p>
-</div>
-<p class="readmore"><a href="https://research.meta.ai/blog/muse-spark-open" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
 <article id="item-4">
-<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Liquid AI 官方博客 / Hacker News 热帖 · 288 分 / 81 评</span></div>
-<h2>Liquid AI 发布 LFM2.5-24B-A2B，主打设备端快速运行的 Agent</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Hacker News 热帖 · 456 分 / 450 评；Anthropic 官方博客</span></div>
+<h2>Claude Code 团队怎么做代码审查：流程设计比模型能力更关键</h2>
 <div class="body">
-<p>Liquid AI 发布 LFM2.5-24B-A2B，官方定位是给设备端运行的 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 提供足够快的推理速度。从命名看，24B 与 A2B 的组合通常意味着总参数在 240 亿量级、每次推理激活约 20 亿的稀疏结构，从而把算力开销压到终端设备可以承受的区间。</p>
-<p>设备端 Agent 带来的好处是延迟低、数据不出设备，代价则是能力上限、工具调用的稳定性与上下文长度都会打折。判断标准不该是参数够不够大，而是「这个功能在离线或弱网状态下能不能跑通」。如果产品里存在大量格式化抽取、意图路由、字段补全这类窄任务，把它们下沉到端侧小模型、把复杂推理留给云端，是当下更现实的 <button class="term term--wiki" data-slug="model-selection" type="button">model-selection</button> 结构。</p>
-<p class="why"><strong>为什么值得关心</strong>：它把「端侧还是云端」从技术选型问题变成产品分层的设计问题。对做移动端和嵌入式场景的团队，这意味着可以在不牺牲隐私的前提下做出可用的智能功能，也意味着需要重新设计一套降级与切换策略。</p>
+<p>Anthropic 的 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button> 团队公开了他们内部做代码审查的做法，帖子在 Hacker News 上拿到 456 分、450 条评论。讨论的重心不是某个模型多聪明，而是团队如何把审查切成可以由 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 承接的环节，以及人在哪一步介入、哪些判断必须留给人。</p>
+<p>这是把「<button class="term term--wiki" data-slug="human-in-the-loop" type="button">人在回路</button>」从口号变成流程图的一个样本。做 Agent 类产品的团队可以直接抄它的结构思路：先定义可验证的产出（能跑通的代码、能复现的报错），再把 agent 放在生成和初审环节，把不可逆操作留给人工确认。反过来，如果你的产品还在用「一键生成全部」做卖点，用户第一次遇到不可回滚的错误就会流失，而这类流程设计的成本远低于换一个更强的模型。</p>
+<p class="why"><strong>为什么值得关心</strong>：它给出的不是能力参数，而是产品交互与责任边界的设计范式。任何做 Agent 的产品经理都会遇到同一个问题：哪些步骤自动、哪些步骤要人点确认。这篇文章提供了一个来自一线团队的参考答案，也顺带说明竞品在把 Agent 嵌入研发流程这件事上已经走到流程层。</p>
 </div>
-<p class="readmore"><a href="https://www.liquid.ai/blog/lfm2-5-24b-a2b" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-5">
-<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Simon Willison 博客 / GNOME 开发者博客 / Hacker News 热帖 · 509 分</span></div>
-<h2>AI 正在批量反编译游戏与硬件固件，逆向工程的门槛被显著拉低</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Simon Willison 博客引用 / Hacker News · 286 分；金融时报报道</span></div>
+<h2>Anthropic 向投资人披露季度收入近 168 亿美元，此前却拿到最高垃圾级信用评级</h2>
 <div class="body">
-<p>Simon Willison 撰文讨论 AI 正在大规模反编译游戏，他的评价是既了不起又令人不安。同期 GNOME 开发者博客记录了用 AI 辅助逆向工程硬件的尝试，另有一条热帖显示 AOSP 的源码发布严重滞后，开发者干脆反汇编系统库来定位和上报 bug。几条线索指向同一现象：<button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 配合反汇编工具，正在把过去需要多年专门训练才能做的逆向工作平民化。</p>
-<p>对做开发者工具、安全与兼容层的团队，这是一块突然变得廉价的新能力；对闭源商业软件，则是许可与合规上的新风险敞口。产品层面的决策要提前做：我们要不要给自己的 Agent 配这套能力，客户会拿它来做什么，用户协议里是否需要明确边界。技术能力普及的速度通常快过规则制定，这一段空窗期就是风险区间。</p>
-<p class="why"><strong>为什么值得关心</strong>：它提醒一件事：Agent 的能力边界正在从「写代码」扩展到「理解并拆解别人的二进制与固件」。如果你的产品依赖闭源组件或专有格式，需要重新评估护城河的深度；如果你做安全或兼容工具，这是一条明确的能力升级路径。</p>
-</div>
-<p class="readmore"><a href="https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-6">
-<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Startup Fortune / Hacker News 热帖 · 383 分 / 277 评</span></div>
-<h2>报道称银行正试图转手刚承销的 AI 数据中心债务</h2>
-<div class="body">
-<p>Startup Fortune 报道，此前为 AI 数据中心扩张提供融资的银行，现在正试图把这部分债务转手出去。这条消息在 Hacker News 上引发近三百条讨论，核心争议在于：AI 算力的资本开支是否已经跑在了实际收入前面。</p>
-<p>对产品团队的直接含义是成本假设需要加一条风险条款。做三年期的成本模型时，不要默认「单位 token 价格只会单边下降」或「算力随时可得」，融资结构的变化会以价格波动、供应紧张甚至供应商策略调整的形式传导下来。把供应商集中度、合约期限与可替代方案列进风险评估，比赌一个持续降价的曲线更稳妥。</p>
-<p class="why"><strong>为什么值得关心</strong>：推理成本是 AI 产品毛利的主要变量，而这条新闻说明底层的资本结构正在被重新定价。它会先影响云厂商的定价与配额策略，再影响你的成本表，提前做多供应商与自建方案的预案是有必要的。</p>
-</div>
-<p class="readmore"><a href="https://startupfortune.com/banks-are-now-trying-to-offload-the-ai-data-center-debt-they-just-underwrote/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-7">
-<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Simon Willison 博客转述媒体报道</span></div>
-<h2>报道称 Anthropic 在 IPO 前向投资人披露季度收入增至 168 亿美元</h2>
-<div class="body">
-<p>据 Simon Willison 转述的媒体报道，<button class="term term--wiki" data-slug="claude" type="button">Claude AI</button> 背后的 Anthropic 在 IPO 前向投资人披露，季度收入增至 168 亿美元、环比增长接近 50%。这类披露通常出现在上市前的路演阶段，数字本身来自媒体转述而非官方财报，具体口径仍需谨慎对待。</p>
-<p>但方向值得注意：企业侧编码类 Agent 的付费意愿已经被真金白银验证过一轮，这会抬高整个 Agent 工具链的定价天花板。对国内团队来说，可借鉴的不是复刻一个通用助手，而是看它为什么能在编码这个具体工作流里收到钱——任务边界清晰、结果可验证、失败成本可控。把这三点套到自己的场景上，比追模型能力更有用。</p>
-<p class="why"><strong>为什么值得关心</strong>：这是判断 Agent 商业化成熟度的关键信号：不是用户愿不愿意试，而是企业愿不愿意按季度持续付费。如果你的产品还在免费试用阶段，可以据此设定更明确的付费触发点，比如可量化的工时节省或缺陷率下降。</p>
+<p>据金融时报报道并经 Simon Willison 转述，Anthropic 在 IPO 前向投资人披露季度收入增长近 50%，达到约 168 亿美元。同一时期另有一条消息被广泛讨论：公司在 6 月被授予了最高一档的垃圾级信用评级，那篇帖子在 Hacker News 上 286 分。</p>
+<p>收入曲线和信用评级背道而驰，通常指向同一件事：增长靠巨额算力投入换来，现金流结构与资产负债表并不像营收数字那样好看。对把核心功能建在单一模型供应商上的团队，这不是幸灾乐祸的素材，而是供应商风险清单上的一项。实际操作上可以做的很具体：在网关层保留第二家供应商、把关键提示词与评测集做成供应商无关的资产、并在合同里确认模型下线与价格调整的通知期。</p>
+<p class="why"><strong>为什么值得关心</strong>：供应商的商业健康度会以三种方式传导到你的产品上——涨价、限流、模型下线。这条信息提示你，在供应商还在高速增长期就开始做多供应商预案，成本远低于在突发涨价或供应收紧时被动迁移。</p>
 </div>
 <p class="readmore"><a href="https://simonwillison.net/2026/Oct/15/anthropic-tells-investors/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-6">
+<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Hacker News 热帖 · 348 分 / 108 评；Krea 官方</span></div>
+<h2>Krea 3 发布：一款为「规模化编辑」而建的图像模型</h2>
+<div class="body">
+<p>Krea 发布第三代图像模型 Krea 3，官方定位不是生成更漂亮的单张图，而是支持规模化编辑，帖子在 Hacker News 上获得 348 分、108 条讨论。这类定位通常意味着模型更关注在已有图像上做局部修改时的稳定性与一致性，而不是从零出图的可看度。</p>
+<p>对做内容、电商、设计工具的产品经理，这是个方向性信号：图像能力的竞争重心正在从「生成一次」转向「改一百次还能保持一致」。如果你的产品只有文生图入口，用户拿到结果后无法继续微调，那么工作流就会在第一次不满意时断裂。值得评估的是把编辑做成核心交互，围绕批量、可控、可回滚来设计，而不是继续在提示词输入框上做文章。</p>
+<p class="why"><strong>为什么值得关心</strong>：它提示图像类功能的竞争点已经从出图质量转向编辑一致性和批量效率。如果你在做设计或电商素材工具，竞品正在把「可编辑」当成新的护城河，而这一层能力决定了用户会不会把工作流真正搬进你的产品。</p>
+</div>
+<p class="readmore"><a href="https://www.krea.ai/krea-3" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-7">
+<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Simon Willison 博客 / Hacker News · 251 分；GNOME 博客</span></div>
+<h2>AI 正在大规模反编译游戏与硬件：逆向工程成了 Agent 落地最快的场景之一</h2>
+<div class="body">
+<p>Simon Willison 转述了一篇讨论「AI 正在大规模反编译游戏」的文章，作者的态度是既惊叹又担忧；同期 GNOME 博客上有一篇用 AI 逆向硬件的实践记录，Hacker News 上 251 分、248 条讨论。两件事指向同一个现象：把二进制或硬件行为作为输入、由 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 反复试探并解释结果，正在成为一种可复制的工作方式。</p>
+<p>这类场景之所以先跑通，是因为它有清晰的验证信号——代码能不能编译、设备能不能响应，对错不用人来主观判断。做 AI 产品的团队可以从中得到一个选题原则：优先找那些结果可自动验证的垂直场景，而不是需要大量主观评审的开放任务。同时要注意法律与合规边界，游戏反编译天然处在版权灰区，这类能力做企业内部工具和做对外产品，风险完全不是一个量级。</p>
+<p class="why"><strong>为什么值得关心</strong>：它展示了一类「验证信号明确」的场景如何被 Agent 快速吃下，也提醒你评估自己的产品是否具备同样的可验证性。如果你的功能没法自动判断对错，就需要额外投入评测与人工审核成本，这会直接改变单次调用的经济模型。</p>
+</div>
+<p class="readmore"><a href="https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 </div>
 <section class="github-radar" id="github">
@@ -399,82 +399,82 @@ footer h3{
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">morluto/rea</a></h3>
-<span class="repo-category">逆向工程 Agent 工具集</span></div></div>
+<span class="repo-category">Agent 驱动的逆向工程工具</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>291,633</b></span>
-<span>增长 <b>—</b></span>
+<span>Stars <b>308,180</b></span>
+<span>增长 <b>本期建立基线，明日起显示增量</b></span>
 <span>语言 <b>TypeScript</b></span>
 <span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个用 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 做逆向工程的命令行工具，范围从应用层行为分析一直下探到原生二进制，标签里同时出现 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button> 与 <button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>，说明它把主流编码 Agent 当作执行后端。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">多数 Agent 工具解决的是「怎么写代码」，它解决的是「怎么弄清一个已经编译好的东西在做什么」，把反汇编、动态跟踪这类重手工的活交给了 Agent 编排。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">做安全研究、兼容层、遗留系统迁移或恶意样本分析的团队；普通业务产品团队短期用不上。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">它与本期「AI 批量反编译游戏与固件」的热帖是同一现象的工程侧落地，值得产品经理知道这类能力已经工具化、门槛有多低。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">逆向他人软件在多数司法辖区受许可协议与法律限制，MIT 许可证只管代码本身，不管你怎么用；接入前需要有明确的使用边界与审批流程。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个用 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 做逆向工程的命令行工具，覆盖从应用行为分析一直到原生二进制层面，README 强调可配合 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button> 等编码 Agent 使用。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把逆向工程当成一个有明确验证信号的 Agent 任务来做，而不是给一套静态分析工具加个聊天框；技能化（agent-skills）的组织方式让同一套流程可以被不同 Agent 复用。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要理解闭源软件行为、做兼容层或安全审计的团队；没有明确分析对象、只想试试 Agent 能力的团队收益有限。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">它和今天关于「AI 正在大规模反编译游戏」的讨论是同一股潮流的两面：验证信号明确的任务正在被 Agent 率先吃掉，而这个仓库是这股潮流里最直接可用的工具。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">逆向工程在很多司法辖区涉及版权与授权灰区，用在自有软件、授权测试或安全研究时风险可控，做成对外产品前务必先过法务。星标数异常高，实际代码质量仍需自行审查。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">langgenius/dify</a></h3>
-<span class="repo-category">可自托管的 Agentic 工作流与 RAG 平台</span></div></div>
+<h3><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">Graphify-Labs/graphify</a></h3>
+<span class="repo-category">代码库转可查询知识图谱</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>158,670</b></span>
-<span>增长 <b>—</b></span>
+<span>Stars <b>127,807</b></span>
+<span>增长 <b>本期建立基线，明日起显示增量</b></span>
 <span>语言 <b>Python</b></span>
-<span>许可 <b>NOASSERTION</b></span>
+<span>许可 <b>Apache-2.0</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个把 Agent 编排、<button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 管道、模型与工具接入放在同一个协作工作台里的平台，支持云端、私有网络和完全自托管部署，目标是从原型直接走到生产而不用重搭一套栈。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把可视化编排和可部署的服务端放在同一个产品里，而不是只做拖拽画布或只做代码框架，团队里产品与工程可以共用一份工作流定义。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要在企业内部落地多个 Agent 场景、又有数据不出内网要求的中型团队，尤其适合把原型快速推到试点的那一步。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">当 Agent 安全讨论转向隔离与监控，自托管部署本身就是一种风险控制手段；它的私有化能力是本期安全主线的现实解法之一。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">仓库许可证在 GitHub 上显示为 NOASSERTION，商用前务必核对实际授权条款与附加限制；自托管的运维、升级与权限体系也需要有人长期负责。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个把代码库连同文档、SQL 结构、配置文件和 PDF 一起转成可查询知识图谱的工具，以技能形式接入 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、Cursor、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button> 等命令行 Agent。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它明确采用本地确定性的语法树解析，每条边都有解释，并且不使用向量库——这和主流的 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 向量检索路线是两套思路。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">代码规模大、需要让 Agent 稳定回答「这个函数被谁调用」这类结构性问题，且对可解释性有要求的团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 在真实代码库里答错，很多时候不是模型不行而是检索层不可靠。确定性图谱路线给了产品经理一个替代选项：与其调向量库参数，不如换一种检索结构。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">不使用向量库意味着语义模糊查询能力较弱，适合结构化问题；解析大型单体仓库的构建耗时与内存占用需要先做小规模验证。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">langgenius/dify</a></h3>
+<span class="repo-category">Agentic 工作流与 RAG 平台</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>158,729</b></span>
+<span>增长 <b>本期建立基线，明日起显示增量</b></span>
+<span>语言 <b>Python</b></span>
+<span>许可 <b>NOASSERTION（自定义许可，需自行确认）</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">一个可视化搭建 Agentic 工作流和 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 管线的协作平台，支持多个模型与工具，可部署在云端、私有 VPC 或自托管环境。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把原型和生产放在同一个工作台上，强调不必在进入生产时重建整套技术栈——这对从演示走向交付的团队是核心差异。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要在私有环境里交付 AI 应用、又不想从零写编排层的企业团队或解决方案商。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">模型侧每周都在换代，产品侧的固定成本反而集中在编排、评测和部署这几个环节上，这类平台正是在承接这部分成本。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">许可证不是标准的 MIT/Apache，商业化分发前必须逐条确认条款；自托管部署的运维工作量也常被低估。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
-<span class="repo-category">为 Agent 提供网页数据的抓取与解析层</span></div></div>
+<span class="repo-category">为 Agent 提供网页数据</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>192,222</b></span>
-<span>增长 <b>—</b></span>
+<span>Stars <b>192,508</b></span>
+<span>增长 <b>本期建立基线，明日起显示增量</b></span>
 <span>语言 <b>TypeScript</b></span>
 <span>许可 <b>AGPL-3.0</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一套面向 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 的网页抓取与结构化工具，把页面抓下来并整理成模型可以直接消费的格式，覆盖爬取、搜索与内容提取。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不只是爬虫，重点在处理动态渲染、反爬与格式清洗这一层脏活，输出的是给模型用的干净上下文，而不是原始 HTML。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要实时或准实时外部信息的 Agent 产品，比如竞品监控、招投标信息聚合、知识库增量更新这类场景。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 的能力上限很大程度取决于它能拿到什么数据，网页仍是覆盖面最广的外部信息源，这一层做不好，后面的推理再强也无济于事。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">AGPL-3.0 对以服务形式对外提供有传染性要求，商业分发前需法务确认；同时要注意目标站点的 robots 协议与数据合规。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个面向 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 的网页抓取与数据获取工具，把网页内容整理成适合模型消费的结构化数据，也提供搜索能力。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是通用爬虫框架，而是围绕「喂给模型」这一目标做清洗和切分，省掉了大量脏数据处理工作。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要让 Agent 实时接入外部信息的产品，比如竞品监控、销售线索、行业资讯聚合这类场景。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">当模型能力逐渐同质化，数据获取与清洗的实际质量往往决定最终体验，这类基础设施值得放进技术选型清单。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">AGPL-3.0 对闭源商用有传染性约束，做成对外服务前必须确认合规路径；另外目标站点的反爬策略与版权边界需逐站评估。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">ollama/ollama</a></h3>
-<span class="repo-category">本地模型运行与部署工具</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>183,498</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>Go</b></span>
-<span>许可 <b>MIT</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个把开源权重模型跑在本地或自有服务器上的运行时，官方描述里点名支持 <button class="term term--wiki" data-slug="kimi" type="button">Moonshot AI</button>、GLM、MiniMax、<button class="term term--wiki" data-slug="deepseek" type="button">DeepSeek V4</button>、gpt-oss、Qwen、<button class="term term--wiki" data-slug="gemma" type="button">Google Gemma</button> 等一系列模型。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把模型下载、量化与推理服务收敛成一条命令，屏蔽了各家模型格式与推理后端的差异，是开源模型生态事实上的入口。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要在内部做模型对比、验证私有化可行性，或给原型快速接一个可替换后端的团队。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">配合本期开源模型与桌面集群推理的消息，它让「本地跑一遍看看」从一周的工程变成半小时的验证，是评估私有化方案的最低成本起点。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">本地推理的吞吐与并发远低于云服务，开发机跑通不等于生产可用；模型许可证各不相同，商用前要逐个核对。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/ollama/ollama" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 </div></section>
 <footer>
@@ -482,15 +482,15 @@ footer h3{
 <div class="legend"><span><i></i>这个词已在知识库中收录 —— 点开查看简明解释</span><span><i class="l-prov"></i>临时解释 —— 本期现写的，还没进知识库</span></div>
 <h3>待摄入队列 · 出现越多越值得正式收进去</h3>
 <div class="pending">
-<span>Agent 安全边界 <b>×3</b></span>
-<span>端侧模型 <b>×2</b></span>
-<span>开源权重部署 <b>×3</b></span>
+<span>开放权重模型 <b>×5</b></span>
+<span>混合专家 MoE <b>×4</b></span>
+<span>Agent 代码审查 <b>×3</b></span>
 </div>
 <p class="note">日报术语来自维护中的知识库，仅用于解释本期内容。</p>
 </footer>
 </div>
 <div class="scrim" id="scrim"><div class="card" id="card"></div></div>
-<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"benchmark-map":{"display":"基准覆盖地图","title":"把公开 AI 基准映射到真实工作任务的对照表","kind":"temp","plain":"Mercor 劳动指数的做法：把现有 AI 评测集与真实职业任务对齐，看哪些工作时间被基准覆盖、哪些完全没有。","why":"它解释了榜单分数与用户实际体验之间的落差从何而来"},"claude":{"display":"Claude AI","title":"Claude","kind":"wiki","path":"wiki/entities/claude.md","definition":"由 Anthropic 公司开发的大语言模型系列。课程中作为 AI 辅助用户研究的首选工具之一，与飞书（feishu）配合使用。","plain":"","analogy":"","why":"","alias":"Claude、Claude AI"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"containment":{"display":"隔离（Containment）","title":"限制 Agent 可触达的系统范围","kind":"temp","plain":"把 Agent 运行在受限环境里，限定它能访问的文件、网络与工具，并配合日志监控，防止越权操作。","why":"本期安全讨论的核心结论是隔离与监控缺位，而非模型自主作恶"},"deepseek":{"display":"DeepSeek V4","title":"DeepSeek","kind":"wiki","path":"wiki/entities/deepseek.md","definition":"国内独角兽 AI 公司，自研基底模型。开源代表，全系 100 万上下文。","plain":"","analogy":"","why":"","alias":"DeepSeek、DeepSeek V4"},"gemma":{"display":"Google Gemma","title":"Gemma","kind":"wiki","path":"wiki/entities/gemma.md","definition":"Google 推出的开源大语言模型，因可本地部署、Token 限制低，适合特定垂直场景。Day1 中作为\"模型选择 = 产品策略\"的典型例证。","plain":"","analogy":"","why":"","alias":"Gemma、Google Gemma"},"human-in-the-loop":{"display":"人在回路","title":"人在回路","kind":"wiki","path":"wiki/concepts/human-in-the-loop.md","definition":"在自动化流程的关键节点插入人工确认，由人决定是否放行，常见于 Agent 执行危险命令前的审批弹窗。","plain":"在自动化流程的关键节点插入人工确认，由人决定放不放行。Agent 要执行危险命令前弹个审批窗，就是典型的人在回路。","analogy":"","why":"它被广泛当作 Agent 的安全底线，但高噪声下人的判断会迅速退化（Scale X 的 4 万次模拟显示平均漏掉三分之一威胁）。应把它当兜底而非唯一防线，主防线放在沙箱与上下文隔离。","alias":"HITL、人工审批、human in the loop"},"kimi":{"display":"Moonshot AI","title":"Kimi","kind":"wiki","path":"wiki/entities/kimi.md","definition":"月之暗面（Moonshot AI）旗下大模型产品。Kimi 2.6 主打 300+ Agents 连排调用，底层 Long CoT 长思考技术，曾以 256K 超长上下文出圈。课程关键点：Kimi 跳过 SFT 直接用强化学习训练；通过\"砍价活动\"收集用户行为轨迹数据，反向训练底层模型——是 data-flywheel 的典型案例。","plain":"","analogy":"","why":"","alias":"Kimi、月之暗面、Moonshot AI"},"model-selection":{"display":"model-selection","title":"模型选型","kind":"wiki","path":"wiki/concepts/model-selection.md","definition":"模型选型是把\"用哪个模型\"当成产品策略而非技术选择来做：明确目标 → 用真实 query 构建测试集 → GSB 盲评 → 成本/耗时量化 → 综合决策，并建立持续评测机制（不是非此即彼的一次性选择）。与 model-strategy（更偏宏观的模型战略/开源闭源/国内外）相对，本概念聚焦\"具体两个候选模型怎么选\"的方法。","plain":"","analogy":"","why":"","alias":"模型选型、Model Selection、选模型、模型选择"},"muse-spark":{"display":"Muse Spark","title":"Meta 研究团队发布的开放模型","kind":"temp","plain":"Meta 研究博客发布的开放权重模型，本期与苹果 MLX 的本地分布式推理方案一起出现。","why":"用来说明开源权重模型已经能在自有硬件上实际部署，而不只是跑分"},"open-weights":{"display":"开放权重","title":"开放权重模型","kind":"wiki","path":"wiki/concepts/open-weights.md","definition":"模型参数可公开下载、能在自己机器上运行的模型。注意它不等于开源——训练数据和训练代码通常并未一并公开。","plain":"模型参数公开可下载、能在自己机器上跑的模型。但它不等于「开源」：训练数据和训练代码通常没一起公开。","analogy":"","why":"它决定你能否把数据留在自己的边界内处理，以及是否会被单一供应商的定价和可用性绑死。自建审核、私有部署都建立在开放权重之上。","alias":"开源权重、open weights"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
+<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"human-in-the-loop":{"display":"人在回路","title":"人在回路","kind":"wiki","path":"wiki/concepts/human-in-the-loop.md","definition":"在自动化流程的关键节点插入人工确认，由人决定是否放行，常见于 Agent 执行危险命令前的审批弹窗。","plain":"在自动化流程的关键节点插入人工确认，由人决定放不放行。Agent 要执行危险命令前弹个审批窗，就是典型的人在回路。","analogy":"","why":"它被广泛当作 Agent 的安全底线，但高噪声下人的判断会迅速退化（Scale X 的 4 万次模拟显示平均漏掉三分之一威胁）。应把它当兜底而非唯一防线，主防线放在沙箱与上下文隔离。","alias":"HITL、人工审批、human in the loop"},"mlx":{"display":"MLX","title":"苹果机器学习框架","kind":"temp","plain":"苹果为自家芯片优化的机器学习框架，可在 Mac 设备上高效运行和分布式部署模型。","why":"它决定了一部分模型能否在苹果硬件上低成本自托管，影响端侧与私有部署方案的可行性。"},"model-selection":{"display":"model-selection","title":"模型选型","kind":"wiki","path":"wiki/concepts/model-selection.md","definition":"模型选型是把\"用哪个模型\"当成产品策略而非技术选择来做：明确目标 → 用真实 query 构建测试集 → GSB 盲评 → 成本/耗时量化 → 综合决策，并建立持续评测机制（不是非此即彼的一次性选择）。与 model-strategy（更偏宏观的模型战略/开源闭源/国内外）相对，本概念聚焦\"具体两个候选模型怎么选\"的方法。","plain":"","analogy":"","why":"","alias":"模型选型、Model Selection、选模型、模型选择"},"moe":{"display":"MoE","title":"混合专家架构","kind":"temp","plain":"一种模型结构，把参数拆成多个「专家」子网络，每次推理只激活其中少数几个，从而在总参数量很大的情况下控制单次计算成本。","why":"Muse Spark Open 等开放权重模型采用这一结构，直接影响自托管时的显存规划和推理成本测算。"},"muse-spark":{"display":"Muse Spark Open","title":"Meta 开放权重多模态模型","kind":"temp","plain":"Meta 研究团队发布的开放权重前沿模型，支持文本之外的多模态输入，采用混合专家结构，可下载自托管。","why":"它给多模态功能提供了一条不依赖闭源 API 的替代路径，是可以拿来议价和降本的备选项。"},"openrouter":{"display":"OpenRouter","title":"模型聚合 API 平台","kind":"temp","plain":"一个统一入口的模型调用平台，开发者用同一套接口调用多家厂商的模型，并按用量付费。","why":"新模型常在此同步上架，是观察模型可选范围与价格变化的最快窗口。"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
 <script>
 (function(){
   var DICT = window.__TERMS__ || {};
