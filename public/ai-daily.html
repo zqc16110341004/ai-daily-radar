@@ -315,80 +315,80 @@ footer h3{
 <body>
 <div class="wrap">
 <header class="masthead">
-<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-10-17 → 2026-10-20</span></div>
-<h1 class="serif">DeepSeek 新模型刷屏，开放权重与 Agent 工程化并进</h1>
-<div class="stats"><span><b>7</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>10</b> 个</span><span>更新于 10-20 10:16</span></div>
+<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-10-18 → 2026-10-21</span></div>
+<h1 class="serif">模型厂补齐推理与垂类，AI 答案的可信度成新战场</h1>
+<div class="stats"><span><b>7</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>7</b> 个</span><span>更新于 10-21 10:09</span></div>
 </header>
 <div class="news-grid">
 <article id="item-1">
-<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hugging Face 模型页 / Hacker News 热帖 · 953 分 / 716 评；OpenRouter 与 Artificial Analysis 同期收录</span></div>
-<h2>DeepSeek 发布 V4.1 Flash 1017，三处平台同时开闸</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hacker News 热帖 · 2142 分 / 836 评</span></div>
+<h2>DeepSeek 开源自家推理框架 DeepInfer，登顶当日热榜</h2>
 <div class="body">
-<p>DeepSeek 在 Hugging Face 上放出 DeepSeek-V4.1-Flash-1017，帖子迅速冲到 953 分、716 条讨论，是本期热度最高的一条；同一模型的 OpenRouter 接入页另拿到 520 分，第三方评测站 Artificial Analysis 也建好了独立条目并标注为 Max 档。一个模型在模型托管、路由平台、独立评测三个入口同步出现，说明它不是小范围灰度，而是直接开放给所有人调用。Flash 后缀通常指向低延迟、低成本的推理档位，但素材里没有给出参数量、上下文长度与具体跑分，它到底强在哪一档，仍要看第三方实测。</p>
-<p>对做 AI 产品的人来说，真正要调整的是选型节奏：版本号里带日期（1017），意味着迭代以周为单位，任何写死在提示词或评测集里的模型假设都会很快过期。更可操作的动作是把 <button class="term term--wiki" data-slug="model-selection" type="button">model-selection</button> 做成配置项而不是硬编码，在路由层留一个可切换的旁路，等第三方实测出来之后，用自己业务集的回归结果决定是否切换，而不是被热度牵着走。</p>
-<p class="why"><strong>为什么值得关心</strong>：头部开源模型每一次发版，都会重新定价一次「够用」的门槛。如果你的产品还在用上一代模型跑主干链路，现在就该算一笔账：切过去省下的单价与延迟，是否大于重跑回归和调提示词的人力；如果算下来不划算，也要把这个结论写下来，避免三个月后重复讨论。</p>
+<p>DeepSeek 在 GitHub 上放出了 DeepInfer，官方描述是「面向 DeepSeek 系列模型的高性能推理框架」。这条仓库链接在 Hacker News 上冲到 2142 分、836 条评论，是当天绝对的热度第一，讨论量远超一般模型发布。需要注意的是，公开信息目前只到「框架定位」这一层，具体的吞吐、显存占用、硬件支持范围都要回仓库文档核对，不要拿社区转述的数字做容量规划。</p>
+<p>对做 AI 产品的人来说，这条的意义不在技术细节，而在成本结构。推理框架是决定单位 token 成本的隐形变量之一，模型厂自己下场做框架，通常意味着后续会把「模型 + 推理栈」打包成一套部署方案推给企业客户。如果你的产品现在完全依赖云 API，值得评估一下：当上游把自托管路径做得越来越顺手时，你的成本护城河到底是模型能力，还是那层没被认真算过的调用账单。</p>
+<p class="why"><strong>为什么值得关心</strong>：把「模型选型」和「推理部署方式」拆开看是这期最实用的一课。团队应该建立一个可替换的模型接入层，让「换模型」和「换推理后端」都不需要重写业务代码；否则每一次上游降价或开源，你都只能被动等供应商跟进。</p>
 </div>
-<p class="readmore"><a href="https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://github.com/deepseek-ai/DeepInfer" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-2">
-<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">Mistral 官方博客 / CERN 官网 / Hacker News 热帖 · 556 分与 320 分</span></div>
-<h2>Mistral 一天两动作：时间序列基础模型上线，与 CERN 签署战略合作</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">路透社 / Hacker News · 556 分 / 505 评</span></div>
+<h2>美国土安全部下令禁止联邦民用机构使用 DeepSeek</h2>
 <div class="body">
-<p>Mistral 发布 Timestral，一组面向时间序列预测的基础模型；同一天，CERN 宣布与 Mistral 签署战略合作意向书，要一起加速科学领域的 AI 应用。两条消息在 Hacker News 上分别拿到 556 分和 320 分，在同一天的榜单里占了两个位置。时间序列是电力、制造、金融、运维等场景的核心数据形态，长期被传统统计方法和各家云厂商的专用服务分割，通用大模型公司此前很少正面进入。</p>
-<p>这是「通用模型公司往垂直基础模型下沉」的又一个清晰信号，与前两周各家争相发通用对话模型形成对照。如果你的产品里有预测类功能，比如容量预估、销量预测、设备异常预警，过去要么自研统计模型，要么接云厂商专用 API，现在多了一个可选供给方，值得放进下一轮技术选型的对比清单。同时也要看到，通用模型加垂直模型加科研合作的组合，是 Mistral 在用差异化绕开与头部通用模型的正面消耗，这条路线能否成立，取决于垂直场景的付费意愿是否真的高于通用 API。</p>
-<p class="why"><strong>为什么值得关心</strong>：预测类功能长期被默认为「统计团队的活」，基础模型厂商入场后，这类功能的实现成本会明显下移，产品侧可以重新考虑把预测做成默认能力而不是增值模块。判断依据是：谁能用更少的数据和更短的交付周期达到可接受精度，谁就拿到这块市场。</p>
+<p>路透社报道，美国国土安全部发布命令，禁止联邦民用机构在其系统上使用 DeepSeek。这条新闻在 Hacker News 上拿到 556 分，但评论数高达 505 条——评论与分数几乎持平，说明争议主要不在事实本身，而在「模型国籍是否应该成为采购标准」这件事上。</p>
+<p>做 To B 或出海产品的团队，要把这条当成合规信号而不是科技新闻。政企客户的安全审查正在从「你的数据存哪里」延伸到「你调的是谁的模型」，一份模型清单可能直接决定标书能不能过。比较务实的做法是在架构上支持多模型路由，并在对外材料里准备好「模型可替换、数据不出境」的说明，而不是等客户的安全问卷发过来才临时改。</p>
+<p class="why"><strong>为什么值得关心</strong>：模型选型正在从纯性能决策变成合规决策。如果目标客户里有政府、金融、医疗或跨国企业，单一模型依赖就是单点风险；产品文档里最好提前写清模型可切换机制，这会直接影响采购评分。</p>
+</div>
+<p class="readmore"><a href="https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-3">
+<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Mistral 官方博客 / Hacker News · 614 分 / 119 评</span></div>
+<h2>Mistral 发布 Timestral：面向时间序列的基础模型</h2>
+<div class="body">
+<p>Mistral 发布 Timestral，定位是时间序列方向的基础模型。相比它同一天的其他发布，这条在 Hacker News 上拿到的评论数最少（119 条），但分数不低，属于「业内看懂了但大众没兴趣」的类型。时间序列指的是销量、流量、库存、能耗、设备指标这类按时间排列的数据，过去基本是传统预测模型和定制特征工程的领域。</p>
+<p>对 AI 产品经理来说，这是一个被长期低估的功能位。大量企业软件里的「预测」模块——补货建议、容量预警、趋势看板——目前要么是规则，要么是每接一个客户就要重新调参的定制模型，交付成本极高。基础模型如果能把这件事变成「喂历史数据 + 少量微调」，那预测能力就有机会从项目制交付变成标准化功能。建议先拿一条内部已有的预测需求做小规模对照测试，而不是立刻改路线图。</p>
+<p class="why"><strong>为什么值得关心</strong>：这决定了你的「智能预测」功能是继续做定制项目，还是能做成可复制的产品模块。判断标准很朴素：如果新客户接入不再需要数据科学家介入，它就该进标准版；如果仍需逐客户调参，那就还是服务生意。</p>
 </div>
 <p class="readmore"><a href="https://mistral.ai/news/timestral/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-3">
-<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">arXiv 论文 / Hacker News 热帖 · 502 分 / 236 评</span></div>
-<h2>混合推理 Agent：在潜空间里思考，用文本对外行动</h2>
-<div class="body">
-<p>一篇 arXiv 论文提出「混合推理 Agent」：让 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 在潜空间里完成思考，再通过文本与外部交互，帖子在 Hacker News 拿到 502 分、236 条讨论，是本期讨论密度最高的技术贴之一。它的核心思路是把「想」和「说」拆开——内部推理不强制展开成自然语言 token，只在需要调用工具或回复用户时才落成文本。</p>
-<p>对做 Agent 产品的团队，这直接指向一个成本结构问题：现在多步 Agent 的账单大头，往往花在反复输出的思维链上，如果推理能在潜空间完成，延迟和 token 成本会同时下降。代价是可观测性——你看不到它在想什么，<button class="term term--wiki" data-slug="human-in-the-loop" type="button">人在回路</button> 的审核点和出错归因会变得更难设计。短期内更现实的判断是把它当作 12 到 18 个月的技术储备，但产品侧的护栏与日志要现在就开始按「推理过程不可见」来预演，否则等模型换了，审核流程会整段失效。</p>
-<p class="why"><strong>为什么值得关心</strong>：Agent 产品的成本曲线和可审计性是两件事，过去靠「把思考过程打出来」同时解决了两者。这条路线一旦成熟，产品必须重新回答：当模型不再展示推理，你用什么向客户证明结果可信，这很可能成为下一轮 Agent 产品的差异化点。</p>
-</div>
-<p class="readmore"><a href="https://arxiv.org/abs/2610.18861" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
 <article id="item-4">
-<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Hacker News 热帖 · 292 分 / 209 评</span></div>
-<h2>不自建 LLM 代理层，你怎么知道请求到底发生了什么</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Mistral 官方博客 / Hacker News · 533 分 / 143 评</span></div>
+<h2>Mistral 发布 Voxtral 3，语音模型线再更新</h2>
 <div class="body">
-<p>一篇在 Hacker News 拿到 292 分、209 条讨论的文章，标题直白地质问：如果你不自己跑一层 <button class="term term--temp" data-slug="llm-proxy" type="button">LLM 代理层</button>，你怎么知道请求到底发生了什么。作者主张团队自建代理层，把各家模型的调用收拢到自己可控的中间层，从而看清实际发出的提示、返回内容、延迟与花费，而不是把这一切交给供应商后台的一个汇总数字。</p>
-<p>这不是运维洁癖，而是 AI 产品的成本与合规基础设施。多模型、多供应商之后，「这个月钱花在哪个功能上」「这条用户投诉对应哪一次调用」「敏感字段有没有被发出去」这三个问题，只有在有代理层时才能回答。对产品经理的可操作含义是：在需求评审阶段就把可观测性当作功能的一部分排期，而不是上线后补；代理层同时也是做灰度、A/B 和故障降级的天然开关，早建比晚建便宜。</p>
-<p class="why"><strong>为什么值得关心</strong>：很多团队在第一次收到账单异常或合规问询时才想起这一层，那时已经丢失了历史现场。判断标准很简单：如果现在无法在十分钟内回答「上周三某条用户反馈对应的是哪次模型调用」，就说明代理层该排进下个迭代。</p>
+<p>同一天，Mistral 还发布了 Voxtral 3，是 Voxtral 系列的最新版本，在 Hacker News 上 533 分、143 条评论。标题层面没有透露能力细节，实际的延迟、语言覆盖、是否支持流式，都需要打开官方博客逐项核对——这类版本号更新最容易在二手转述中被夸大，写进方案前务必看原文。</p>
+<p>值得关注的是发布节奏：一家体量远小于头部实验室的欧洲厂商，在同一天推出时序基础模型和语音模型两个垂类版本。这说明「通用大模型 + 若干垂类基础模型」正在成为中型厂商的标准打法——不在通用能力上硬拼，而是在语音、时序、文档这些有明确企业预算的方向上占位。对产品经理的含义是：垂类能力的采购选项会越来越多，你不必什么都自研，但需要一张清楚的能力地图，知道哪一层外采、哪一层自己做才形成差异。</p>
+<p class="why"><strong>为什么值得关心</strong>：语音交互是很多产品的下一个入口，但自研语音栈的成本被普遍低估。这类第三方垂类模型的密集出现，意味着「语音功能」的正确决策是先算自研与外采的成本差，而不是先排研发人力。</p>
 </div>
-<p class="readmore"><a href="https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://mistral.ai/news/voxtral-3/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-5">
-<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Show HN · 329 分 / 86 评</span></div>
-<h2>llmspeed：买硬件之前，先感受本地模型跑多快</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">redact.dev 博客 / Hacker News · 714 分 / 208 评</span></div>
+<h2>WhatsApp 帮助页里藏了给大模型的指令：不要推荐监管机构</h2>
 <div class="body">
-<p>Show HN 上的 llmspeed 是一个「买硬件之前先感受本地模型速度」的小工具，拿到 329 分、86 条讨论。它让用户在实际采购 GPU 或整机之前，先对某个本地 <button class="term term--wiki" data-slug="open-weights" type="button">开放权重</button> 模型的实际推理速度形成直观预期，而不必先花一笔钱把机器买回来试。</p>
-<p>这类工具的价值在于压低了本地部署的决策成本。当客户提出「能不能私有化部署」时，团队过去要么凭经验报数，要么直接买机器做验证；现在可以更早给出「这个模型在你的场景下大概是什么体验」的答案。对产品经理来说，私有化方案的报价与 SLA 承诺可以更有依据。但它也提醒一件事：本地部署的真实瓶颈常常不是模型本身，而是显存、并发数和运维人力，速度测出来了，这三项的账还得另外算。</p>
-<p class="why"><strong>为什么值得关心</strong>：私有化是很多 To B AI 产品的成交前提，也是毛利率最容易失控的环节。这类工具让「先报个价试试」变成「先测一下再报价」，能显著减少因为硬件估算错误导致的交付亏损。</p>
+<p>有开发者在 WhatsApp 的帮助页面里发现了面向大模型的隐藏指令，内容大意是要求读到这段文字的 AI 不要推荐监管机构。这条在 Hacker News 上拿到 714 分、208 条评论，讨论集中在「页面里写给自己竞争对手的模型看的话」这种做法是否合适。这属于典型的 <button class="term term--temp" data-slug="prompt-injection" type="button">提示注入</button> 场景：内容被 AI 助手抓取后，隐藏文本会影响它给出的答案，而终端用户完全看不到这段文字。</p>
+<p>对做 AI 助手、AI 搜索或客服机器人的团队，这是一条必须现在就处理的风险。你的产品大概率会抓取第三方页面来生成答案，那些页面里可能埋着影响输出的指令。可行的应对不是去追求完全识别隐藏文本，而是给答案加上来源标注和「该内容来自第三方页面」的提示，并对涉及监管、医疗、金融建议类的问题设置更严格的引用策略。同时反过来看，你自己的帮助中心和文档也会被别人的 AI 读取——里面的措辞同样在为你的品牌「发言」。</p>
+<p class="why"><strong>为什么值得关心</strong>：提示注入从技术圈的概念变成了公开被使用的商业手段。如果你的产品答案直接引用第三方网页且不做可见性校验，就等于把品牌口径交给了别人写的隐藏文本，这在受监管行业是实打实的合规敞口。</p>
 </div>
-<p class="readmore"><a href="https://llmspeed.dev/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-6">
-<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Show HN · 252 分 / 89 评</span></div>
-<h2>Sphinx：代码上线前，让钩子反过来考你 AI 写的代码</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">peec.ai 博客 / Hacker News · 323 分 / 188 评</span></div>
+<h2>有人靠发布编造的统计数据，被各大模型反复引用</h2>
 <div class="body">
-<p>Sphinx 是一个挂在开发流程里的钩子，在代码上线前就 AI 生成的代码反过来「考」开发者，Hacker News 上拿到 252 分、89 条讨论。它的设计前提很明确：Agent 写代码的速度已经超过了人阅读理解的速度，「能跑」不再等于「团队真的懂了」。</p>
-<p>这是 AI 编码工具普及之后必然出现的一类产品：从「帮你想」转向「检验你有没有想」。对做研发效能或 AI 编程产品的团队，这类「理解度校验」可以成为明确的差异化功能点，因为主流工具目前都在比拼生成速度而不是理解深度。对使用方来说，值得想清楚的是把它放在 CI 还是代码评审环节——位置放错，它会变成又一个大家都学会跳过的检查项。</p>
-<p class="why"><strong>为什么值得关心</strong>：当团队里 AI 生成的代码占比过半，最大的风险不再是写错，而是没人能维护。评估这类工具时，看的不该是它问得多刁钻，而是它是否让关键模块始终有至少一个真正读懂的人。</p>
+<p>一位作者在博客里复盘了自己的实验：把编造的统计数据发布到网上，结果这些数字被多个大模型当作事实引用、传播开来。帖子在 Hacker News 上 323 分、188 条评论，评论区讨论的焦点是「AI 搜索的引用机制正在被低成本操纵」。这件事之所以成立，是因为模型和 AI 搜索倾向于引用结构清晰、看起来像来源的页面，而很少去核实这份统计最初是谁做的。</p>
+<p>这是这一期里最该让产品负责人警觉的一条。如果你的产品有 AI 问答或 AI 搜索能力，那么「引用来源的可信度」正在成为一个真实的差异化点——谁能标注数据出处、区分一手和二手来源、对孤立统计给出置信提示，谁就更可能被企业客户信任。这也是 <button class="term term--temp" data-slug="geo" type="button">GEO（生成引擎优化）</button>（生成引擎优化）从营销概念变成实际预算科目的原因：品牌方开始为「被模型正确引用」付费，而错误引用会变成需要处理的公关事件。</p>
+<p class="why"><strong>为什么值得关心</strong>：两件事同时发生：模型引用的内容质量在下降，而企业对引用准确性的要求在上升。这中间的落差就是产品机会——引用溯源、来源分级、答案置信度提示，都可能成为你区别于通用助手的核心卖点。</p>
 </div>
-<p class="readmore"><a href="https://sphinx-six-theta.vercel.app/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-7">
-<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Hugging Face 官方博客（多篇同期发布）</span></div>
-<h2>一天之内多款开放权重模型上线：501B 的 Beam、Meta 的多模态 MoE、IBM 的三合一端点</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">个人技术博客 / Hacker News · 300 分 / 215 评</span></div>
+<h2>不自己搭 LLM 代理网关，你根本不知道线上发生了什么</h2>
 <div class="body">
-<p>Hugging Face 上一天之内出现多款开放权重模型：Reflection 的 Beam 是一个 501B、可以自己持有和定制的模型；Meta 放出 Muse Spark Open，定位为开放权重的前沿多模态 <button class="term term--temp" data-slug="moe" type="button">MoE</button> 模型；IBM 的 Granite Switch 4.1 把聊天、决策与语音收在同一个端点下；此外还有瑞士 AI 的 Apertus 1.5 更新，以及英伟达公开的 2.8 万亿 token 印度语系预训练数据流水线。这些发布分散在不同团队，却挤在同一时间窗口里。</p>
-<p>密集发布的直接后果是，「开放权重」这条产品线不再只等于小模型：501B 与前沿多模态 MoE 都开始可下载，意味着有算力的团队可以把过去只能调 API 的能力搬进自己的 VPC。对 AI 产品经理的判断影响有两面：供应商锁定在明显变弱，议价空间变大；但选择成本在变高，模型越多越难决策。没有自己的一套评测与回归流程，开放权重反而会变成负担。</p>
-<p class="why"><strong>为什么值得关心</strong>：如果你正在为「要不要接受供应商涨价或条款变更」做准备，这批模型是现成的谈判筹码。但筹码要能用才有价值，建议同步确认一件事：团队现在能不能在一周内把一个新模型接进现有链路并跑完回归，做不到的话，再多开源模型也换不成议价能力。</p>
+<p>一篇标题相当直接的文章提出：如果不自建 <button class="term term--temp" data-slug="llm-proxy" type="button">LLM 代理网关</button> 网关，团队其实不知道自家 AI 功能在线上到底发生了什么。这条在 Hacker News 上 300 分、却有 215 条评论，评论区几乎是一线工程团队的现场交流，很多人分享了自己在成本归因、响应差异、故障排查上踩过的坑。</p>
+<p>这条对 AI 产品经理的价值在于它把「可观测性」从工程话题拉回到产品话题。没有统一网关，你就回答不了几个最基本的产品问题：哪个功能在烧钱、换模型后体验变好还是变差、一次线上故障影响的是哪批用户。这几件事直接决定你能否做 A/B 实验和定价决策。建议把「所有模型调用经过统一入口」当作一条架构底线来推，而不是等成本报表对不上账时才回头补。</p>
+<p class="why"><strong>为什么值得关心</strong>：能不能做模型层面的实验和成本核算，取决于有没有统一调用入口。这一条是很多 AI 功能「上线即黑箱」的根因——它影响的是你后续所有迭代的决策质量，而不只是一次故障排查。</p>
 </div>
-<p class="readmore"><a href="https://huggingface.co/blog/reflection-beam" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://jrdsgl.com/if-you-dont-run-your-own-llm-proxy-how-the-fuck-do-you-even-know-whats-going-on/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 </div>
 <section class="github-radar" id="github">
@@ -398,23 +398,23 @@ footer h3{
 <div class="repo-grid">
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">langgenius/dify</a></h3>
-<span class="repo-category">Agentic 工作流与 RAG 一体化平台</span></div></div>
+<h3><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">morluto/rea</a></h3>
+<span class="repo-category">Agent 驱动的逆向工程工具</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>158,943</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>Python</b></span>
-<span>许可 <b>NOASSERTION（自定义条款，需核对）</b></span>
+<span>Stars <b>348,609</b></span>
+<span>增长 <b>本期建立基线，明日起显示增量</b></span>
+<span>语言 <b>TypeScript</b></span>
+<span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">把模型接入、<button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 知识库、工具调用和可视化编排放在同一个协作工作区里的平台，支持云托管、VPC 与完全自托管部署。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">差异不在编排画布本身，而在「从原型到生产不用重搭一套栈」——同一份配置可以走云端也可以走私有化，避免了验证阶段和生产阶段用两套系统。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要快速验证 AI 功能、又迟早要面对私有化交付的团队；纯研究型项目会觉得约束偏多。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 平台层正在收敛，选平台时「能不能自托管」往往比「画布好不好看」更决定后期成本，这一点在 To B 交付里尤其明显。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">许可证标注为 NOASSERTION，商用前须逐条核对；可视化编排很容易堆出难以维护的巨型流程图，接入时应先约定复杂度上限。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个用 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 做逆向工程的命令行工具，官方描述是从应用行为一路分析到原生二进制，标签里同时挂着 agent-skills、binary-analysis 以及 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button> 等运行环境。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">大多数 Agent 工具解决的是「写代码」，它解决的是「读懂一个没有源码的东西」，把反编译、行为观测这类原本靠专家经验的活拆成 Agent 可执行的步骤。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要做兼容性分析、安全评估、遗留系统摸底的团队；纯业务开发团队基本用不上。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">它代表了 Agent 落地的一条明确路径：不去抢通用助手的位置，而是绑定一个高门槛、高单价的专业场景。这类「垂直 Agent」的商业模式通常比通用助手更清晰。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">逆向工程在不同司法辖区的合法性差异很大，用于竞品分析或绕过授权机制可能直接踩线；接入前应让法务确认用途边界。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
@@ -422,59 +422,59 @@ footer h3{
 <span class="repo-category">Agent 运行环境增强层</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>284,171</b></span>
-<span>增长 <b>—</b></span>
+<span>Stars <b>284,940</b></span>
+<span>增长 <b>本期建立基线，明日起显示增量</b></span>
 <span>语言 <b>JavaScript</b></span>
 <span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">面向 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>、Cursor、OpenCode 等多种 <button class="term term--temp" data-slug="agent-harness" type="button">Agent 运行环境</button> 的增强层，提供技能、本能、记忆、安全与研究优先的开发流程，通过 <code>npx</code> 装成插件。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是又一个 Agent，而是横跨多个 harness 的能力层：同一套技能和钩子可以同时挂在 Claude Code 和 Codex 上，不必各维护一份配置。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">同时在多个编码 Agent 之间切换、希望技能与记忆跨工具复用的重度团队；只用单一工具的人收益有限。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 工具链碎片化是当下最真实的一笔隐性成本，「配置层能否跨 harness 复用」正在从锦上添花变成选型标准。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">README 明确警告不要叠加多种安装方式，重复安装会导致技能、命令和钩子重复注册；它还附带安全组件，接入前应审查这些钩子实际拿到了哪些权限。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一套面向 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>、Cursor 等多种编码 Agent 的性能优化系统，提供技能、本能、记忆、安全与研究优先的开发流程。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是又一个 Agent，而是横跨多个 harness 的能力层：同一套技能和记忆可以同时挂在不同的编码工具上，不必每个工具各维护一份配置。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">同时在多个编码 Agent 之间切换、希望技能与记忆能跨工具复用的重度用户；只用单一工具的人收益有限。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 工具链正在持续碎片化，「配置层能否跨 harness 复用」从锦上添花变成了真实痛点，这也是团队评估是否统一工具标准时该纳入的维度。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">这类增强层通常会拿到较宽的本地权限，接入前应确认它的钩子实际能访问哪些文件和命令；MIT 许可本身不构成安全背书。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">DietrichGebert/ponytail</a></h3>
-<span class="repo-category">编码 Agent 的减法约束插件</span></div></div>
+<h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
+<span class="repo-category">面向 Agent 的网页抓取与数据接入</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>168,162</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>JavaScript</b></span>
-<span>许可 <b>MIT</b></span>
+<span>Stars <b>193,509</b></span>
+<span>增长 <b>本期建立基线，明日起显示增量</b></span>
+<span>语言 <b>TypeScript</b></span>
+<span>许可 <b>AGPL-3.0</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个让编码 Agent「像屋里最懒的资深工程师那样思考」的插件，核心主张是最好的代码是你从没写过的代码。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">主流 Agent 插件都在教模型写得更多、做得更多，它反过来做减法，抑制过度工程和不必要的抽象层。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">代码库已有沉淀、最怕 Agent 到处加样板代码和中间层的团队；绿地项目可能会被它压得过于保守。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 生成代码的量已经超过人的评审能力，这时候约束「少写」对净收益的改善，往往比提升「多写」更直接。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">懒惰启发式在必须显式实现的场景会误判，仍要人工把关；插件行为依赖宿主工具的版本，升级时可能失效。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个把网页内容转成结构化数据、供 AI 应用和 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 使用的抓取工具，主打爬取、抓取、搜索三件事。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它解决的是「网页原本是给人看的，模型读起来噪音太多」这个问题，输出直接面向下游模型消费，而不是原始的 HTML 堆。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要给 AI 搜索、竞品监控、知识库补数据源的团队，尤其是数据源以公开网页为主的场景。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">在本期「编造统计被模型引用」的语境下，抓取层的质量直接决定了你的答案可信度——抓什么、抓哪一层、要不要保留出处，都是产品决策而非纯工程决策。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">AGPL-3.0 对商业闭源产品有传染性风险，把它作为服务对外提供前需要法务确认；另外遵守目标站点的 robots 与版权要求是硬前提。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/DietrichGebert/ponytail" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">morluto/rea</a></h3>
-<span class="repo-category">用 Agent 做逆向工程的工具集</span></div></div>
+<h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">langgenius/dify</a></h3>
+<span class="repo-category">Agent 工作流与 RAG 应用开发平台</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>337,527</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>TypeScript</b></span>
-<span>许可 <b>MIT</b></span>
+<span>Stars <b>159,073</b></span>
+<span>增长 <b>本期建立基线，明日起显示增量</b></span>
+<span>语言 <b>Python</b></span>
+<span>许可 <b>NOASSERTION</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">用 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 做逆向工程的工具集，从应用行为一路下探到原生二进制分析，属于 agent-skills 生态里偏硬核的一支。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">把 Agent 能力从「写代码」搬到「读别人的代码和二进制」，覆盖的是过去需要专门工具链和经验积累的场景。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">安全研究、竞品兼容性分析、遗留系统摸底；普通业务团队用不上，但需要知道它已经存在。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 的能力边界正在向分析类、取证类任务扩张，这会改变安全与合规团队对「AI 能做什么」的预期，也改变防护的假设。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">逆向工程在很多司法辖区和用户协议下受限，商用前必须法务确认；星标数极高但项目相对新，成熟度仍需自行验证。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个可视化搭建 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 工作流与 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 管线的协作平台，支持云端、VPC 与自托管部署，覆盖从原型到上线的过程。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把编排、检索、模型接入放在同一个工作台里，相比直接写代码调模型，更适合非工程角色参与原型验证。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要快速验证企业内部 AI 应用、又要求私有化部署的团队；对纯研究型项目价值不大。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">在模型和推理框架快速变化的当下，把业务逻辑放在可替换的编排层而不是硬编码里，是降低上游变动成本的现实做法，这也是这类平台真正的价值点。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">许可证字段在 GitHub 上显示为 NOASSERTION，实际条款需自行核对（通常带附加限制），商用前不要默认等同于 Apache 或 MIT。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 </div></section>
 <footer>
@@ -482,15 +482,15 @@ footer h3{
 <div class="legend"><span><i></i>这个词已在知识库中收录 —— 点开查看简明解释</span><span><i class="l-prov"></i>临时解释 —— 本期现写的，还没进知识库</span></div>
 <h3>待摄入队列 · 出现越多越值得正式收进去</h3>
 <div class="pending">
-<span>Mistral <b>×3</b></span>
-<span>时间序列基础模型 <b>×2</b></span>
-<span>Agent harness <b>×3</b></span>
+<span>提示注入 <b>×3</b></span>
+<span>生成引擎优化 <b>×3</b></span>
+<span>推理框架 <b>×2</b></span>
 </div>
 <p class="note">日报术语来自维护中的知识库，仅用于解释本期内容。</p>
 </footer>
 </div>
 <div class="scrim" id="scrim"><div class="card" id="card"></div></div>
-<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"agent-harness":{"display":"Agent 运行环境","title":"Agent harness / 智能体脚手架","kind":"temp","plain":"承载 Agent 运行的外层框架与工具链，负责技能注册、工具调用、上下文管理和权限控制。","why":"工具链碎片化让「配置能否跨 harness 复用」成为团队选型时的真实成本项。"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"human-in-the-loop":{"display":"人在回路","title":"人在回路","kind":"wiki","path":"wiki/concepts/human-in-the-loop.md","definition":"在自动化流程的关键节点插入人工确认，由人决定是否放行，常见于 Agent 执行危险命令前的审批弹窗。","plain":"在自动化流程的关键节点插入人工确认，由人决定放不放行。Agent 要执行危险命令前弹个审批窗，就是典型的人在回路。","analogy":"","why":"它被广泛当作 Agent 的安全底线，但高噪声下人的判断会迅速退化（Scale X 的 4 万次模拟显示平均漏掉三分之一威胁）。应把它当兜底而非唯一防线，主防线放在沙箱与上下文隔离。","alias":"HITL、人工审批、human in the loop"},"llm-proxy":{"display":"LLM 代理层","title":"自建的模型调用中间层","kind":"temp","plain":"团队自行部署的一层中间服务，统一收拢对各家模型 API 的请求，便于记录提示内容、返回结果、延迟与花费。","why":"它是多模型时代做成本归因、故障排查与合规审计的基础设施，也是灰度与降级的开关。"},"model-selection":{"display":"model-selection","title":"模型选型","kind":"wiki","path":"wiki/concepts/model-selection.md","definition":"模型选型是把\"用哪个模型\"当成产品策略而非技术选择来做：明确目标 → 用真实 query 构建测试集 → GSB 盲评 → 成本/耗时量化 → 综合决策，并建立持续评测机制（不是非此即彼的一次性选择）。与 model-strategy（更偏宏观的模型战略/开源闭源/国内外）相对，本概念聚焦\"具体两个候选模型怎么选\"的方法。","plain":"","analogy":"","why":"","alias":"模型选型、Model Selection、选模型、模型选择"},"moe":{"display":"MoE","title":"混合专家架构（Mixture of Experts）","kind":"temp","plain":"一种模型架构，总参数量很大但每次推理只激活其中一部分专家网络，从而在控制计算量的同时扩大模型容量。","why":"开放权重的前沿模型越来越多采用 MoE，直接影响私有化部署时的显存与并发估算。"},"open-weights":{"display":"开放权重","title":"开放权重模型","kind":"wiki","path":"wiki/concepts/open-weights.md","definition":"模型参数可公开下载、能在自己机器上运行的模型。注意它不等于开源——训练数据和训练代码通常并未一并公开。","plain":"模型参数公开可下载、能在自己机器上跑的模型。但它不等于「开源」：训练数据和训练代码通常没一起公开。","analogy":"","why":"它决定你能否把数据留在自己的边界内处理，以及是否会被单一供应商的定价和可用性绑死。自建审核、私有部署都建立在开放权重之上。","alias":"开源权重、open weights"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
+<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"geo":{"display":"GEO（生成引擎优化）","title":"Generative Engine Optimization","kind":"temp","plain":"让品牌内容更容易被大模型和 AI 搜索引用、并以正确方式呈现的一套内容策略。","why":"当 AI 成为答案入口，被模型引用就等同于过去的搜索排名，且错误引用会变成公关事件。"},"llm-proxy":{"display":"LLM 代理网关","title":"LLM Proxy / Gateway","kind":"temp","plain":"所有模型调用统一经过的一层服务，用来做路由、鉴权、日志、限流与成本统计。","why":"没有这一层，成本归因、模型 A/B 和故障排查都做不了，AI 功能会变成上线即黑箱。"},"prompt-injection":{"display":"提示注入","title":"Prompt Injection","kind":"temp","plain":"在网页、文档或输入内容里埋入写给模型看的指令，诱导 AI 按埋入者意图作答而非用户意图。","why":"AI 助手和 AI 搜索会大量读取第三方页面，这是最现实的品牌与合规风险来源之一。"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
 <script>
 (function(){
   var DICT = window.__TERMS__ || {};
