@@ -315,88 +315,78 @@ footer h3{
 <body>
 <div class="wrap">
 <header class="masthead">
-<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-10-19 → 2026-10-22</span></div>
-<h1 class="serif">AI 日报 · 今日速览（自动聚合，未做中文解读）</h1>
-<div class="stats"><span><b>8</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>0</b> 个</span><span>更新于 10-22 10:04</span></div>
+<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-10-20 → 2026-10-23</span></div>
+<h1 class="serif">Agent 从能跑走向敢跑：推理、隔离与信任三条线</h1>
+<div class="stats"><span><b>7</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>9</b> 个</span><span>更新于 10-23 10:07</span></div>
 </header>
 <div class="news-grid">
 <article id="item-1">
-<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">Hacker News 热帖 · 2302分 / 883评</span></div>
-<h2>DeepInfer: High-performance inference framework for DeepSeek models</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">GitHub 热门项目 / Hacker News 热帖 · 2332 分 / 888 评</span></div>
+<h2>DeepSeek 开源 DeepInfer 推理框架，冲上本期热度第一</h2>
 <div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>DeepInfer: High-performance inference framework for DeepSeek models</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+<p>DeepSeek 在 GitHub 上开源了名为 DeepInfer 的项目，定位是为 DeepSeek 系列模型提供高性能推理。这条目在 Hacker News 上拿到 2332 分、888 条评论，是当天讨论量最大的技术帖，热度远超同期其他项目。</p>
+<p>推理框架位于模型和产品之间，它直接决定单位 token 的成本、首字延迟和并发上限。一直以来，模型厂商的推理优化是黑盒，外部团队只能通过 API 价格间接感受；现在这套东西被摆到台面上，自建推理的团队多了一个可以对照和借鉴的选项。需要留意的是，它明确面向 DeepSeek 自家模型，未必能直接套用到其他模型上；评估时应先看是否支持你要用的模型和部署形态，再判断能否省钱。</p>
+<p class="why"><strong>为什么值得关心</strong>：如果你在做高并发或长链路的成本敏感功能，比如客服质检、批量文档处理、Agent 多轮循环，推理层从「只能买云 API」变成「可以参考开源实现自托管」，产品和财务要一起重算毛利模型，同时把「换推理后端」写进技术方案的可选项。</p>
 </div>
 <p class="readmore"><a href="https://github.com/deepseek-ai/DeepInfer" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-2">
-<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">Hacker News 热帖 · 973分 / 534评</span></div>
-<h2>PHP 8.2.35</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">GitHub 热门项目 / Hacker News 热帖 · 309 分 / 162 评</span></div>
+<h2>英伟达开源 OpenShell：给成群的自主 Agent 一个安全私有运行时</h2>
 <div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>PHP 8.2.35</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+<p>英伟达开源了 OpenShell。按照项目自述，它是一个安全、私有的运行时，用来承载成批运行的自主 Agent。帖子在 Hacker News 上获得 309 分、162 条评论，讨论集中在「Agent 拿到执行权限之后，边界划在哪里」。</p>
+<p>Agent 从演示走到生产，真正的阻力往往不是模型够不够聪明，而是它敢不敢被放开手脚：要执行代码、读文件、调外部服务，每一步都是权限问题。这类运行时的价值在于把「能不能跑」变成「敢不敢跑」，让企业客户可以接受 Agent 在受控环境里自主行动。产品侧要提前想清楚的是，它和你现有的 <button class="term term--wiki" data-slug="mcp" type="button">MCP</button> 工具链、自建沙箱怎么衔接，别到最后多出一层没人维护的隔离。</p>
+<p class="why"><strong>为什么值得关心</strong>：企业客户在评估 Agent 产品时，问的第一个问题通常是「它能碰到什么、出了问题谁负责」。运行时层是回答这个问题的关键组件，也是把 Agent 卖进金融、政务这类客户的入场条件，值得在架构评审里单独立项。</p>
 </div>
-<p class="readmore"><a href="https://github.com/php/php-src/releases/tag/php-8.2.35" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://github.com/NVIDIA/OpenShell" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-3">
-<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Hacker News 热帖 · 757分 / 197评</span></div>
-<h2>Voxtral 3</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">GitHub 热门项目 / Hacker News 热帖 · 379 分 / 90 评</span></div>
+<h2>Google 开源 TorchTPU，让 PyTorch 原生跑在 TPU 上</h2>
 <div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>Voxtral 3</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+<p>Google 开源了 TorchTPU，这是一个面向 <button class="term term--temp" data-slug="tpu" type="button">TPU</button> 的 PyTorch 原生后端。消息在 Hacker News 上获得 379 分、90 条评论，讨论热度不低但争议相对集中。</p>
+<p>过去想在 TPU 上跑模型，多数团队得走 JAX 或经过转换的路径，等于框架选择和算力选择绑在一起。原生后端的意义是把这两件事拆开：PyTorch 代码可以直接落到 TPU 上，迁移成本下降，议价空间上升。对产品团队来说，这不会立刻改变用户体验，但会影响「训练和微调放哪儿」的决策，尤其是那些卡在 GPU 排期上的项目。</p>
+<p class="why"><strong>为什么值得关心</strong>：算力成本是 AI 产品毛利的第一变量。当 TPU 从「另一套框架生态」变成 PyTorch 的一等公民，算力采购就从框架驱动转为价格驱动，下一次做预算或做自研模型决策时，可以真正把多家芯片方案放到同一张表里比。</p>
+</div>
+<p class="readmore"><a href="https://github.com/google-pytorch/torch_tpu" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-4">
+<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">OpenAI 官方公告 / Hacker News 热帖 · 322 分 / 144 评</span></div>
+<h2>OpenAI 模型将上 Google Cloud，模型与云开始解耦</h2>
+<div class="body">
+<p>OpenAI 官方宣布，其模型将可以在 Google Cloud 上使用。这条消息在 Hacker News 上获得 322 分、144 条评论，讨论焦点是这对云厂商与模型厂商之间绑定关系的影响。</p>
+<p>对企业交付来说，这件事消掉了一个长期卡点：客户往往已经签了某朵云、数据不允许出云，过去「选云等于选模型」，现在两件事可以分开谈。竞品格局上，模型厂商的独占渠道正在变薄，云厂商的角色则更偏向卖算力、合规和运维。销售话术需要跟着改：从「我们的模型只能在某朵云上」变成「你的云上能跑哪些模型、代价差多少」。</p>
+<p class="why"><strong>为什么值得关心</strong>：做 B 端 Agent 或 AI 应用的公司，投标时最常见的否决理由就是「数据不能出我们的云」。多云分发把这条从硬约束降级为商务条款，产品路线图里应该同步评估多模型、多云接入的抽象层要不要提前做。</p>
+</div>
+<p class="readmore"><a href="https://openai.com/index/openai-models-google-cloud/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-5">
+<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Mistral 官方博客 / Hacker News 热帖 · 767 分 / 200 评</span></div>
+<h2>Mistral 发布 Voxtral 3，语音模型线再进一步</h2>
+<div class="body">
+<p>Mistral 上线了 Voxtral 3，这是其 Voxtral 语音模型线的最新版本，官方公告页与 Hacker News 讨论（767 分、200 条评论）同期出现，热度在当日前列。同期该公司还发布了 Mistral Large 4，一天之内连发两款。</p>
+<p>语音是少数「模型能力提升会直接改变交互形态」的入口：转写质量上去一档，会议纪要、语音客服、口述输入这些场景的可用性就会跳一级，而不只是准确率数字的变化。Mistral 过去在 Voxtral 系列上提供过可自托管的权重，如果这一版延续同样策略，自建 <button class="term term--temp" data-slug="asr" type="button">ASR</button> 的成本会继续下压，纯做语音转写封装的中间层产品空间会被进一步挤压。产品上应该问的是：语音在你的产品里是入口还是附属功能，这决定了要不要跟着换模型。</p>
+<p class="why"><strong>为什么值得关心</strong>：语音交互的门槛正在从「能不能识别」变成「值不值得做」。如果你的路线图里有语音入口，现在该评估的是自托管 <button class="term term--temp" data-slug="asr" type="button">ASR</button> 与控制成本的组合，而不是继续按云 API 计价做单位经济测算。</p>
 </div>
 <p class="readmore"><a href="https://mistral.ai/news/voxtral-3/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-4">
-<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Hacker News 热帖 · 738分 / 216评</span></div>
-<h2>WhatsApp's help pages hid LLM instructions: dont recommend a regulator</h2>
-<div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>WhatsApp's help pages hid LLM instructions: dont recommend a regulator</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
-</div>
-<p class="readmore"><a href="https://redact.dev/blog/whatsapp-help-pages-hidden-ai-instructions" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-5">
-<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Hacker News 热帖 · 647分 / 372评</span></div>
-<h2>Ousted Savannah police officer gave ICE agent husband access to Flock system</h2>
-<div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>Ousted Savannah police officer gave ICE agent husband access to Flock system</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
-</div>
-<p class="readmore"><a href="https://www.wjcl.com/article/savannah-police-officer-ice-agent-flock-access/74135816" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
 <article id="item-6">
-<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Hacker News 热帖 · 620分 / 124评</span></div>
-<h2>Timestral: Mistral's time-series foundation models</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Hacker News 热帖 · 365 分 / 204 评</span></div>
+<h2>发假统计数据，就能被大模型反复引用</h2>
 <div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>Timestral: Mistral's time-series foundation models</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+<p>一位作者公开复盘了自己的实验：编造统计数据并发布到网上，观察这些数字如何被各类大模型在回答中引用、扩散。帖子在 Hacker News 上获得 365 分、204 条评论，讨论集中在 AI 答案的可信度上。</p>
+<p>这件事戳破的是「有引用就等于有依据」这个假设。做 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 或答案引擎的团队，检索池里放什么、来源怎么打分，直接决定了产品是在传递知识还是在放大噪音。它同时也说明 <button class="term term--temp" data-slug="geo" type="button">GEO</button> 已经从营销话术变成一条灰色产业链：只要内容结构讨模型喜欢，假数据也能获得稳定曝光。产品上必须回答一个问题：你的引用是用来装饰答案，还是真的经过可信度筛选。</p>
+<p class="why"><strong>为什么值得关心</strong>：如果你的产品靠「标注来源」建立信任，这条直接打在信任基础上。需要决定是否引入来源评分、多源交叉验证、低质站点黑名单，以及当引用冲突时产品该怎么呈现；这些决定的成本不高，但拖到出事之后再补，代价会大得多。</p>
 </div>
-<p class="readmore"><a href="https://mistral.ai/news/timestral/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://peec.ai/blog/publish-stats-get-cited-the-tactic-that-put-my-data-all-over-the-web" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-7">
-<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Hacker News 热帖 · 578分 / 540评</span></div>
-<h2>DeepSeek banned from U.S. federal civilian agencies under new DHS order</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Wiz 安全博客 / Hacker News 热帖 · 446 分 / 184 评</span></div>
+<h2>AI 辅助挖出 PHP 严重远程执行漏洞</h2>
 <div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>DeepSeek banned from U.S. federal civilian agencies under new DHS order</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
-</div>
-<p class="readmore"><a href="https://www.reuters.com/technology/us-banning-chinese-ai-deepseek-government-agency-it-systems-2026-10-19/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-8">
-<div class="item-top"><span class="idx" aria-hidden="true">08</span><span class="from">Hacker News 热帖 · 435分 / 172评</span></div>
-<h2>PHP2Shell: AI uncovers critical RCE in PHP</h2>
-<div class="body">
-<p>（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）</p>
-<p>PHP2Shell: AI uncovers critical RCE in PHP</p>
-<p class="why"><strong>为什么值得关心</strong>：（自动聚合，未从 AI 产品经理视角解读，请补充。）</p>
+<p>安全厂商 Wiz 披露了 PHP 中一个被称作 PHP2Shell 的严重 <button class="term term--temp" data-slug="rce" type="button">RCE</button> 漏洞，从标题看，发现过程借助了 AI。同一时间，PHP 发布了 8.2.35 版本，GitLab 也推送了关键补丁版本，安全相关的条目在这期热帖里占了不止一条。</p>
+<p>漏洞挖掘一直是靠人力慢慢磨的活，AI 参与之后，发现速度会明显加快，留给防守方的补丁窗口随之变短。对产品团队来说，这意味着两件事：依赖清单和升级节奏要从「季度维护」提到「随时响应」；同时，AI 生成代码的审计成本要往上调，因为写得快不等于写得安全。开源组件的供应链风险，正在从运维议题变成产品可用性议题。</p>
+<p class="why"><strong>为什么值得关心</strong>：你的技术栈里大概率有 PHP 或其他开源组件，这类事件把安全更新从后台运维事项变成影响可用性与合规的产品风险。至少应该确认：谁负责盯漏洞公告、从公告到上线补丁的 SLA 是多久，这个数字在客户的安全问卷里会被直接问到。</p>
 </div>
 <p class="readmore"><a href="https://www.wiz.io/blog/php2shell-php-rce" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
@@ -409,70 +399,82 @@ footer h3{
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">morluto/rea</a></h3>
-<span class="repo-category">GitHub 热门项目</span></div></div>
+<span class="repo-category">面向 Agent 的逆向工程工具链</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>358261</b></span>
+<span>Stars <b>366,641</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>TypeScript</b></span>
 <span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">Reverse engineer anything with agents, from app behavior down to native binaries.</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个用 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 做逆向工程的工具：从应用行为一路下探到原生二进制，面向 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button> 这类 CLI Agent 设计。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它并非给 Agent 增加新能力，更接近把「逆向」这件原本高度依赖专家经验的事拆成 Agent 可以逐步执行的流程。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要做协议分析、竞品行为研究、遗留系统摸底的安全团队和平台团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">这类项目的星标体量说明，「Agent + 垂直专业工具链」的组合正在被大规模接受，通用助手之外的细分工具层仍有空间。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">逆向工程有明确的法律与授权边界，企业内部使用前要限定目标范围和留痕，别让 Agent 把这件事做得太容易反而失控。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a></h3>
-<span class="repo-category">GitHub 热门项目</span></div></div>
+<h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
+<span class="repo-category">给 Agent 供数据的网页抓取与清洗层</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>285763</b></span>
+<span>Stars <b>194,330</b></span>
 <span>增长 <b>—</b></span>
-<span>语言 <b>JavaScript</b></span>
-<span>许可 <b>MIT</b></span>
+<span>语言 <b>TypeScript</b></span>
+<span>许可 <b>AGPL-3.0</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个把网页抓取、清洗、转成结构化数据的工具，输出直接面向大模型和 Agent 使用。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它优先考虑输出的可用性而非页面覆盖广度，抓回来的内容可以直接进 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 流程，不需要再写一层解析。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">要做知识库问答、竞品监控、内容聚合的团队，尤其是数据源以公开网页为主的场景。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 的能力瓶颈正在从模型转向数据供给，谁能稳定拿到干净的网页数据，谁的效果就更可控。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">AGPL-3.0 对以服务形式对外提供有额外约束，商用前要过一遍法务；抓取本身也要遵守目标站点的条款和频率限制。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">NousResearch/hermes-agent</a></h3>
-<span class="repo-category">GitHub 热门项目</span></div></div>
+<h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">langgenius/dify</a></h3>
+<span class="repo-category">Agentic 工作流与 RAG 一体化平台</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>255976</b></span>
+<span>Stars <b>159,293</b></span>
 <span>增长 <b>—</b></span>
 <span>语言 <b>Python</b></span>
-<span>许可 <b>MIT</b></span>
+<span>许可 <b>NOASSERTION</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">The agent that grows with you</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个把 Agent 工作流、<button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 流水线和模型/工具接入放在同一工作台的平台，支持云端、VPC 和自托管三种部署方式。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它主打的是「原型到生产不换栈」，业务和工程在同一张画布上协作，避免验证阶段用一套工具、上线又重写一遍。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">想快速验证 Agent 场景、同时又要保留私有化交付能力的中小团队，以及大企业内部的创新小组。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">企业采购越来越看重「可自托管、可审计」，这类平台正好占住了这个位置，也是自研还是采购这道题的现成参照。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">许可证标注为 NOASSERTION，商用前要逐条确认条款；自托管意味着运维、升级和安全责任回到自己身上，别只算软件成本。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/NousResearch/hermes-agent" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener noreferrer">tensorflow/tensorflow</a></h3>
-<span class="repo-category">GitHub 热门项目</span></div></div>
+<h3><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">Graphify-Labs/graphify</a></h3>
+<span class="repo-category">代码库知识图谱 / 代码 Agent 技能</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>201175</b></span>
+<span>Stars <b>133,025</b></span>
 <span>增长 <b>—</b></span>
-<span>语言 <b>C++</b></span>
+<span>语言 <b>Python</b></span>
 <span>许可 <b>Apache-2.0</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">An Open Source Machine Learning Framework for Everyone</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">本期自动聚合入选，待人工补充中文解读。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个把代码库连同文档、SQL schema、配置和 PDF 转成可查询知识图谱的工具，以 <code>/graphify</code> 技能的形式挂在 Claude Code、Cursor、Codex、Gemini CLI 上。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不做向量检索，走本地确定性的 AST 解析，每条边都能解释来源，这对需要追溯的场景是本质差别。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">代码库规模大、需要审计和可解释性的团队，尤其是对黑盒检索结果不放心的合规敏感行业。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">企业级代码 Agent 的瓶颈，正从「模型会不会写」转到「它凭什么这么写」，可解释的上下文层会成为标配。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">知识图谱构建有一次性的时间和算力成本，代码频繁变动时还要想清楚增量重建策略，否则图谱很快就会过期。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/tensorflow/tensorflow" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 </div></section>
 <footer>
@@ -480,13 +482,15 @@ footer h3{
 <div class="legend"><span><i></i>这个词已在知识库中收录 —— 点开查看简明解释</span><span><i class="l-prov"></i>临时解释 —— 本期现写的，还没进知识库</span></div>
 <h3>待摄入队列 · 出现越多越值得正式收进去</h3>
 <div class="pending">
-
+<span>Agent 运行时 <b>×3</b></span>
+<span>推理成本 <b>×3</b></span>
+<span>来源可信度 <b>×2</b></span>
 </div>
 <p class="note">日报术语来自维护中的知识库，仅用于解释本期内容。</p>
 </footer>
 </div>
 <div class="scrim" id="scrim"><div class="card" id="card"></div></div>
-<script>window.__TERMS__={};</script>
+<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"asr":{"display":"ASR","title":"自动语音识别","kind":"temp","plain":"把语音转成文字的技术，是会议纪要、语音客服、口述输入的基础能力。","why":"语音入口的可用性由 ASR 质量决定，自托管成本又决定它值不值得做。"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"geo":{"display":"GEO","title":"生成引擎优化","kind":"temp","plain":"针对大模型回答与 AI 搜索结果做内容优化，让品牌或数据更容易被引用。","why":"当假数据也能被稳定引用，做答案产品的团队必须重新设计来源可信度机制。"},"mcp":{"display":"MCP","title":"Model Context Protocol","kind":"wiki","path":"wiki/concepts/mcp.md","definition":"一套让大模型调用外部工具和数据源的开放协议：服务端声明有哪些工具可用，模型按需调用。","plain":"开放协议，让大模型能调外部工具和数据源。服务端先声明有哪些工具可用，模型需要时再调用。它解决的是「模型能调什么」。","analogy":"","why":"但它不记录「模型看过什么」。Cloudflare 指出的正是这个缺口——缺了观察记录，共享工作空间时就难判断是否越权。评估 Agent 权限时，MCP 只是第一层，还要补上资源可见性追踪。","alias":"模型上下文协议"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"},"rce":{"display":"RCE","title":"远程代码执行漏洞","kind":"temp","plain":"攻击者可以远程在目标服务器上执行任意代码，属于最高危级别的安全漏洞。","why":"AI 加速漏洞挖掘后，补丁窗口变短，依赖管理从运维事项升级为产品风险。"},"tpu":{"display":"TPU","title":"张量处理单元","kind":"temp","plain":"Google 自研的 AI 专用芯片，主要用于模型训练与推理。","why":"算力成本是 AI 产品毛利的第一变量，芯片选项变多意味着采购议价空间变大。"}};</script>
 <script>
 (function(){
   var DICT = window.__TERMS__ || {};
