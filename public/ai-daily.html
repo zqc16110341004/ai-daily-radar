@@ -315,80 +315,90 @@ footer h3{
 <body>
 <div class="wrap">
 <header class="masthead">
-<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-10-24 → 2026-10-27</span></div>
-<h1 class="serif">模型在降价、公司在上市，AI 回报却在行业外缺席</h1>
-<div class="stats"><span><b>7</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>9</b> 个</span><span>更新于 10-27 10:33</span></div>
+<div class="brandline"><span class="brand">AI 日报</span><span class="stamp">2026-10-25 → 2026-10-28</span></div>
+<h1 class="serif">模型更便宜、更难选：成本、合规与评测同时收紧</h1>
+<div class="stats"><span><b>8</b> 条</span><span>GitHub 项目 <b>4</b> 个</span><span>知识库术语 <b>8</b> 个</span><span>更新于 10-28 10:42</span></div>
 </header>
 <div class="news-grid">
 <article id="item-1">
-<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">美国 SEC 文件 / Hacker News 热帖 · 1494 分 / 1463 评</span></div>
-<h2>Anthropic 递交 S-1 招股书，头部模型公司开始接受公开市场审视</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">01</span><span class="from">美国 SEC 文件 / Hacker News 热帖 · 1689 分 / 1651 评</span></div>
+<h2>Anthropic 递交上市文件，前沿模型公司开始接受公开市场审视</h2>
 <div class="body">
-<p>Anthropic 向美国证券交易委员会提交了 S-1 注册声明，文件托管在 sec.gov 上。这是启动上市流程的第一份正式材料，意味着公司需要向公众披露业务结构、收入来源、成本构成与风险因素。这条素材在 Hacker News 上以 1494 分、1463 条讨论排在当日首位，热度远高于同期其他技术话题。</p>
-<p>对 AI 产品经理来说，真正的变化在信息透明度上。<button class="term term--temp" data-slug="s-1" type="button">S-1 招股书</button> 一旦公开，模型公司的毛利率、算力采购规模、企业客户集中度这些过去只在传闻里出现的数字，会变成可以逐季核对的一手材料。你在和供应商谈年度框架、判断对方当前的折扣能持续多久时，终于有了可以对照的依据，而不是只听销售说“我们在补贴市场”。</p>
-<p class="why"><strong>为什么值得关心</strong>：如果你把某个模型供应商作为核心功能依赖，这份文件是评估对方价格策略可持续性的第一手材料。建议据此提前准备多模型路由与切换成本预算——当供应商需要向公开市场证明毛利时，过去那种大幅度补贴式定价就很难长期维持。</p>
+<p>Anthropic 向美国证券交易委员会提交了 S-1 注册声明，这是走向公开上市的第一份正式披露文件。Hacker News 上的讨论热度接近 1700 分、1600 多条评论，是本期讨论量最大的一条。文件本身的意义在于：一家前沿模型公司第一次被放进了「必须披露收入结构、成本构成、算力承诺与风险因素」的框架里，而不再是靠博客文章和融资通稿对外沟通。</p>
+<p>对做 AI 产品的人来说，这份文件的价值有两个方向。一是采购与依赖管理：当你的主力模型供应商要面对公开市场的季度审视，补贴力度、免费额度、多年长约的定价承诺都可能随披露要求调整，产品侧的三年成本模型必须留出重新议价的空间，而不是把当前单价线性外推。二是情报价值：招股书里的收入构成、客户集中度和算力支出，比任何一份行业报告都更接近真实竞争格局，值得让负责路线图的人读一遍原文而不是二手解读。</p>
+<p class="why"><strong>为什么值得关心</strong>：从今天起，应该把主要模型供应商当成有财报周期的上市公司来评估：它们对毛利和成本的反应会比以前更快、更硬。凡是把「当前 API 价格」写进商业计划书的产品，都需要补一版价格上行的压力测试。</p>
 </div>
 <p class="readmore"><a href="https://www.sec.gov/Archives/edgar/data/2130357/000162828026067168/anthropicpbc-sx1.htm" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 <article id="item-2">
-<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">独立分析博客 / Hacker News 热帖 · 416 分 / 426 评</span></div>
-<h2>OpenAI 与 Anthropic 在几个月内把大模型价格下调最多八成，原因是什么</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">02</span><span class="from">OpenAI 官方博客 / Hacker News 热帖 · 626 分 / 420 评；Simon Willison 博客</span></div>
+<h2>OpenAI 发布 GPT-6.1 Terra</h2>
 <div class="body">
-<p>一篇技术分析文章统计，OpenAI 与 Anthropic 在短短几个月内把大模型 API 价格下调了最多约 80%，并追问背后的原因。文章把可能的解释放在一起讨论：推理硬件效率提升、模型变小变专、来自开源权重模型的竞争压力，以及用低价锁定开发者生态。讨论在 Hacker News 上获得 416 分、426 条评论。</p>
-<p>对做产品的人来说，这里有两个容易忽视的细节。一是降价通常伴随旧模型下线与新模型默认替换，价格降了但输出风格、指令遵循和拒绝行为都可能变化，线上功能会悄悄发生变化。二是价目表上的折扣不等于实际账单下降，缓存命中率、上下文长度、重试与失败调用都会抵消这部分差价。把“模型成本每年会降”写进财务模型是合理的，但需要明确它依赖的是持续迁移，而不是自动发生。</p>
-<p class="why"><strong>为什么值得关心</strong>：如果你的毛利模型建立在“明年模型更便宜”这一假设上，现在就该做一次压力测试：假设价格不再下降，产品是否还能成立。同时把多模型抽象层当成基础设施来做——否则降价红利会被迁移成本抵消，你只是换了家供应商继续被锁定。</p>
-</div>
-<p class="readmore"><a href="https://minimaxir.com/2026/10/cheap-llms/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-3">
-<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">OpenAI 官方博客 / Hacker News 热帖 · 517 分 / 329 评</span></div>
-<h2>OpenAI 发布 GPT-6.1 Terra，版本迭代进入小数点节奏</h2>
-<div class="body">
-<p>OpenAI 在官方博客发布 GPT-6.1 Terra，该条目在 Hacker News 上获得 517 分、329 条讨论；Simon Willison 同日也写了记录文章。从版本命名看，这是在一个大版本内部的迭代，而不是换代式发布。素材没有给出具体的基准分数与定价，需要回原文核对后再做对比。</p>
-<p>对产品团队来说，值得注意的不是这一版强了多少，而是节奏本身。版本号从“大版本跃迁”变成小数点迭代，意味着模型能力的更新周期可能已经短于多数团队的评测周期。当模型一年更新好几次，靠人工在发布日手动试几轮的做法就不再够用，你需要的是一套能在每次换代时自动跑完自有任务集的回归评测。</p>
-<p class="why"><strong>为什么值得关心</strong>：模型更新的速度已经超过大多数团队的验证速度。如果你的上线流程里没有“换模型前后自动跑一遍业务评测集”这一步，每一次默认版本变更都可能带来不易察觉的功能退化——尤其是那些不在公开榜单上、但对你业务关键的场景。</p>
+<p>OpenAI 上线了新模型 GPT-6.1 Terra，官方博客给出了介绍，Hacker News 上六百多分、四百多条评论，Simon Willison 也同步写了上手笔记。这是典型的「小版本快跑」节奏：版本号带小数点，发布间隔以周计，而不是过去那种一年一两次的大版本。</p>
+<p>这类发布对产品团队的真实影响不在「要不要换模型」，而在迁移成本已经变成一项常态支出。如果每六到八周就有一次值得评估的更新，那么「全量切换」的思路会持续亏损，更划算的做法是维护一套自己的任务评测集，新模型只跑这套集子做回归对比，达标才灰度。同时，模型版本号不该出现在你的对外宣传里——用户不关心你用哪一代，只关心结果稳不稳。</p>
+<p class="why"><strong>为什么值得关心</strong>：把「模型评估」从项目制的偶发工作改成常设流程，是这一阶段最实际的组织调整。没有自有评测集的产品团队，会在每一轮模型更新中被供应商的基准分数牵着走。</p>
 </div>
 <p class="readmore"><a href="https://openai.com/index/introducing-gpt-6-1-terra/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
+<article id="item-3">
+<div class="item-top"><span class="idx" aria-hidden="true">03</span><span class="from">Hacker News 热帖 · 434 分 / 434 评</span></div>
+<h2>OpenAI 与 Anthropic 数月内把大模型价格下调最高八成，为什么</h2>
+<div class="body">
+<p>一篇分析文章梳理了 OpenAI 与 Anthropic 在几个月内多次下调模型价格、累计幅度最高约八成的现象，并讨论了背后的推理成本下降、份额竞争与产能利用等因素。这条在 Hacker News 上引发了对价格战的密集讨论，正反两方都很激烈。</p>
+<p>需要提醒的是，单价下降不等于总成本下降。价格一降，产品侧通常会立刻放宽上下文长度、增加重试、把原来离线跑的批处理改成实时跑，用量涨得比单价跌得更快。所以真正该据此调整的判断是定价模型：如果你还在按 token 加价转售，毛利会被持续压缩，转向按任务结果或按席位计费的产品会更抗跌。另外，任何跨年的成本预测都该按季度重算，而不是签一份三年锁价合同然后等着被市场打脸。</p>
+<p class="why"><strong>为什么值得关心</strong>：降价周期里最容易犯的错，是把短暂的价格红利当成结构性成本优势写进商业模型。对 AI 产品负责人来说，这一条应当触发一次毛利假设复核，而不是一次简单的「成本降了，可以多上功能」。</p>
+</div>
+<p class="readmore"><a href="https://minimaxir.com/2026/10/cheap-llms/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
 <article id="item-4">
-<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Apollo 每日观察 / Hacker News 热帖 · 638 分 / 668 评</span></div>
-<h2>Apollo：科技行业之外，看不到 AI 带来的回报</h2>
+<div class="item-top"><span class="idx" aria-hidden="true">04</span><span class="from">Hacker News 热帖 · 666 分 / 272 评（Lynch 实验室公开对比）</span></div>
+<h2>十年前的卷积网络在皮肤癌诊断上跑赢当前前沿大模型</h2>
 <div class="body">
-<p>Apollo 的 Daily Spark 栏目发文指出，从经济数据看，AI 带来的生产率或利润回报目前主要集中在科技行业内部，科技行业之外还看不到明显迹象。这条分析在 Hacker News 上引发 638 分、668 条评论的讨论，反馈相当两极。</p>
-<p>把它和本期其他几条放在一起看会更有意思：一边是模型价格大降、模型公司在冲刺上市，另一边是传统行业的买家在账面上还看不出收益。这中间的落差正是产品经理要解决的问题——客户不是买不到 AI 能力，而是买完之后说不清它到底值多少钱。</p>
-<p class="why"><strong>为什么值得关心</strong>：如果你的客户来自科技行业之外的行业，明年的预算审查会更严，采购方会要求可归因的回报证明。把“上线后如何证明有效”做成产品的一部分——基线测量、对照实验、自动生成的效益报告——可能比再多接一个模型更能推动续费和扩购。</p>
-</div>
-<p class="readmore"><a href="https://www.apollo.com/wealth/insights-news/insights/daily-spark/no-signs-of-ai-payoff-outside-the-tech-sector" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-5">
-<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">Cohere 官方博客 / Hacker News 热帖 · 259 分 / 111 评</span></div>
-<h2>Cohere 披露一款热门开源权重模型出现令人担忧的行为</h2>
-<div class="body">
-<p>Cohere 在一篇博客中称，观察到一款流行的开源权重模型出现了“令人担忧的行为”，这条内容在 Hacker News 上获得 259 分、111 条评论。博客原文涉及具体模型与复现方式，素材摘要里没有展开，做技术决策前应当回原文逐条核对，而不是只看标题。</p>
-<p>对使用 <button class="term term--wiki" data-slug="open-weights" type="button">开放权重</button> 自托管方案的产品团队来说，这类披露提醒的是一件结构性的事：权重可以下载，责任却不会跟着下载。自托管省下的调用费用，换回来的是行为审计、版本管理、出问题时的止损预案都要自己做。关键路径上要么补齐评测与 <button class="term term--wiki" data-slug="human-in-the-loop" type="button">人在回路</button> 的审核环节，要么老老实实购买带合同与 SLA 的托管服务。</p>
-<p class="why"><strong>为什么值得关心</strong>：开源不等于可控，便宜不等于安全。在做 <button class="term term--wiki" data-slug="model-selection" type="button">model-selection</button> 时，把可审计性、供应商责任划分、事故后的止损路径正式写进评分表，而不是只比价格和榜单分数——一旦出问题，这几项决定的是你能不能在一周内换掉它。</p>
-</div>
-<p class="readmore"><a href="https://cohere.com/blog/concerning-behaviour-popular-open-weight-ai-model" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
-</article>
-<article id="item-6">
-<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">Lynch Lab 研究博客 / Hacker News 热帖 · 655 分 / 269 评</span></div>
-<h2>十年前的卷积网络在皮肤癌诊断上仍胜过前沿大模型</h2>
-<div class="body">
-<p>研究者在一篇博客中报告，一个十年前架构的 <button class="term term--temp" data-slug="cnn" type="button">卷积神经网络</button> 在皮肤癌诊断任务上的表现优于当前的前沿大语言模型，这条内容在 Hacker News 上获得 655 分、269 条讨论。讨论的焦点集中在：为什么在图像分类这种被专用模型研究了很多年的任务上，通用大模型仍然不占优势。</p>
-<p>这条对做 AI 产品的人是一个很直接的反例。垂直领域、标注质量高、任务边界清楚的窄问题上，小而专用的模型往往更准、更便宜、延迟更低，也更容易通过医疗这类行业的合规审查。反过来，把图像诊断交给通用大模型，通常是因为团队想统一技术栈，而不是因为它效果更好。</p>
-<p class="why"><strong>为什么值得关心</strong>：这是 <button class="term term--wiki" data-slug="model-selection" type="button">model-selection</button> 的具体实践：先跑最小基线——规则、小模型、现成专用模型——确认不够用再上大语言模型。按这个顺序做，很多功能能省掉一个数量级的推理成本，也少了一套提示词维护负担。</p>
+<p>一项公开的对比实验显示，十年前训练的老式卷积神经网络，在皮肤癌诊断任务上的表现优于当前的前沿通用大模型。作者把对比结果直接做成了网页，Hacker News 上的讨论集中在「前沿」这个词到底意味着什么。</p>
+<p>这条对产品选型的冲击很直接：在任务窄、指标明确、有标注数据的场景里，专用小模型往往同时赢在准确率、延迟和单价上，而通用大模型赢在冷启动和长尾泛化。所以选型的第一问不该是「用哪个最强的模型」，而是「这是不是窄任务」。是的话，先花两周训一个专用基线，再拿它去和通用模型比；只有当基线明显不够用时，才轮到上大模型。把这个顺序写进团队的选型规范，能省掉大量默认走 LLM 的冤枉钱。</p>
+<p class="why"><strong>为什么值得关心</strong>：高 stakes 场景（医疗、金融、工业质检）里，把通用大模型当默认答案是一种昂贵的惰性。这条素材应当被用来校准团队对「前沿」的理解：榜单前沿不等于任务最优，验收必须用自己的标注集。</p>
 </div>
 <p class="readmore"><a href="https://lynchlab.net/llm-skin-cancer" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
-<article id="item-7">
-<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">Cerebras 官方博客 / Hacker News 热帖 · 364 分 / 141 评</span></div>
-<h2>Cerebras 公布在自家芯片上部署万亿参数前沿模型的方法</h2>
+<article id="item-5">
+<div class="item-top"><span class="idx" aria-hidden="true">05</span><span class="from">OpenAI 官方博客 / Hacker News 热帖 · 1129 分 / 660 评；预印本讨论 778 分 / 283 评</span></div>
+<h2>OpenAI 连发数学与科学成果，另有预印本宣称证伪指数时间假设</h2>
 <div class="body">
-<p>Cerebras 在官方博客中介绍了如何在自家的晶圆级芯片上部署万亿参数级别的前沿模型，这条内容在 Hacker News 上获得 364 分、141 条讨论。素材没有给出具体的吞吐与报价数据，如果要把这些结论当作采购依据，需要回到原文查证。</p>
-<p>值得关注的是推理供给侧正在分化。GPU 之外出现新的部署路线，对产品端的直接影响是延迟档位和单 token 价格可能出现新的报价组合。但它同时带来迁移成本：模型版本、配额、可用性都取决于一家专用硬件厂商。对做实时对话、语音交互或 Agent 循环这类对首字延迟敏感的产品，这类路线值得留意，但短期不宜写进架构的硬依赖。</p>
-<p class="why"><strong>为什么值得关心</strong>：如果你的产品体验瓶颈在首字延迟上，推理硬件的分化会打开新的可能性，也带来新的单一供应商风险。合理的判断依据是：先把它当候选选项持续跟踪价格与可用性，等接口稳定到可以随时切换，再谈架构层面的投入。</p>
+<p>OpenAI 发布了一组与学术社区合作完成的数学、计算机科学与物理学工作，官方口径是「构建科学理解」。几乎同期，GitHub 上一份题为《<button class="term term--temp" data-slug="exponential-time-hypothesis" type="button">指数时间假设</button> 是错的》的预印本论文在 Hacker News 上拿到近 800 分、280 多条讨论。两件事在时间上挨得很近，构成了一个「模型开始产出可被检验的新结论」的叙事。</p>
+<p>对产品经理来说，重点不是「AI 会做数学了」，而是验收方式正在变化。当模型输出的是可被验证的结论而不是一段话，你的质量体系就得从「看起来对不对」升级为「有没有人能复核、复核成本多高」。这也意味着 <button class="term term--wiki" data-slug="human-in-the-loop" type="button">人在回路</button> 从体验设计问题变成了成本结构问题：专家复核的单价，可能比模型调用贵两个数量级。同时提醒一句，预印本尚未经过同行评议，对外材料里把「宣称」写成「证明」是要出事的。</p>
+<p class="why"><strong>为什么值得关心</strong>：如果你的产品面向研究、分析、尽调这类需要结论可信的场景，「AI 给出了答案」远远不够，你得设计出谁来签字这一环。这一条值得用来提前向业务方管理预期，避免被打上「AI 能替专家」的标签后收不了场。</p>
 </div>
-<p class="readmore"><a href="https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+<p class="readmore"><a href="https://openai.com/index/building-scientific-understanding-with-academic-communities/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-6">
+<div class="item-top"><span class="idx" aria-hidden="true">06</span><span class="from">斯坦福日报 / Hacker News 热帖 · 480 分 / 266 评</span></div>
+<h2>斯坦福日报：Claude 被指用盗版获取的教授著作训练</h2>
+<div class="body">
+<p>斯坦福日报报道称，斯坦福部分教授出版的书籍被以盗版形式获取，并用于 Claude 的训练。报道将训练数据来源问题重新推到台面上，Hacker News 上的讨论集中在「模型公司对语料来源的尽职调查到底做了什么」。</p>
+<p>训练数据合规正在从法务议题变成产品议题。企业客户在采购评审里越来越常问一句「你们的模型用了什么数据」，而这个问题的答案往往不在模型公司手里，而在语料供应链的某一环。对做垂直模型的团队，这意味着你的语料授权链要能拿出书面证据，而不是「网上抓的」；对做应用层的团队，供应商尽调清单里应该加一条：训练数据来源、相关诉讼状态、以及一旦被判侵权时的责任划分与迁移方案。</p>
+<p class="why"><strong>为什么值得关心</strong>：这是本期风险面最具体的一条。面向法务、出版、教育、内容行业的 AI 产品，数据来源问题会直接卡在采购环节；提前准备可解释的语料来源说明，比事后写声明便宜得多。</p>
+</div>
+<p class="readmore"><a href="https://stanforddaily.com/2026/10/27/professors-books-pirated-to-train-claude/" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-7">
+<div class="item-top"><span class="idx" aria-hidden="true">07</span><span class="from">IEEE Spectrum / Hacker News 热帖 · 459 分 / 211 评</span></div>
+<h2>维基百科开始成规模清理 AI 生成的条目内容</h2>
+<div class="body">
+<p>IEEE Spectrum 报道，维基百科的志愿者项目正在成规模地清理由 AI 生成的条目内容，涉及识别、标注与返工修订。这是社区层面对「低质量生成文本涌入」做出的一次组织化反应，而不是靠某个检测工具。</p>
+<p>对做内容类产品的团队，这条要读出的信号是：公共知识池的守门人已经开始用流程而非算法来兜底。检测 AI 文本并不可靠，但编辑审查加来源核验这套人力流程是有效的。如果你的产品输出会被发布到公共平台，就该提前设计溯源与署名机制——谁生成的、基于什么来源、由谁复核，否则品牌会被整体贴上「AI 垃圾」的标签，而且是不可逆的那种。</p>
+<p class="why"><strong>为什么值得关心</strong>：内容类产品正在面对一个和 SEO 时代类似的拐点：平台规则从「鼓励产量」转向「惩罚低质」。这一条直接影响你要不要给 AI 生成内容加上人工复核和来源标注这两个功能，以及愿不愿意为此承担成本。</p>
+</div>
+<p class="readmore"><a href="https://spectrum.ieee.org/wikipedia-wikiproject-ai-writing-cleanup" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
+</article>
+<article id="item-8">
+<div class="item-top"><span class="idx" aria-hidden="true">08</span><span class="from">Futurism / Hacker News 热帖 · 280 分 / 197 评</span></div>
+<h2>报道称亚马逊在持续未达预期后收缩其 AI 部门</h2>
+<div class="body">
+<p>Futurism 报道称，亚马逊在自研 AI 业务持续未达预期之后对其 AI 部门进行了收缩，报道中提到了 Nova 相关团队。需要说明的是，这目前是单一媒体的报道，具体规模与人事细节尚未获得多方确认，引用时应保留措辞上的余地。</p>
+<p>抛开具体数字不谈，这条和前面的降价新闻放在一起看，指向同一个判断：大厂自研基础模型的容错窗口正在收窄。对产品团队的直接含义是，不要把路线图押注在某一家自研模型能追平前沿的假设上。工程上更稳妥的做法是在业务层做 <button class="term term--wiki" data-slug="model-selection" type="button">model-selection</button> 抽象：模型可替换、评测可对比、切换成本可控。这层抽象平时看着像过度设计，等到供应商路线变动的那天，它就是你能不能在一周内换掉底座的分水岭。</p>
+<p class="why"><strong>为什么值得关心</strong>：它提醒 AI 产品负责人区分两件事：供应商的模型能力，和供应商对这块业务的承诺强度。前者看榜单，后者看组织调整。后者变化时，前者往往很快就会跟着变。</p>
+</div>
+<p class="readmore"><a href="https://futurism.com/artificial-intelligence/amazon-ai-division-failure-nova" target="_blank" rel="noopener noreferrer">读原文 ↗</a></p>
 </article>
 </div>
 <section class="github-radar" id="github">
@@ -398,83 +408,83 @@ footer h3{
 <div class="repo-grid">
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">morluto/rea</a></h3>
-<span class="repo-category">用 Agent 做逆向工程的工具</span></div></div>
+<h3><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">affaan-m/ECC</a></h3>
+<span class="repo-category">跨工具 Agent 运行环境增强层</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>392,128</b></span>
-<span>增长 <b>本期建立基线，明日起显示增量</b></span>
-<span>语言 <b>TypeScript</b></span>
+<span>Stars <b>290,959</b></span>
+<span>增长 <b>本期建立基线，下一期起显示增量</b></span>
+<span>语言 <b>JavaScript</b></span>
 <span>许可 <b>MIT</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个用 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 做逆向工程的命令行工具，覆盖从应用行为一路到原生二进制的分析，主题标签里包含 agent-skills、<button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把逆向工程拆成可复用的 agent 技能，挂到你已经熟悉的编码 Agent 上，而不是另造一个专用分析器——同一条分析流程可以换 harness 继续跑。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要做安全分析、竞品客户端行为研究、遗留二进制排查的团队；普通业务开发基本用不上。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">它和本期 Agent 工具链的主线呼应：Agent 的能力边界正在从“写新代码”扩展到“读懂既有系统”，这是产品能力评估里容易被忽略的一环。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">逆向工程涉及授权与合规边界，法律风险由使用者承担。这类项目的星标数异常高，接入前务必先看代码实现和它实际拿到的权限范围。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一套面向 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button>、Cursor、OpenCode 等多种运行环境的增强层，把技能、记忆、安全策略与研究优先的开发流程打包成插件装进现有工具。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它不是又一个 Agent，而是横跨多个 <button class="term term--temp" data-slug="agent-harness" type="button">Agent 运行环境</button> 的能力层：同一套技能与钩子能同时挂在不同工具上，不必给每个工具各维护一份配置。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">同时在多个编码 Agent 之间切换、希望技能与记忆跨工具复用的团队；只用单一工具的团队收益有限。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">本期多条新闻都在讲模型降价与选型，但真实的效率损耗往往藏在工具链碎片化上——配置层能不能复用，直接决定一个人的产出上限。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">项目文档明确提示不要叠加多种安装方式，重复安装会导致技能、命令和钩子重复触发。它还附带安全类组件，接入前务必审查这些钩子实际拿到了哪些文件与命令权限。</span></div>
 </div>
-<p class="repo-link"><a href="https://github.com/morluto/rea" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+<p class="repo-link"><a href="https://github.com/affaan-m/ECC" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
+</div></article>
+<article class="repo-card">
+<div class="repo-visual"><div class="repo-head">
+<h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
+<span class="repo-category">面向 Agent 的网页抓取与结构化数据层</span></div></div>
+<div class="repo-body">
+<div class="repo-metrics">
+<span>Stars <b>196,108</b></span>
+<span>增长 <b>本期建立基线，下一期起显示增量</b></span>
+<span>语言 <b>TypeScript</b></span>
+<span>许可 <b>AGPL-3.0</b></span>
+</div>
+<div class="repo-notes">
+<div class="repo-note"><span class="k">这是</span><span class="v">把网页抓取、解析并转换成结构化数据的开源库与服务，输出可以直接喂给 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 和 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 流程使用。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它是为模型消费而设计的，输出的是干净的结构化内容，而不是给人看的网页快照；抓取、清洗、切分这几步被合并进了一条链路。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要把外部网页内容持续接进自有知识库或 Agent 的产品团队，尤其是没有专门爬虫工程资源的小团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">推理变便宜之后，瓶颈正在从模型成本转向数据获取与清洗质量。抓取层做得好不好，直接决定你的 RAG 效果天花板在哪。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">AGPL-3.0 对闭源商用和分发有额外义务，上线前要请法务确认实际使用方式是否触发开源义务；同时对目标站点的抓取要遵守服务条款与 robots 规则。</span></div>
+</div>
+<p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">Graphify-Labs/graphify</a></h3>
-<span class="repo-category">代码库知识图谱 / 检索增强</span></div></div>
+<span class="repo-category">代码库知识图谱与结构化检索</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>136,215</b></span>
-<span>增长 <b>—</b></span>
+<span>Stars <b>137,055</b></span>
+<span>增长 <b>本期建立基线，下一期起显示增量</b></span>
 <span>语言 <b>Python</b></span>
 <span>许可 <b>Apache-2.0</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">把代码库连同文档、SQL schema、配置文件和 PDF 一起解析成可查询知识图谱的工具，以 <code>/graphify</code> 技能形式提供给 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、Cursor、<button class="term term--wiki" data-slug="codex" type="button">OpenAI Codex</button> 等命令行工具。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它用本地确定性的 AST 解析，每条边都有解释，完全不依赖向量库——这跟主流 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 先做嵌入、再比相似度的做法是两条路。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">代码库规模大、需要 Agent 回答跨文件跨模块问题的工程团队；也是给“检索要不要上向量库”这个问题提供一个结构化替代答案的地方。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">它代表了检索增强的一条分支：结构化确定性解析在代码这类强结构数据上，可能比语义相似度检索更可靠、更可解释。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">解析质量取决于对各语言的支持程度，超大仓库首次构建耗时较长；图谱的更新维护也需要纳入流程，否则会变成又一份过期文档。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">把代码库连同文档、SQL schema、配置文件和 PDF 一起转成可查询知识图谱的工具，以技能形式接入 <button class="term term--wiki" data-slug="claude-code" type="button">claude code</button>、Cursor、Codex 等命令行 Agent，解析在本地完成。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它明确不用向量库，走本地确定性的语法树解析，每一条边都有解释——这是用结构化换取可追溯，而不是用相似度换取召回。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">代码库规模大、需要精确引用和可解释检索的工程团队，以及受限于合规不能把代码送进向量数据库的场景。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">它给 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 提供了另一条技术路线：在你要求「答错代价很高」的场景里，图谱式检索的可解释性值得做一次对照实验再决定。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">本地解析会持续占用机器资源；图谱质量强依赖解析器对语言和框架的覆盖度，冷门技术栈容易产生失真，接入前先在自己的仓库上跑一遍验证。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/Graphify-Labs/graphify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 <article class="repo-card">
 <div class="repo-visual"><div class="repo-head">
 <h3><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">langgenius/dify</a></h3>
-<span class="repo-category">Agent 工作流与 RAG 平台</span></div></div>
+<span class="repo-category">可自托管的 Agent 工作流与 RAG 平台</span></div></div>
 <div class="repo-body">
 <div class="repo-metrics">
-<span>Stars <b>159,639</b></span>
-<span>增长 <b>—</b></span>
+<span>Stars <b>159,744</b></span>
+<span>增长 <b>本期建立基线，下一期起显示增量</b></span>
 <span>语言 <b>Python</b></span>
 <span>许可 <b>NOASSERTION</b></span>
 </div>
 <div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个可视化搭建 agentic 工作流与 <button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 管线的平台，支持丰富的模型与工具，可部署在云端、VPC 或完全自托管。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它把从原型到生产要用的整套栈放在同一个协作工作区里，团队验证完一个想法不必换框架重写一遍——这是它和“一堆独立开源组件拼起来”最大的区别。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">想在一两周内验证一个 AI 功能是否成立的产品团队，以及需要在自托管环境下满足数据合规的企业。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">在“企业买了 AI 却说不清回报”的当下，缩短从想法到可测量结果的距离，本身就是在降低试错成本。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">许可证标注为 NOASSERTION，不是标准开源许可，商用前需确认附加条款；自托管的运维与模型配额管理成本也不低，别按零成本估算。</span></div>
+<div class="repo-note"><span class="k">这是</span><span class="v">一个把 Agentic 工作流、<button class="term term--wiki" data-slug="rag" type="button">Retrieval-Augmented Generation</button> 管道、模型与工具支持放在同一协作工作区里的平台，支持云端、VPC 与完全自托管部署。</span></div>
+<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它强调从原型到生产用同一套栈，不用在验证完之后重写一遍；自托管与私有化部署是核心卖点，数据可以不出域。</span></div>
+<div class="repo-note"><span class="k">适合</span><span class="v">需要私有化部署、要把 AI 能力接进内部系统、但不想自研编排层的中大型团队。</span></div>
+<div class="repo-note"><span class="k">今天看</span><span class="v">在模型价格快速下行、大厂自研收缩的环境里，「不自研编排、只自研场景」是最省钱的路线，这类平台是多数团队的默认起点。</span></div>
+<div class="repo-note"><span class="k">注意</span><span class="v">许可证字段为 NOASSERTION，说明并非标准开源许可，商用前必须逐条核对条款（尤其是品牌标识与多租户限制）；自托管也意味着备份、升级、扩容这些运维成本由你自己承担。</span></div>
 </div>
 <p class="repo-link"><a href="https://github.com/langgenius/dify" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
-</div></article>
-<article class="repo-card">
-<div class="repo-visual"><div class="repo-head">
-<h3><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">firecrawl/firecrawl</a></h3>
-<span class="repo-category">面向 Agent 的网页抓取与检索</span></div></div>
-<div class="repo-body">
-<div class="repo-metrics">
-<span>Stars <b>195,720</b></span>
-<span>增长 <b>—</b></span>
-<span>语言 <b>TypeScript</b></span>
-<span>许可 <b>AGPL-3.0</b></span>
-</div>
-<div class="repo-notes">
-<div class="repo-note"><span class="k">这是</span><span class="v">一个给 <button class="term term--wiki" data-slug="agent" type="button">AI Agent</button> 提供网页数据的抓取与搜索库，把网页转成适合模型消费的结构化内容。</span></div>
-<div class="repo-note is-diff"><span class="k">不同</span><span class="v">它的输出直接面向大模型，而不是给你原始 HTML 让你自己清洗，省掉一整层解析与去噪工程——这是它和通用爬虫框架的核心差异。</span></div>
-<div class="repo-note"><span class="k">适合</span><span class="v">需要实时网页信息的产品：竞品情报、比价、客服知识库更新、研究型 Agent。</span></div>
-<div class="repo-note"><span class="k">今天看</span><span class="v">Agent 能力的天花板很大程度取决于拿到的数据质量，数据入口层正在成为一个独立的产品类别。</span></div>
-<div class="repo-note"><span class="k">注意</span><span class="v">AGPL-3.0 对以服务形式分发有传染性要求，商用前请法务评估；抓取目标站点的 robots 协议与版权边界也需要逐站确认，不要默认可以爬。</span></div>
-</div>
-<p class="repo-link"><a href="https://github.com/firecrawl/firecrawl" target="_blank" rel="noopener noreferrer">查看 GitHub 仓库 ↗</a></p>
 </div></article>
 </div></section>
 <footer>
@@ -483,14 +493,14 @@ footer h3{
 <h3>待摄入队列 · 出现越多越值得正式收进去</h3>
 <div class="pending">
 <span>推理成本 <b>×3</b></span>
-<span>S-1 招股书 <b>×2</b></span>
-<span>开源权重 <b>×3</b></span>
+<span>Agent 运行环境 <b>×4</b></span>
+<span>训练数据合规 <b>×3</b></span>
 </div>
 <p class="note">日报术语来自维护中的知识库，仅用于解释本期内容。</p>
 </footer>
 </div>
 <div class="scrim" id="scrim"><div class="card" id="card"></div></div>
-<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"cnn":{"display":"卷积神经网络","title":"卷积神经网络（CNN）","kind":"temp","plain":"一类经典的图像识别模型架构，参数规模远小于大语言模型。","why":"皮肤癌诊断案例里，十年前的 CNN 击败前沿大模型，是模型选型的典型反例。"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"human-in-the-loop":{"display":"人在回路","title":"人在回路","kind":"wiki","path":"wiki/concepts/human-in-the-loop.md","definition":"在自动化流程的关键节点插入人工确认，由人决定是否放行，常见于 Agent 执行危险命令前的审批弹窗。","plain":"在自动化流程的关键节点插入人工确认，由人决定放不放行。Agent 要执行危险命令前弹个审批窗，就是典型的人在回路。","analogy":"","why":"它被广泛当作 Agent 的安全底线，但高噪声下人的判断会迅速退化（Scale X 的 4 万次模拟显示平均漏掉三分之一威胁）。应把它当兜底而非唯一防线，主防线放在沙箱与上下文隔离。","alias":"HITL、人工审批、human in the loop"},"model-selection":{"display":"model-selection","title":"模型选型","kind":"wiki","path":"wiki/concepts/model-selection.md","definition":"模型选型是把\"用哪个模型\"当成产品策略而非技术选择来做：明确目标 → 用真实 query 构建测试集 → GSB 盲评 → 成本/耗时量化 → 综合决策，并建立持续评测机制（不是非此即彼的一次性选择）。与 model-strategy（更偏宏观的模型战略/开源闭源/国内外）相对，本概念聚焦\"具体两个候选模型怎么选\"的方法。","plain":"","analogy":"","why":"","alias":"模型选型、Model Selection、选模型、模型选择"},"open-weights":{"display":"开放权重","title":"开放权重模型","kind":"wiki","path":"wiki/concepts/open-weights.md","definition":"模型参数可公开下载、能在自己机器上运行的模型。注意它不等于开源——训练数据和训练代码通常并未一并公开。","plain":"模型参数公开可下载、能在自己机器上跑的模型。但它不等于「开源」：训练数据和训练代码通常没一起公开。","analogy":"","why":"它决定你能否把数据留在自己的边界内处理，以及是否会被单一供应商的定价和可用性绑死。自建审核、私有部署都建立在开放权重之上。","alias":"开源权重、open weights"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"},"s-1":{"display":"S-1 招股书","title":"S-1 注册声明","kind":"temp","plain":"美国公司申请上市的注册文件，需公开披露财务、成本结构与风险因素。","why":"本期 Anthropic 提交 S-1，是外界第一次能系统核对头部模型公司商业模式的机会。"}};</script>
+<script>window.__TERMS__={"agent":{"display":"AI Agent","title":"智能体","kind":"wiki","path":"wiki/concepts/agent.md","definition":"","plain":"","analogy":"","why":"","alias":"Agent、智能体、AI Agent"},"agent-harness":{"display":"Agent 运行环境","title":"Agent Harness","kind":"temp","plain":"指承载 Agent 运行的外壳层，负责工具调用、权限控制、上下文管理、技能与钩子加载，例如 Claude Code、Codex、Cursor 都属于不同的运行环境。","why":"工具链碎片化是本期 GitHub 项目的共同前提，理解这一层才能判断「配置能否跨工具复用」为什么值钱。"},"claude-code":{"display":"claude code","title":"Claude Code","kind":"wiki","path":"wiki/entities/claude-code.md","definition":"Anthropic 推出的 AI 编码工具/CLI，代表\"AI 已具备替代程序员部分能力\"的产品形态。课程中用以说明 AI 对程序员岗位的潜在冲击。","plain":"","analogy":"","why":"","alias":"Claude Code"},"codex":{"display":"OpenAI Codex","title":"Codex","kind":"wiki","path":"wiki/entities/codex.md","definition":"OpenAI 的 AI 编程 Agent，与 Anthropic 的 Claude Code 形成对照。2026 年 2 月案例：3 名工程师 / 5 个月 / 100 万行生产代码 / 1500 个 PR 全由 Codex 生成。课程中频繁与 Claude Code 配对使用（多模型协作分流）。","plain":"","analogy":"","why":"","alias":"Codex、OpenAI Codex"},"exponential-time-hypothesis":{"display":"指数时间假设","title":"Exponential Time Hypothesis","kind":"temp","plain":"计算复杂性理论中的一个未证明假设，大意是某些经典难题不存在显著快于穷举的算法。若它被证伪，意味着这类问题的算法上限比此前认为的更低。","why":"本期 OpenAI 相关预印本宣称将其证伪，是理解「模型产出可检验新结论」这条主线的关键背景。"},"human-in-the-loop":{"display":"人在回路","title":"人在回路","kind":"wiki","path":"wiki/concepts/human-in-the-loop.md","definition":"在自动化流程的关键节点插入人工确认，由人决定是否放行，常见于 Agent 执行危险命令前的审批弹窗。","plain":"在自动化流程的关键节点插入人工确认，由人决定放不放行。Agent 要执行危险命令前弹个审批窗，就是典型的人在回路。","analogy":"","why":"它被广泛当作 Agent 的安全底线，但高噪声下人的判断会迅速退化（Scale X 的 4 万次模拟显示平均漏掉三分之一威胁）。应把它当兜底而非唯一防线，主防线放在沙箱与上下文隔离。","alias":"HITL、人工审批、human in the loop"},"model-selection":{"display":"model-selection","title":"模型选型","kind":"wiki","path":"wiki/concepts/model-selection.md","definition":"模型选型是把\"用哪个模型\"当成产品策略而非技术选择来做：明确目标 → 用真实 query 构建测试集 → GSB 盲评 → 成本/耗时量化 → 综合决策，并建立持续评测机制（不是非此即彼的一次性选择）。与 model-strategy（更偏宏观的模型战略/开源闭源/国内外）相对，本概念聚焦\"具体两个候选模型怎么选\"的方法。","plain":"","analogy":"","why":"","alias":"模型选型、Model Selection、选模型、模型选择"},"rag":{"display":"Retrieval-Augmented Generation","title":"检索增强生成","kind":"wiki","path":"wiki/concepts/rag.md","definition":"让大模型在生成内容时不仅依赖自身参数，还能调用外部知识库进行信息检索的范式。解决模型知识时效性、可溯源性问题。","plain":"","analogy":"","why":"","alias":"检索增强生成、RAG、Retrieval-Augmented Generation、知识增强"}};</script>
 <script>
 (function(){
   var DICT = window.__TERMS__ || {};
