@@ -1,0 +1,144 @@
+{
+  "headline": "AI 日报 · 今日速览（自动聚合，未做中文解读）",
+  "news": [
+    {
+      "source": "Hacker News 热帖 · 2945分 / 890评",
+      "title": "Astra can read and write weights to improve Qwen",
+      "url": "https://rikiyat.github.io/blog/weight-space-programming/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Astra can read and write weights to improve Qwen"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 1493分 / 485评",
+      "title": "Postman silently auto-installs AI plugins and attempts to share all API data",
+      "url": "https://github.com/postmanlabs/postman-app-support/issues/14370",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Postman silently auto-installs AI plugins and attempts to share all API data"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 1113分 / 647评",
+      "title": "AI is forcing us to pay off 40 years of technical debt",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "AI is forcing us to pay off 40 years of technical debt"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 830分 / 390评",
+      "title": "Show HN: Subvocal – Talk to your computer without making noise",
+      "url": "https://news.ycombinator.com/item?id=50340088",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Show HN: Subvocal – Talk to your computer without making noise"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 662分 / 461评",
+      "title": "Google will turn off search for schools that reject AI",
+      "url": "https://www.nytimes.com/2026/11/03/us/google-search-schools-restrict-ai.html",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Google will turn off search for schools that reject AI"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 634分 / 164评",
+      "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+      "url": "https://news.ycombinator.com/item?id=50363461",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 624分 / 212评",
+      "title": "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks",
+      "url": "https://freenode.net/article/ubuntu-lts-kernels-still-unfixed-for-critical-cve-2026-98432",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Ubuntu still has not released patch for Linux 0day RCE in almost 3 weeks"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 594分 / 274评",
+      "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    }
+  ],
+  "repos": [
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "category": "GitHub 热门项目",
+      "stars": "260614",
+      "growth": "—",
+      "lang": "Python",
+      "license": "MIT",
+      "notes": {
+        "这是": "The agent that grows with you",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "category": "GitHub 热门项目",
+      "stars": "201315",
+      "growth": "—",
+      "lang": "C++",
+      "license": "Apache-2.0",
+      "notes": {
+        "这是": "An Open Source Machine Learning Framework for Everyone",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "category": "GitHub 热门项目",
+      "stars": "198700",
+      "growth": "—",
+      "lang": "TypeScript",
+      "license": "AGPL-3.0",
+      "notes": {
+        "这是": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "Significant-Gravitas/AutoGPT",
+      "url": "https://github.com/Significant-Gravitas/AutoGPT",
+      "category": "GitHub 热门项目",
+      "stars": "187910",
+      "growth": "—",
+      "lang": "Python",
+      "license": "NOASSERTION",
+      "notes": {
+        "这是": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    }
+  ],
+  "terms": {},
+  "pending": {},
+  "date": "2026-11-05",
+  "range": "2026-11-02 → 2026-11-05",
+  "updated": "11-05 11:51"
+}
