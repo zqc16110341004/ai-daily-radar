@@ -1,0 +1,144 @@
+{
+  "headline": "AI 日报 · 今日速览（自动聚合，未做中文解读）",
+  "news": [
+    {
+      "source": "Hacker News 热帖 · 1558分 / 496评",
+      "title": "Claude Code sends your email address to websites",
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Claude Code sends your email address to websites"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 1292分 / 748评",
+      "title": "AI is forcing us to pay off 40 years of technical debt",
+      "url": "https://spectrum.ieee.org/ai-in-cybersecurity-php2shell-vulnerability",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "AI is forcing us to pay off 40 years of technical debt"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 724分 / 197评",
+      "title": "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)",
+      "url": "https://news.ycombinator.com/item?id=50363461",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Tell HN: Gemini trains on chat history, even for subscribers (personal accounts)"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 687分 / 278评",
+      "title": "Blender's UI and Runtime: Much Faster Than GPUI",
+      "url": "https://github.com/ppmpreetham/BUI",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Blender's UI and Runtime: Much Faster Than GPUI"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 624分 / 408评",
+      "title": "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS",
+      "url": "https://github.com/PrivSec-dev/banking-apps-compat-report/issues/105",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Dutch 'idealist' bank ASN blocks non-Google Android, including GrapheneOS"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 614分 / 289评",
+      "title": "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux",
+      "url": "https://www.mindstudio.ai/blog/linux-nvidia-rtx-spark-laptop",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Nvidia RTX Spark encrypted firmware slows inference speed to 35% on Linux"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 498分 / 223评",
+      "title": "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue",
+      "url": "https://finance.yahoo.com/technology/ai/articles/mark-cuban-says-facebook-knowingly-213000020.html",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Cuban: Facebook knowingly runs AI deepfake scam ads; docs say $16B fraud revenue"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 486分 / 362评",
+      "title": "A thousand fewer paths to root",
+      "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "A thousand fewer paths to root"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    }
+  ],
+  "repos": [
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "category": "GitHub 热门项目",
+      "stars": "298636",
+      "growth": "—",
+      "lang": "JavaScript",
+      "license": "MIT",
+      "notes": {
+        "这是": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "category": "GitHub 热门项目",
+      "stars": "261238",
+      "growth": "—",
+      "lang": "Python",
+      "license": "MIT",
+      "notes": {
+        "这是": "The agent that grows with you",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "category": "GitHub 热门项目",
+      "stars": "201368",
+      "growth": "—",
+      "lang": "C++",
+      "license": "Apache-2.0",
+      "notes": {
+        "这是": "An Open Source Machine Learning Framework for Everyone",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "category": "GitHub 热门项目",
+      "stars": "199292",
+      "growth": "—",
+      "lang": "TypeScript",
+      "license": "AGPL-3.0",
+      "notes": {
+        "这是": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    }
+  ],
+  "terms": {},
+  "pending": {},
+  "date": "2026-11-07",
+  "range": "2026-11-04 → 2026-11-07",
+  "updated": "11-07 11:21"
+}
