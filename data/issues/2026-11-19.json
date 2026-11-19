@@ -1,0 +1,144 @@
+{
+  "headline": "AI 日报 · 今日速览（自动聚合，未做中文解读）",
+  "news": [
+    {
+      "source": "Hacker News 热帖 · 1337分 / 852评",
+      "title": "GPT‑6.2 Astra and Sol",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "GPT‑6.2 Astra and Sol"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 916分 / 149评",
+      "title": "How to make almost anything",
+      "url": "https://pub.cba.mit.edu/863.26/site/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "How to make almost anything"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 767分 / 688评",
+      "title": "AI is killing All About Berlin",
+      "url": "https://nicolasbouliane.com/blog/death-by-ai",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "AI is killing All About Berlin"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 728分 / 619评",
+      "title": "Windows 11 is collecting data on which coding agents and developer tools you use",
+      "url": "https://xusheng.dev/posts/windows-coding-agent-telemetry/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Windows 11 is collecting data on which coding agents and developer tools you use"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 701分 / 276评",
+      "title": "Optimizely compromised, served malware on Zoom, GitLab",
+      "url": "https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Optimizely compromised, served malware on Zoom, GitLab"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 692分 / 543评",
+      "title": "Google's AI answers reducing search traffic by 40%",
+      "url": "https://revscope.co/blog/search-seo-geo-2026/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Google's AI answers reducing search traffic by 40%"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 587分 / 528评",
+      "title": "Gemini 4 Neon",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Gemini 4 Neon"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    },
+    {
+      "source": "Hacker News 热帖 · 479分 / 329评",
+      "title": "Seven new models at scalable price-performance",
+      "url": "https://microsoft.ai/news/microsoft-ignite-2026/",
+      "paras": [
+        "（当前为无大模型连接的降级模式，以下为原始标题，未做中文翻译与解读，请补充。）",
+        "Seven new models at scalable price-performance"
+      ],
+      "why": "（自动聚合，未从 AI 产品经理视角解读，请补充。）"
+    }
+  ],
+  "repos": [
+    {
+      "name": "affaan-m/ECC",
+      "url": "https://github.com/affaan-m/ECC",
+      "category": "GitHub 热门项目",
+      "stars": "306670",
+      "growth": "—",
+      "lang": "JavaScript",
+      "license": "MIT",
+      "notes": {
+        "这是": "The agent harness performance optimization system. Skills, instincts, memory, security, and research-first development for Claude Code, Codex, Opencode, Cursor and beyond.",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "NousResearch/hermes-agent",
+      "url": "https://github.com/NousResearch/hermes-agent",
+      "category": "GitHub 热门项目",
+      "stars": "264540",
+      "growth": "—",
+      "lang": "Python",
+      "license": "MIT",
+      "notes": {
+        "这是": "The agent that grows with you",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "firecrawl/firecrawl",
+      "url": "https://github.com/firecrawl/firecrawl",
+      "category": "GitHub 热门项目",
+      "stars": "203317",
+      "growth": "—",
+      "lang": "TypeScript",
+      "license": "AGPL-3.0",
+      "notes": {
+        "这是": "Knowledge infrastructure to make your agents smarter. Search, scrape and 550+ data providers through one API.",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    },
+    {
+      "name": "tensorflow/tensorflow",
+      "url": "https://github.com/tensorflow/tensorflow",
+      "category": "GitHub 热门项目",
+      "stars": "201592",
+      "growth": "—",
+      "lang": "C++",
+      "license": "Apache-2.0",
+      "notes": {
+        "这是": "An Open Source Machine Learning Framework for Everyone",
+        "今天看": "本期自动聚合入选，待人工补充中文解读。"
+      }
+    }
+  ],
+  "terms": {},
+  "pending": {},
+  "date": "2026-11-19",
+  "range": "2026-11-16 → 2026-11-19",
+  "updated": "11-19 12:40"
+}
